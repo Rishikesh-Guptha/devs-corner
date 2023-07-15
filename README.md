@@ -1,4 +1,9 @@
-# Getting Started with Create React App
+# Dev's Corner
+
+This is a Personalized Learning based web application , specifically designed for students who wants to pursue a successful career in the tech field.
+
+This project is built using **Reactjs** for the Frontend and **Firebase** as BAAS.
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
