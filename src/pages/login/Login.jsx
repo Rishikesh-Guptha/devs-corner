@@ -19,6 +19,10 @@ const Login = () => {
                         <input type="password" className="password" placeholder='IamBatman'/>
                     </div>
                 </form>
+                <button className="submit">Submit</button>
+            </div>
+            <div className="bottom">
+                <p>First time? <a href="">Signup</a></p>
             </div>
         </div>
     </div>
