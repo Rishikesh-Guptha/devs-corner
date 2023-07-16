@@ -1,8 +1,37 @@
 * {
     font-family: 'Poppins';
     font-weight: 300;
+    margin: 0;
+    }
+    
+    .nav-right {
+        display: flex;
+        margin-right: 1rem;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    
+    }
+    
+    .login,
+    .signup {
+        margin-right: 1rem;
+    }
+    
+    .navbar {
+        margin-top: 0px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        height: 5rem;
+        /* background-color: #3B3C36;
+            color: whitesmoke; */
+        position: fixed;
+        background-color: white;
 }
 
-.heading {
+.title {
     margin-left: 2rem;
+    margin-top: 1rem;
+        font-size: xx-large;
 }
