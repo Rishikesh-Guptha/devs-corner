@@ -5,7 +5,6 @@ const Landingpage = () => {
   return (
     <div>
         <div className="navbar"> 
-        {/* <Navbar1 /> */}
         <div className="nav-left">
         <p className="title">Dev's Corner</p>
         </div>
