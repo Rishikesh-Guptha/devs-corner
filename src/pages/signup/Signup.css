@@ -1,0 +1,26 @@
+label {
+    text-align: left;
+}
+
+.container {
+    text-align: center;
+}
+
+.heading {
+    font-size: x-large;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+label,
+input {
+    margin: 1rem 0;
+}
+
+.submit {
+    margin: 2rem 0;
+    font-size: medium;
+    width: 7rem;
+    height: 2.5rem;
+
+}
