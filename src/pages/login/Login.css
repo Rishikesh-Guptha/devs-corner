@@ -1,5 +1,6 @@
 .container {
     text-align: center;
+    border: 1px solid black;
 }
 .heading {
     font-size: x-large;
