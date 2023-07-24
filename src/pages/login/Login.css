@@ -12,7 +12,7 @@
     label,
     input {
         margin: 1rem 0;
-    }
+}
     
     .submit {
         margin: 2rem 0;
@@ -20,13 +20,13 @@
         width: 7rem;
         height: 2.5rem;
     
-    }
-                                                                .emailid,
-                                                                .passwords {
-                                                                    text-align: left;
-                                                                    margin-left: 8rem;
-                                                                }
-                                
-                                                                input {
-                                                                    width: 15rem;
-                                                                }
+}
+
+.emailid,
+.passwords {
+    text-align: left;
+    margin-left: 8rem;
+}
+input {
+    width: 15rem;
+}

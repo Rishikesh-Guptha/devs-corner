@@ -1,6 +1,7 @@
 .container {
     text-align: center;
     /* border: 10px solid black; */
+    padding-bottom: 2rem;
 }
 
 .heading {
@@ -20,4 +21,14 @@ input {
     width: 7rem;
     height: 2.5rem;
 
+}
+.emailid,
+.passwords,
+.confirm-passwords {
+    text-align: left;
+    margin-left: 8rem;
+}
+
+input {
+    width: 15rem;
 }
