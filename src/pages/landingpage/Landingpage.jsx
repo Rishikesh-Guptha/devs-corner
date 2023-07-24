@@ -20,6 +20,9 @@ const Landingpage = () => {
         
         </div>
         <div className="main-text">
+          <div className="text-space1">
+            <p>Let's make a new world</p>
+          </div>
             
         </div>
         <Outlet/>

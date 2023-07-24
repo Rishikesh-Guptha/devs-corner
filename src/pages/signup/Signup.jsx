@@ -1,9 +1,15 @@
 import React from 'react';
-import './/Signup.css'
+import './/Signup.css';
+import Landingpage from '../landingpage/Landingpage';
+import Login from '../login/Login';
+import { Outlet, Link } from "react-router-dom";
 
 const Signup = () => {
   return (
     <div>
+        <div className="back-btn">
+            <button> <Link to="/">Back</Link></button>
+        </div>
          <div className="container">
             <div className="head">
                 <p className="heading">SIGNUP</p>
@@ -28,9 +34,10 @@ const Signup = () => {
                 <button className="submit">Submit</button>
             </div>
             <div className="bottom">
-                <p>If this page is Familiar,you already have an account <a href="">Login</a></p>
+                <p>If this page is Familiar,you already have an account <Link to="/Login">Login</Link></p>
             </div>
         </div>
+        <Outlet/>
     </div>
   )
 }
