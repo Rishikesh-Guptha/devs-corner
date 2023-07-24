@@ -1,9 +1,10 @@
 .container {
     text-align: center;
     border: 1px solid black;
+    margin: auto 30rem;
 }
 .heading {
-    font-size: x-large;
+    font-size: xx-large;
         margin-top: 4rem;
         margin-bottom: 2rem;
     }
@@ -20,3 +21,12 @@
         height: 2.5rem;
     
     }
+                                                                .emailid,
+                                                                .passwords {
+                                                                    text-align: left;
+                                                                    margin-left: 8rem;
+                                                                }
+                                
+                                                                input {
+                                                                    width: 15rem;
+                                                                }

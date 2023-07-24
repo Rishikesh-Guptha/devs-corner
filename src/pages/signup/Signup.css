@@ -1,10 +1,10 @@
 .container {
     text-align: center;
-    border: 10px solid blacks;
+    /* border: 10px solid black; */
 }
 
 .heading {
-    font-size: x-large;
+    font-size: xx-large;
     margin-top: 4rem;
     margin-bottom: 2rem;
 }
