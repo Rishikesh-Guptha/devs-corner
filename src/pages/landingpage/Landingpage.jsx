@@ -5,6 +5,7 @@ import { Outlet, Link } from "react-router-dom";
 import Login from '../login/Login';
 import Signup from '../signup/Signup';
 import Navbar2 from '../navbar2/Navbar2';
+// import Navbar2 from '../navbar2/Navbar2';
 
 
 //This page currently only has the navbar like structure .
@@ -29,7 +30,7 @@ const Landingpage = () => {
           </div>
             
         </div>
-        <Navbar2/>
+        {/* <Navbar2/> */}
         <Outlet/>
     </div>
   )

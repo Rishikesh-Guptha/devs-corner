@@ -10,10 +10,10 @@ const Navbar2 = () => {
         <p className="title"> <Link to="/" style={{textDecoration: 'none', color: 'black'}}>Dev's Corner</Link></p>
         </div>
         
-        <div className="nav-right">
+        {/* <div className="nav-right">
           <p className="login"> <Link to="Login" style={{textDecoration: 'none', color: 'black'}}>Login</Link> </p>
           <p className="signup"><Link to="Signup" style={{textDecoration: 'none', color: 'black'}}>Signup</Link></p>
-        </div>
+        </div> */}
         
         </div>
         <div className="main-text">
