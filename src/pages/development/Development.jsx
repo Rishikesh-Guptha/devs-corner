@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import './Development.css'
 
 const Development = () => {
   return (
