@@ -5,6 +5,9 @@ import { Outlet, Link } from "react-router-dom";
 import Login from '../login/Login';
 import Signup from '../signup/Signup';
 
+
+//This page currently only has the navbar like structure .
+//This is the first page that appears when the application is loaded
 const Landingpage = () => {
   return (
     <div>

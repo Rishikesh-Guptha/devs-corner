@@ -4,6 +4,7 @@ import Landingpage from '../landingpage/Landingpage';
 import Login from '../login/Login';
 import { Outlet, Link } from "react-router-dom";
 
+//This is the signup page
 const Signup = () => {
   return (
     <div>
