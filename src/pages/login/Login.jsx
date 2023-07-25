@@ -3,6 +3,8 @@ import './/Login.css';
 import Landingpage from '../landingpage/Landingpage';
 import Signup from '../signup/Signup';
 import { Outlet, Link } from "react-router-dom";
+import GoogleIcon from '@mui/icons-material/Google';
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 //This is the login page
 const Login = () => {
@@ -28,6 +30,14 @@ const Login = () => {
                     </div>
                 </form>
                 <button className="submit">Submit</button>
+            </div>
+            <div className="other-methods">
+                <p>---or---</p>
+                <div className="icons">
+                    <GoogleIcon className="google-icon" fontsize="medium"></GoogleIcon>
+                    <GitHubIcon className="github-icon"></GitHubIcon>
+
+                </div>
             </div>
             <div className="bottom">
                 <p>First time? <Link to="/Signup">Signup</Link></p>
