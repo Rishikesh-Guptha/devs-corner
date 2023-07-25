@@ -6,7 +6,9 @@ const Dashboard = () => {
   return (
     <div>
       <Navbar2/>
-      
+      <div className="content">
+        <p>This is the place where we display all the dsa, development etc...</p>
+      </div>
     </div>
   )
 }
