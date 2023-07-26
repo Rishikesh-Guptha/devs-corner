@@ -1,8 +1,10 @@
 import Landingpage from "./pages/landingpage/Landingpage";
 import Login from "./pages/login/Login";
 import Signup from "./pages/signup/Signup";
+import Dashboard from "./pages/dashboard/Dashboard.jsx";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { FirebaseApp } from "firebase/app";
+import { auth } from "./firebase";
 
 function App() {
   return (
@@ -10,6 +12,8 @@ function App() {
       <BrowserRouter>
       <Routes>
         <Route path="/" element={<Landingpage />}/>
+        <Route path="Dashboard" element={<Dashboard />}/>
+
        <Route path="Landingpage" element={<Landingpage />}/>
         <Route path="Login" element={<Login/>} />
         <Route path="Signup" element={<Signup/>} />

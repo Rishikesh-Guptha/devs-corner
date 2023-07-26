@@ -20,7 +20,7 @@ const Navbar2 = () => {
         </div>
         <div className="main-text">
           <div className="text-space1">
-            <p>Let's make a new world</p>
+            
           </div>
             
         </div>
