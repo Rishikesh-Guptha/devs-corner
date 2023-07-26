@@ -58,7 +58,7 @@ const Login = () => {
                 <p>---or---</p>
                 <div className="icons">
                     <GoogleIcon className="google-icon" fontsize="medium"></GoogleIcon>
-                    <GitHubIcon className="github-icon"></GitHubIcon>
+                    <GitHubIcon className="github-icon" on></GitHubIcon>
 
                 </div>
             </div>
