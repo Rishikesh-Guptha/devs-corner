@@ -8,7 +8,7 @@ const Navbar2 = () => {
     <div>
         <div className="navbar"> 
         <div className="nav-left">
-        <p className="title"> <Link to="/" style={{textDecoration: 'none', color: 'black'}}>Dev's Corner</Link></p>
+        <p className="title"> <Link to="/Dashboard" style={{textDecoration: 'none', color: 'black'}}>Dev's Corner</Link></p>
         </div>
         
         <div className="nav-right">

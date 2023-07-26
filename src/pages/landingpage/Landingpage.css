@@ -28,6 +28,7 @@
             color: whitesmoke; */
         position: fixed;
         background-color: white;
+        border-bottom: 1px black solid;
 }
 
 .title {

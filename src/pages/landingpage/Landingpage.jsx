@@ -26,7 +26,7 @@ const Landingpage = () => {
         </div>
         <div className="main-text">
           <div className="text-space1">
-            <p>Let's make a new world</p>
+            <p>This is the first page</p>
             <p>This is the landing page</p>
           </div>
             
