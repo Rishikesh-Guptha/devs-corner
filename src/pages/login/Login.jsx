@@ -7,7 +7,7 @@ import { Outlet, Link,NavLink, useNavigate } from "react-router-dom";
 import GoogleIcon from '@mui/icons-material/Google';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import { auth } from '../../firebase';
-
+import Dashboard from '../dashboard/Dashboard';
 
 //This is the login page
 const Login = () => {
