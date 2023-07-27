@@ -1,6 +1,7 @@
 import React from 'react';
 import './Dashboard.css';
 import Navbar2 from '../navbar2/Navbar2';
+import Login from '../login/Login';
 
 const Dashboard = () => {
   return (

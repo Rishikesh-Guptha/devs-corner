@@ -8,6 +8,7 @@ import GoogleIcon from '@mui/icons-material/Google';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import { auth } from '../../firebase';
 
+
 //This is the login page
 const Login = () => {
     const navigate = useNavigate();
