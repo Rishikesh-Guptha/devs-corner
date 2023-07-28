@@ -14,10 +14,23 @@ const Dashboard = () => {
         <p className="headings">
           Courses
         </p>
-       <Box sx={{display: 'flex','& > :not(style)': {m: 5,width: 1400,height: 280,},}}>
+       <Box sx={{display: 'flex',flexDirection: 'column','& > :not(style)': {m: 5,width: 1400,height: 280,},}}>
       {/* <Paper variant="outlined" /> */}
+      
       <Paper variant="outlined" square elevation={20} sx={{backgroundColor:'#bdbdbd', borderRadius:5, i:100}} >
-      <Paper variant="outlined" square sx={{backgroundColor:'white',width:375, height: 240 ,m:2.5 }}>DSA</Paper>
+      <Paper variant="outlined" square sx={{backgroundColor:'white',width:375, height: 240 ,m:2.5, borderRadius:5 }}>DSA</Paper>
+      </Paper>
+
+      <Paper variant="outlined" square elevation={20} sx={{backgroundColor:'#bdbdbd', borderRadius:5, i:100}} >
+      <Paper variant="outlined" square sx={{backgroundColor:'white',width:375, height: 240 ,m:2.5,borderRadius:5 }}>Development</Paper>
+      </Paper>
+
+      <Paper variant="outlined" square elevation={20} sx={{backgroundColor:'#bdbdbd', borderRadius:5, i:100}} >
+      <Paper variant="outlined" square sx={{backgroundColor:'white',width:375, height: 240 ,m:2.5,borderRadius:5 }}>Open Source</Paper>
+      </Paper>
+
+      <Paper variant="outlined" square elevation={20} sx={{backgroundColor:'#bdbdbd', borderRadius:5, i:100}} >
+      <Paper variant="outlined" square sx={{backgroundColor:'white',width:375, height: 240 ,m:2.5,borderRadius:5 }}>Finance Managment</Paper>
       </Paper>
       
     </Box>

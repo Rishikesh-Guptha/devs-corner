@@ -35,7 +35,7 @@
 .title {
     margin-left: 2rem;
     margin-top: 1rem;
-    font-size: xx-large;
+    font-size: x-large;
 }
 
 .main-text {
@@ -63,9 +63,9 @@ link {
 }
 
 .dashboard:hover {
-    opacity: .8;
+    opacity: .7;
 }
 
 .community:hover {
-    opacity: .8;
+    opacity: .7;
 }
