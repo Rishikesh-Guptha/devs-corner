@@ -11,12 +11,12 @@ const Dashboard = () => {
     <div>
       <Navbar2/>
       <div className="main_content">
-       <Box sx={{display: 'flex','& > :not(style)': {m: 1,width: 275,height: 150,},}}>
+        <p className="headings">
+          Courses
+        </p>
+       <Box sx={{display: 'flex','& > :not(style)': {m: 1,width: 1200,height: 220,},}}>
       {/* <Paper variant="outlined" /> */}
-      <Paper variant="outlined" square elevation={20} sx={{backgroundColor:'gray', borderRadius:5}} >Hello</Paper>
-      <Paper variant="outlined" square elevation={20} sx={{backgroundColor:'gray', borderRadius:5}} >Hello</Paper>
-      <Paper variant="outlined" square elevation={20} sx={{backgroundColor:'gray', borderRadius:5}} >Hello</Paper>
-      <Paper variant="outlined" square elevation={20} sx={{backgroundColor:'gray', borderRadius:5}} >Hello</Paper>
+      <Paper variant="outlined" square elevation={20} sx={{backgroundColor:'#bdbdbd', borderRadius:5, i:100}} >Hello</Paper>
       
     </Box>
     
