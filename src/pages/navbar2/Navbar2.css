@@ -46,3 +46,26 @@
 link {
     text-decoration: none;
 }
+.nav-left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-between;
+}
+
+.nav-left>p {
+    margin: auto 1rem;
+}
+
+.community,
+.dashboard {
+    cursor: pointer;
+}
+
+.dashboard:hover {
+    opacity: .8;
+}
+
+.community:hover {
+    opacity: .8;
+}

@@ -9,12 +9,14 @@ const Navbar2 = () => {
         <div className="navbar"> 
         <div className="nav-left">
         <p className="title"> <Link to="/Dashboard" style={{textDecoration: 'none', color: 'black'}}>Dev's Corner</Link></p>
+        <p className="dashboard">Dashboard</p>
+        <p className="community">Community</p>
         </div>
         
         <div className="nav-right">
           {/* <p className="login"> <Link to="Login" style={{textDecoration: 'none', color: 'black'}}>Login</Link> </p>
           <p className="signup"><Link to="Signup" style={{textDecoration: 'none', color: 'black'}}>Signup</Link></p> */}
-          <FaceIcon></FaceIcon>
+          <FaceIcon sx={{fontSize:40}}></FaceIcon>
         </div>
         
         </div>
