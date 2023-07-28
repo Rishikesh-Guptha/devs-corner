@@ -14,11 +14,12 @@ const Dashboard = () => {
         <p className="headings">
           Courses
         </p>
-       <Box sx={{display: 'flex',flexDirection: 'column','& > :not(style)': {m: 5,width: 1400,height: 280,},}}>
+       <Box sx={{display: 'flex',flexDirection: 'column','& > :not(style)': {m: 3.5,width: 1400,height: 280,},}}>
       {/* <Paper variant="outlined" /> */}
       
       <Paper variant="outlined" square elevation={20} sx={{backgroundColor:'#bdbdbd', borderRadius:5, i:100}} >
       <Paper variant="outlined" square sx={{backgroundColor:'white',width:375, height: 240 ,m:2.5, borderRadius:5 }}>DSA</Paper>
+      
       </Paper>
 
       <Paper variant="outlined" square elevation={20} sx={{backgroundColor:'#bdbdbd', borderRadius:5, i:100}} >
