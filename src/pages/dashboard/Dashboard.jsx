@@ -11,21 +11,7 @@ const Dashboard = () => {
     <div>
       <Navbar2/>
       <div className="main_content">
-        {/* <Box sx={{
-        width: 200,
-        height: 150,
-        backgroundColor: 'lightgray'
-      }}/> */}
-       <Box
-      sx={{
-        display: 'flex',
-        '& > :not(style)': {
-          m: 1,
-          width: 275,
-          height: 150,
-        },
-      }}
-    >
+       <Box sx={{display: 'flex','& > :not(style)': {m: 1,width: 275,height: 150,},}}>
       {/* <Paper variant="outlined" /> */}
       <Paper variant="outlined" square elevation={20} sx={{backgroundColor:'gray'}} />
       <Paper variant="outlined" square elevation={20} sx={{backgroundColor:'gray'}} />
