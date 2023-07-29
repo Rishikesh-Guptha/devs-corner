@@ -17,21 +17,24 @@ const Dashboard = () => {
        <Box sx={{display: 'flex',flexDirection: 'column','& > :not(style)': {m: 3.5,width: 1400,height: 280,},}}>
       {/* <Paper variant="outlined" /> */}
       
-      <Paper variant="outlined" square elevation={20} sx={{backgroundColor:'#bdbdbd', borderRadius:5, i:100}} >
-      <Paper variant="outlined" square sx={{backgroundColor:'white',width:375, height: 240 ,m:2.5, borderRadius:5 }}>DSA</Paper>
-      
+      <Paper variant="outlined" square elevation={20} sx={{backgroundColor:'#bdbdbd', borderRadius:5, i:100, display:'flex'}} >
+      <Paper variant="outlined" square sx={{backgroundColor:'white',width:375, height: 240 ,m:2.5, borderRadius:5 }}></Paper>
+      <Paper variant="outlined" square sx={{alignItems:'stretch', backgroundColor:'#bdbdbd', height:260, width:1000, m:1, border:'none'}} >DSA</Paper>
       </Paper>
 
-      <Paper variant="outlined" square elevation={20} sx={{backgroundColor:'#bdbdbd', borderRadius:5, i:100}} >
-      <Paper variant="outlined" square sx={{backgroundColor:'white',width:375, height: 240 ,m:2.5,borderRadius:5 }}>Development</Paper>
+      <Paper variant="outlined" square elevation={20} sx={{backgroundColor:'#bdbdbd', borderRadius:5, i:100, display:'flex'}} >
+      <Paper variant="outlined" square sx={{backgroundColor:'white',width:375, height: 240 ,m:2.5,borderRadius:5 }}></Paper>
+      <Paper variant="outlined" square sx={{alignItems:'stretch', backgroundColor:'#bdbdbd', height:260, width:1000, m:1, border:'none'}} >DEVELOPMENT</Paper>
       </Paper>
 
-      <Paper variant="outlined" square elevation={20} sx={{backgroundColor:'#bdbdbd', borderRadius:5, i:100}} >
-      <Paper variant="outlined" square sx={{backgroundColor:'white',width:375, height: 240 ,m:2.5,borderRadius:5 }}>Open Source</Paper>
+      <Paper variant="outlined" square elevation={20} sx={{backgroundColor:'#bdbdbd', borderRadius:5, i:100, display:'flex'}} >
+      <Paper variant="outlined" square sx={{backgroundColor:'white',width:375, height: 240 ,m:2.5,borderRadius:5 }}></Paper>
+      <Paper variant="outlined" square sx={{alignItems:'stretch', backgroundColor:'#bdbdbd', height:260, width:1000, m:1, border:'none'}} >OPEN SOURCE</Paper>
       </Paper>
 
-      <Paper variant="outlined" square elevation={20} sx={{backgroundColor:'#bdbdbd', borderRadius:5, i:100}} >
-      <Paper variant="outlined" square sx={{backgroundColor:'white',width:375, height: 240 ,m:2.5,borderRadius:5 }}>Finance Managment</Paper>
+      <Paper variant="outlined" square elevation={20} sx={{backgroundColor:'#bdbdbd', borderRadius:5, i:100, display:'flex'}} >
+      <Paper variant="outlined" square sx={{backgroundColor:'white',width:375, height: 240 ,m:2.5,borderRadius:5 }}></Paper>
+      <Paper variant="outlined" square sx={{alignItems:'stretch', backgroundColor:'#bdbdbd', height:260, width:1000, m:1, border:'none'}} >FINANCE</Paper>
       </Paper>
       
     </Box>
