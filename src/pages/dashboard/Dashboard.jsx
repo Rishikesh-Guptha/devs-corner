@@ -7,6 +7,7 @@ import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 // or
 import { Image } from 'mui-image'
+import { Avatar, CardMedia } from '@mui/material';
 
 const Dashboard = () => {
   return (
@@ -21,8 +22,10 @@ const Dashboard = () => {
       
       <Paper variant="outlined" square elevation={20} sx={{backgroundColor:'#bdbdbd', borderRadius:5, i:100, display:'flex'}} >
       {/* <Paper variant="outlined" component={'image'} alt="DSA pic" src='../assets/data_structure.jpg' square sx={{backgroundColor:'white',width:375, height: 240 ,m:2.5, borderRadius:5 }}></Paper> */}
-      <img src='../../assets/data_structure.jpg'alt='dsa pic' width={375} height={240}/>
+      <img src='../../assets/data_structure.jpg' alt='dsa pic' width={375} height={240}/>
       {/* <Image src="../../assets/data_structure.jpg" alt='dsa pic' width={375} height={240}   /> */}
+      {/* <Box component={Image} src='../../assets/data_structure.jpg' alt='dsa pic' sx={{ height:240, width: 375 }} /> */}
+      {/* <CardMedia component={Image} image='../../assets/data_structure.jpg' alt='dsa pic'/> */}
       <Paper variant="outlined" square sx={{alignItems:'stretch', backgroundColor:'#bdbdbd', height:260, width:1000, m:1, border:'none'}} >DSA</Paper>
       </Paper>
 
