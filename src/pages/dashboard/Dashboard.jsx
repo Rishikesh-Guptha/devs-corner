@@ -1,5 +1,6 @@
 import React from 'react';
 import './Dashboard.css';
+import { Outlet, Link } from "react-router-dom";
 import Navbar2 from '../navbar2/Navbar2';
 import Login from '../login/Login';
 import Dsa from '../dsa/Dsa.jsx';
@@ -24,7 +25,8 @@ const Dashboard = () => {
       {/* <Paper variant="outlined" /> */}
       
       <Paper variant="outlined" square elevation={20} sx={{backgroundColor:'#bdbdbd', borderRadius:5, i:100, display:'flex'}} >
-      <img src={DSAPIC} alt='dsaa pic' width={320} height={270} />
+      <img src={DSAPIC} alt='dsaa pic' width={300} height={270} />
+      <Link to="/Dsa" style={{textDecoration: 'none', color: 'black'}}>
       <Paper variant="outlined" square sx={{alignItems:'stretch', backgroundColor:'#bdbdbd', height:260, width:1000, m:1, border:'none'}} >
         <div className="dsa">
           <div className="titles">
@@ -36,10 +38,11 @@ const Dashboard = () => {
           </div>
         </div>
       </Paper>
+      </Link>
       </Paper>
 
       <Paper variant="outlined" square elevation={20} sx={{backgroundColor:'#bdbdbd', borderRadius:5, i:100, display:'flex'}} >
-      <img src={OPENSOURCEPIC} alt='dsaa pic' width={320} height={270} />
+      <img src={OPENSOURCEPIC} alt='dsaa pic' width={300} height={270} />
       <Paper variant="outlined" square sx={{alignItems:'stretch', backgroundColor:'#bdbdbd', height:260, width:1000, m:1, border:'none'}} >
       <div className="dsa">
           <div className="titles">
@@ -54,7 +57,7 @@ const Dashboard = () => {
       </Paper>
 
       <Paper variant="outlined" square elevation={20} sx={{backgroundColor:'#bdbdbd', borderRadius:5, i:100, display:'flex'}} >
-      <img src={DEVELOPMENTPIC} alt='dsaa pic' width={320} height={270} />
+      <img src={DEVELOPMENTPIC} alt='dsaa pic' width={300} height={270} />
       <Paper variant="outlined" square sx={{alignItems:'stretch', backgroundColor:'#bdbdbd', height:260, width:1000, m:1, border:'none'}} >
       <div className="dsa">
           <div className="titles">
@@ -69,7 +72,7 @@ const Dashboard = () => {
       </Paper>
 
       <Paper variant="outlined" square elevation={20} sx={{backgroundColor:'#bdbdbd', borderRadius:5, i:100, display:'flex'}} >
-      <img src={FINANCEPIC} alt='dsaa pic' width={320} height={270} />
+      <img src={FINANCEPIC} alt='dsaa pic' width={300} height={270} />
       <Paper variant="outlined" square sx={{alignItems:'stretch', backgroundColor:'#bdbdbd', height:260, width:1000, m:1, border:'none'}} >
       <div className="dsa">
           <div className="titles">

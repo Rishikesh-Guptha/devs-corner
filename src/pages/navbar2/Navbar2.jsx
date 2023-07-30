@@ -117,6 +117,7 @@ const Navbar2 = () => {
           </div>
             
         </div>
+        <Outlet/>
     </div>
   )
 }
