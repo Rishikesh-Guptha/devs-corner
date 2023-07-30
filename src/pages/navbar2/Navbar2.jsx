@@ -41,6 +41,7 @@ const Navbar2 = () => {
         </div>
         
         <div className="nav-right">
+          <p>Hello {auth.currentUser.email} !!</p>
           <Tooltip title="Account settings">
           <IconButton
             onClick={handleClick}
