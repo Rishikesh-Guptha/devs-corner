@@ -39,7 +39,7 @@ const Dashboard = () => {
       </Paper>
 
       <Paper variant="outlined" square elevation={20} sx={{backgroundColor:'#bdbdbd', borderRadius:5, i:100, display:'flex'}} >
-      <img src={DEVELOPMENTPIC} alt='dsaa pic' width={320} height={270} />
+      <img src={OPENSOURCEPIC} alt='dsaa pic' width={320} height={270} />
       <Paper variant="outlined" square sx={{alignItems:'stretch', backgroundColor:'#bdbdbd', height:260, width:1000, m:1, border:'none'}} >
       <div className="dsa">
           <div className="dsa-title">
@@ -54,8 +54,18 @@ const Dashboard = () => {
       </Paper>
 
       <Paper variant="outlined" square elevation={20} sx={{backgroundColor:'#bdbdbd', borderRadius:5, i:100, display:'flex'}} >
-      <img src={OPENSOURCEPIC} alt='dsaa pic' width={320} height={270} />
-      <Paper variant="outlined" square sx={{alignItems:'stretch', backgroundColor:'#bdbdbd', height:260, width:1000, m:1, border:'none'}} >OPEN SOURCE</Paper>
+      <img src={DEVELOPMENTPIC} alt='dsaa pic' width={320} height={270} />
+      <Paper variant="outlined" square sx={{alignItems:'stretch', backgroundColor:'#bdbdbd', height:260, width:1000, m:1, border:'none'}} >
+      <div className="dsa">
+          <div className="dsa-title">
+            Open Source
+          </div>
+          <Paper sx={{width:1000, height:2, backgroundColor:'black'}}></Paper>
+          <div className="content">
+            This is not exactly a course , but a portal to a whole new world of oppurtunities not just for jobs but also to change the world... It really does.
+          </div>
+        </div>
+      </Paper>
       </Paper>
 
       <Paper variant="outlined" square elevation={20} sx={{backgroundColor:'#bdbdbd', borderRadius:5, i:100, display:'flex'}} >
