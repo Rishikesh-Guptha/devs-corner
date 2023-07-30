@@ -2,3 +2,8 @@
     margin: 2rem 2rem 0;
     font-size: xxx-large;
 }
+img {
+    margin: auto 1rem;
+    border-radius: 5px;
+
+}
