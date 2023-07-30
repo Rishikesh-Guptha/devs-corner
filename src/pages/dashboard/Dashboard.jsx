@@ -24,6 +24,7 @@ const Dashboard = () => {
        <Box sx={{display: 'flex',flexDirection: 'column','& > :not(style)': {m: 4,width: 1400,height: 280,},}}>
       {/* <Paper variant="outlined" /> */}
       
+      {/* Data Structure and Algorithms  */}
       <Paper variant="outlined" square elevation={20} sx={{backgroundColor:'#bdbdbd', borderRadius:5, i:100, display:'flex'}} >
       <img src={DSAPIC} alt='dsaa pic' width={300} height={270} />
       <Link to="/Dsa" style={{textDecoration: 'none', color: 'black'}}>
@@ -41,11 +42,12 @@ const Dashboard = () => {
       </Link>
       </Paper>
 
+      {/* Development  */}
       <Paper variant="outlined" square elevation={20} sx={{backgroundColor:'#bdbdbd', borderRadius:5, i:100, display:'flex'}} >
-      <img src={OPENSOURCEPIC} alt='dsaa pic' width={300} height={270} />
+      <img src={OPENSOURCEPIC} alt='development pic' width={300} height={270} />
       <Link to="/Development" style={{textDecoration: 'none', color: 'black'}}>
       <Paper variant="outlined" square sx={{alignItems:'stretch', backgroundColor:'#bdbdbd', height:260, width:1000, m:1, border:'none'}} >
-      <div className="dsa">
+      <div className="development">
           <div className="titles">
             Development
           </div>
@@ -58,11 +60,12 @@ const Dashboard = () => {
       </Link>
       </Paper>
 
+      {/* Opensource  */}
       <Paper variant="outlined" square elevation={20} sx={{backgroundColor:'#bdbdbd', borderRadius:5, i:100, display:'flex'}} >
-      <img src={DEVELOPMENTPIC} alt='dsaa pic' width={300} height={270} />
+      <img src={DEVELOPMENTPIC} alt='open source pic' width={300} height={270} />
       <Link to="/Opensource" style={{textDecoration: 'none', color: 'black'}}>
       <Paper variant="outlined" square sx={{alignItems:'stretch', backgroundColor:'#bdbdbd', height:260, width:1000, m:1, border:'none'}} >
-      <div className="dsa">
+      <div className="opensource">
           <div className="titles">
             Open Source
           </div>
@@ -75,11 +78,12 @@ const Dashboard = () => {
       </Link>
       </Paper>
 
+      {/* Finance Managment  */}
       <Paper variant="outlined" square elevation={20} sx={{backgroundColor:'#bdbdbd', borderRadius:5, i:100, display:'flex'}} >
-      <img src={FINANCEPIC} alt='dsaa pic' width={300} height={270} />
+      <img src={FINANCEPIC} alt='finance pic' width={300} height={270} />
       <Link to="/Finance" style={{textDecoration: 'none', color: 'black'}}>
       <Paper variant="outlined" square sx={{alignItems:'stretch', backgroundColor:'#bdbdbd', height:260, width:1000, m:1, border:'none'}} >
-      <div className="dsa">
+      <div className="finance">
           <div className="titles">
             Finance Managment
           </div>
