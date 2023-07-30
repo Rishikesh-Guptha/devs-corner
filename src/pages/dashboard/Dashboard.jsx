@@ -40,7 +40,17 @@ const Dashboard = () => {
 
       <Paper variant="outlined" square elevation={20} sx={{backgroundColor:'#bdbdbd', borderRadius:5, i:100, display:'flex'}} >
       <img src={DEVELOPMENTPIC} alt='dsaa pic' width={320} height={270} />
-      <Paper variant="outlined" square sx={{alignItems:'stretch', backgroundColor:'#bdbdbd', height:260, width:1000, m:1, border:'none'}} >DEVELOPMENT</Paper>
+      <Paper variant="outlined" square sx={{alignItems:'stretch', backgroundColor:'#bdbdbd', height:260, width:1000, m:1, border:'none'}} >
+      <div className="dsa">
+          <div className="dsa-title">
+            Development
+          </div>
+          <Paper sx={{width:1000, height:2, backgroundColor:'black'}}></Paper>
+          <div className="content">
+            This is where a person transitions into a software developer from a guy who just solves CP problems.
+          </div>
+        </div>
+      </Paper>
       </Paper>
 
       <Paper variant="outlined" square elevation={20} sx={{backgroundColor:'#bdbdbd', borderRadius:5, i:100, display:'flex'}} >
