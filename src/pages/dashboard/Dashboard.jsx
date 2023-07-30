@@ -1,6 +1,7 @@
 import React from 'react';
 import './Dashboard.css';
 import { Outlet, Link } from "react-router-dom";
+import { auth } from "../../firebase";
 import Navbar2 from '../navbar2/Navbar2';
 import Login from '../login/Login';
 import Dsa from '../dsa/Dsa.jsx';
@@ -14,6 +15,13 @@ import OPENSOURCEPIC from '../../assets/open_source.jpg';
 import FINANCEPIC from '../../assets/finance.jpg';
 
 const Dashboard = () => {
+  auth.onAuthStateChanged(user => {
+    if (user) {
+      console.log(user.email + " is logged in!");
+    } else {
+      console.log('User is logged out!');
+    }
+  });
   return (
     <div>
       <Navbar2/>
