@@ -1,5 +1,6 @@
 import React from 'react';
 import './Navbar2.css';
+import Error from '../error/Error.jsx';
 import { auth } from '../../firebase';
 import { Outlet, Link } from "react-router-dom";
 import FaceIcon from '@mui/icons-material/Face';
@@ -41,7 +42,8 @@ const Navbar2 = () => {
         </div>
         
         <div className="nav-right">
-          <p>Hello {auth.currentUser.email} !!</p>
+          <p>Hello {auth.currentUser.email!==null?auth.currentUser.email:<Error/>} !!</p> 
+          {/* There is error in the above line, when someone tries to enter into the website without loggin in, type /dashboard in the url directly */}
           <Tooltip title="Account settings">
           <IconButton
             onClick={handleClick}

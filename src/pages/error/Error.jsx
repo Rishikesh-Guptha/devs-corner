@@ -1,8 +1,12 @@
 import React from 'react'
+import Navbar2 from '../navbar2/Navbar2'
 
 const Error = () => {
   return (
-    <div>It seems you've been lost..</div>
+    <div>
+        <Navbar2/>
+        <p>It seems you've been lost..</p>
+    </div>
   )
 }
 
