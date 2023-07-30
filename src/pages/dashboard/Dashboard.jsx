@@ -5,7 +5,7 @@ import Login from '../login/Login';
 import Dsa from '../dsa/Dsa.jsx';
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
-// or
+
 import { Image } from 'mui-image'
 import { Avatar, CardMedia } from '@mui/material';
 import DSAPIC from'../../assets/data_structure.jpg';
