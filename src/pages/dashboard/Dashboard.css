@@ -5,5 +5,13 @@
 img {
     margin: auto 1rem;
     border-radius: 5px;
+}
 
+.titles {
+    font-size: x-large;
+    margin: 0.2rem auto 1rem;
+}
+
+.content {
+    margin-top: 1rem;
 }

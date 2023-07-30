@@ -20,14 +20,14 @@ const Dashboard = () => {
         <p className="headings">
           Courses
         </p>
-       <Box sx={{display: 'flex',flexDirection: 'column','& > :not(style)': {m: 5,width: 1400,height: 280,},}}>
+       <Box sx={{display: 'flex',flexDirection: 'column','& > :not(style)': {m: 4,width: 1400,height: 280,},}}>
       {/* <Paper variant="outlined" /> */}
       
       <Paper variant="outlined" square elevation={20} sx={{backgroundColor:'#bdbdbd', borderRadius:5, i:100, display:'flex'}} >
       <img src={DSAPIC} alt='dsaa pic' width={320} height={270} />
       <Paper variant="outlined" square sx={{alignItems:'stretch', backgroundColor:'#bdbdbd', height:260, width:1000, m:1, border:'none'}} >
         <div className="dsa">
-          <div className="dsa-title">
+          <div className="titles">
             Data Structures and Algorithms
           </div>
           <Paper sx={{width:1000, height:2, backgroundColor:'black'}}></Paper>
@@ -42,7 +42,7 @@ const Dashboard = () => {
       <img src={OPENSOURCEPIC} alt='dsaa pic' width={320} height={270} />
       <Paper variant="outlined" square sx={{alignItems:'stretch', backgroundColor:'#bdbdbd', height:260, width:1000, m:1, border:'none'}} >
       <div className="dsa">
-          <div className="dsa-title">
+          <div className="titles">
             Development
           </div>
           <Paper sx={{width:1000, height:2, backgroundColor:'black'}}></Paper>
@@ -57,7 +57,7 @@ const Dashboard = () => {
       <img src={DEVELOPMENTPIC} alt='dsaa pic' width={320} height={270} />
       <Paper variant="outlined" square sx={{alignItems:'stretch', backgroundColor:'#bdbdbd', height:260, width:1000, m:1, border:'none'}} >
       <div className="dsa">
-          <div className="dsa-title">
+          <div className="titles">
             Open Source
           </div>
           <Paper sx={{width:1000, height:2, backgroundColor:'black'}}></Paper>
@@ -72,7 +72,7 @@ const Dashboard = () => {
       <img src={FINANCEPIC} alt='dsaa pic' width={320} height={270} />
       <Paper variant="outlined" square sx={{alignItems:'stretch', backgroundColor:'#bdbdbd', height:260, width:1000, m:1, border:'none'}} >
       <div className="dsa">
-          <div className="dsa-title">
+          <div className="titles">
             Finance Managment
           </div>
           <Paper sx={{width:1000, height:2, backgroundColor:'black'}}></Paper>
