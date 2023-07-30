@@ -7,8 +7,6 @@ import Login from '../login/Login';
 import Dsa from '../dsa/Dsa.jsx';
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
-import { Image } from 'mui-image'
-import { Avatar, CardMedia } from '@mui/material';
 import DSAPIC from'../../assets/data_structure.jpg';
 import DEVELOPMENTPIC from '../../assets/development.jpg';
 import OPENSOURCEPIC from '../../assets/open_source.jpg';
@@ -108,6 +106,7 @@ const Dashboard = () => {
     
 
       </div>
+      <Outlet/>
     </div>
   )
 }

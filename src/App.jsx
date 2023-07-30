@@ -8,7 +8,6 @@ import Dsa from "./pages/dsa/Dsa.jsx";
 import Development from "./pages/development/Development.jsx";
 import Opensouce from "./pages/opensource/Opensouce.jsx";
 import Finance from "./pages/finace/Finance.jsx";
-
 import { FirebaseApp } from "firebase/app";
 import { auth } from "./firebase";
 
