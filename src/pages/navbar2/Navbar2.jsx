@@ -1,5 +1,6 @@
 import React from 'react';
 import './Navbar2.css';
+import { auth } from '../../firebase';
 import { Outlet, Link } from "react-router-dom";
 import FaceIcon from '@mui/icons-material/Face';
 import Box from '@mui/material/Box';
@@ -24,6 +25,12 @@ const Navbar2 = () => {
   const handleClose = () => {
     setAnchorEl(null);
   };
+  const handleclose_logout=(e)=>{
+    setAnchorEl(null);
+    e.preventDefault();
+    auth.signOut();
+    console.log('User signed out!');
+  }
   return (
     <div>
         <div className="navbar"> 
@@ -101,11 +108,13 @@ const Navbar2 = () => {
           </ListItemIcon>
           Settings
         </MenuItem>
-        <MenuItem onClick={handleClose}>
+        <MenuItem onClick={handleclose_logout}>
+          <Link to="/Landingpage" style={{textDecoration: 'none', color: 'black'}} >
           <ListItemIcon>
             <Logout fontSize="small" />
           </ListItemIcon>
           Logout
+          </Link>
         </MenuItem>
       </Menu>
         </div>
