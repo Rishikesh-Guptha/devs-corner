@@ -16,6 +16,11 @@
     font-size: x-large;
 }
 
-.tech-content-algorithms {
+.tech-content-algorithms,
+.tech-content-dsa-sheets {
     margin-bottom: 5rem;
+}
+.tech-content-dsa-sheets-title {
+    margin: 3rem auto 1rem 2rem;
+    font-size: x-large;
 }
