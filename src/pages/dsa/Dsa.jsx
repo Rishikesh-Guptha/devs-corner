@@ -98,6 +98,33 @@ const Dsa = () => {
                 </Accordion>
 
               </div>
+              <div className="tech-content-algorithms">
+                <p className="tech-content-algorithms-title">Algorithms</p>
+
+                <Accordion sx={{maxWidth:0.95, marginLeft:5,marginBottom:2}}>
+                  {/* <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1a-content" id="panel1a-header" > */}
+                  <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1a-content"   >
+                    <Typography>Sorting Algorithms</Typography>
+                  </AccordionSummary>
+                  <AccordionDetails sx={{ marginLeft:5}}>
+                    <Typography sx={{ marginLeft:5}}>
+                      The contents for sorting algorithms lie here..
+                    </Typography>
+                  </AccordionDetails>
+                </Accordion>
+
+                <Accordion sx={{maxWidth:0.95, marginLeft:5,marginBottom:2}}>
+                  {/* <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1a-content" id="panel1a-header" > */}
+                  <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1a-content"   >
+                    <Typography>Searching Algorithms</Typography>
+                  </AccordionSummary>
+                  <AccordionDetails sx={{ marginLeft:5}}>
+                    <Typography sx={{ marginLeft:5}}>
+                      The contents for searching algorithms lie here..
+                    </Typography>
+                  </AccordionDetails>
+                </Accordion>
+              </div>
             </div>
           </div>
         </div>

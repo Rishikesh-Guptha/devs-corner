@@ -1,14 +1,21 @@
 .text-title {
-    margin: 1rem auto 2rem 2rem;
+    margin: 2rem auto 2rem 2rem;
     font-size: xx-large;
 }
 .title-text {
     margin-left: 5rem;
     margin-bottom: 3rem;
-    }
-    
-    .tech-content-structures-title {
-        margin-left: 2rem;
-        margin-bottom: 1rem;
-        font-size: x-large;
+}
+.tech-content-structures-title {
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+    font-size: x-large;
+}
+.tech-content-algorithms-title {
+    margin: 3rem auto 1rem 2rem;
+    font-size: x-large;
+}
+
+.tech-content-algorithms {
+    margin-bottom: 5rem;
 }
