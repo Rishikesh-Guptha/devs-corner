@@ -22,81 +22,82 @@ const Dsa = () => {
               </p>
             </div>
             <div className="tech-content">
+              <div className="tech-content-structures">
+                <p className="tech-content-structures-title">Structures</p>
+                  
+                <Accordion sx={{maxWidth:0.95, marginLeft:5,marginBottom:2}}>
+                  {/* <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1a-content" id="panel1a-header" > */}
+                  <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1a-content"   >
+                    <Typography>Arrays</Typography>
+                  </AccordionSummary>
+                  <AccordionDetails sx={{ marginLeft:5}}>
+                    <Typography sx={{ marginLeft:5}}>
+                      The contents for arrays lie here..
+                    </Typography>
+                  </AccordionDetails>
+                </Accordion>
 
-              <Accordion sx={{maxWidth:0.95, marginLeft:5}}>
-                {/* <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1a-content" id="panel1a-header" > */}
-                <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1a-content"   >
-                  <Typography>Arrays</Typography>
-                </AccordionSummary>
-                <AccordionDetails sx={{ marginLeft:5}}>
-                  <Typography sx={{ marginLeft:5}}>
-                    The contents for arrays lie here..
-                  </Typography>
-                </AccordionDetails>
-              </Accordion>
+                <Accordion sx={{maxWidth:0.95, marginLeft:5,marginBottom:2}}>
+                  {/* <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1a-content" id="panel1a-header" > */}
+                  <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1a-content"   >
+                    <Typography>Linked List</Typography>
+                  </AccordionSummary>
+                  <AccordionDetails sx={{ marginLeft:5}}>
+                    <Typography sx={{ marginLeft:5}}>
+                      The contents for Linked Lists lie here..
+                    </Typography>
+                  </AccordionDetails>
+                </Accordion>
 
-              <Accordion sx={{maxWidth:0.95, marginLeft:5}}>
-                {/* <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1a-content" id="panel1a-header" > */}
-                <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1a-content"   >
-                  <Typography>Linked List</Typography>
-                </AccordionSummary>
-                <AccordionDetails sx={{ marginLeft:5}}>
-                  <Typography sx={{ marginLeft:5}}>
-                    The contents for Linked Lists lie here..
-                  </Typography>
-                </AccordionDetails>
-              </Accordion>
+                <Accordion sx={{maxWidth:0.95, marginLeft:5,marginBottom:2}}>
+                  {/* <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1a-content" id="panel1a-header" > */}
+                  <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1a-content"   >
+                    <Typography>Stack</Typography>
+                  </AccordionSummary>
+                  <AccordionDetails sx={{ marginLeft:5}}>
+                    <Typography sx={{ marginLeft:5}}>
+                      The contents for Stack lie here..
+                    </Typography>
+                  </AccordionDetails>
+                </Accordion>
 
-              <Accordion sx={{maxWidth:0.95, marginLeft:5}}>
-                {/* <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1a-content" id="panel1a-header" > */}
-                <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1a-content"   >
-                  <Typography>Stack</Typography>
-                </AccordionSummary>
-                <AccordionDetails sx={{ marginLeft:5}}>
-                  <Typography sx={{ marginLeft:5}}>
-                    The contents for Stack lie here..
-                  </Typography>
-                </AccordionDetails>
-              </Accordion>
+                <Accordion sx={{maxWidth:0.95, marginLeft:5,marginBottom:2}}>
+                  {/* <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1a-content" id="panel1a-header" > */}
+                  <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1a-content"   >
+                    <Typography>Queue</Typography>
+                  </AccordionSummary>
+                  <AccordionDetails sx={{ marginLeft:5}}>
+                    <Typography sx={{ marginLeft:5}}>
+                      The contents for Queue lie here..
+                    </Typography>
+                  </AccordionDetails>
+                </Accordion>
 
-              <Accordion sx={{maxWidth:0.95, marginLeft:5}}>
-                {/* <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1a-content" id="panel1a-header" > */}
-                <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1a-content"   >
-                  <Typography>Queue</Typography>
-                </AccordionSummary>
-                <AccordionDetails sx={{ marginLeft:5}}>
-                  <Typography sx={{ marginLeft:5}}>
-                    The contents for Queue lie here..
-                  </Typography>
-                </AccordionDetails>
-              </Accordion>
+                <Accordion sx={{maxWidth:0.95, marginLeft:5,marginBottom:2}}>
+                  {/* <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1a-content" id="panel1a-header" > */}
+                  <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1a-content"   >
+                    <Typography>Tree</Typography>
+                  </AccordionSummary>
+                  <AccordionDetails sx={{ marginLeft:5}}>
+                    <Typography sx={{ marginLeft:5}}>
+                      The contents for Tree lie here..
+                    </Typography>
+                  </AccordionDetails>
+                </Accordion>
 
-              <Accordion sx={{maxWidth:0.95, marginLeft:5}}>
-                {/* <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1a-content" id="panel1a-header" > */}
-                <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1a-content"   >
-                  <Typography>Tree</Typography>
-                </AccordionSummary>
-                <AccordionDetails sx={{ marginLeft:5}}>
-                  <Typography sx={{ marginLeft:5}}>
-                    The contents for Tree lie here..
-                  </Typography>
-                </AccordionDetails>
-              </Accordion>
+                <Accordion sx={{maxWidth:0.95, marginLeft:5,marginBottom:2}} >
+                  {/* <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1a-content" id="panel1a-header" > */}
+                  <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1a-content"  >
+                    <Typography>Graph</Typography>
+                  </AccordionSummary>
+                  <AccordionDetails sx={{ marginLeft:10}}>
+                    <Typography sx={{ marginLeft:10}}>
+                      The contents for Graph lie here..
+                    </Typography>
+                  </AccordionDetails>
+                </Accordion>
 
-              <Accordion sx={{maxWidth:0.95, marginLeft:5}} >
-                {/* <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1a-content" id="panel1a-header" > */}
-                <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1a-content"  >
-                  <Typography>Graph</Typography>
-                </AccordionSummary>
-                <AccordionDetails sx={{ marginLeft:10}}>
-                  <Typography sx={{ marginLeft:10}}>
-                    The contents for Graph lie here..
-                  </Typography>
-                </AccordionDetails>
-              </Accordion>
-
-              
-
+              </div>
             </div>
           </div>
         </div>
