@@ -74,6 +74,7 @@ const Development = () => {
 
             <div className="row2">
             <Card sx={{ maxWidth: 345, marginLeft:8, width:325,boxShadow:5 }}>
+            <Link to="/Blockchain" style={{textDecoration: 'none', color: 'black'}}>
                 <CardActionArea>
                   <CardMedia component="img" height="140" image="/static/images/cards/contemplative-reptile.jpg" alt="Blockchain pic"/>
                   <CardContent>
@@ -86,6 +87,7 @@ const Development = () => {
                     </Typography> */}
                   </CardContent>
                 </CardActionArea>
+                </Link>
               </Card>
 
               <Card sx={{ maxWidth: 345, marginLeft:8, width:325,boxShadow:5 }}>
