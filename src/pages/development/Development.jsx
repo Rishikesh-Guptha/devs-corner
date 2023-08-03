@@ -19,9 +19,9 @@ const Development = () => {
           </div>
           <div className="development-content">
             <div className="row1">
-              <Card sx={{ maxWidth: 345 , marginLeft:8, width:300}}>
+              <Card sx={{ maxWidth: 345 , marginLeft:8, width:325,boxShadow:5}}>
                 <CardActionArea>
-                  <CardMedia component="img" height="140" image="/static/images/cards/contemplative-reptile.jpg" alt="green iguana"/>
+                  <CardMedia component="img" height="140" image="/static/images/cards/contemplative-reptile.jpg" alt="web development pic"/>
                   <CardContent>
                     <Typography gutterBottom variant="h5" component="div" sx={{textAlign:'center'}}>
                       Web Development
@@ -34,9 +34,9 @@ const Development = () => {
                 </CardActionArea>
               </Card>
 
-              <Card sx={{ maxWidth: 345, marginLeft:8, width:300 }}>
+              <Card sx={{ maxWidth: 345, marginLeft:8, width:325,boxShadow:5 }}>
                 <CardActionArea>
-                  <CardMedia component="img" height="140" image="/static/images/cards/contemplative-reptile.jpg" alt="green iguana"/>
+                  <CardMedia component="img" height="140" image="/static/images/cards/contemplative-reptile.jpg" alt="app development pic"/>
                   <CardContent>
                     <Typography gutterBottom variant="h5" component="div" sx={{textAlign:'center'}}>
                       App Development
@@ -49,9 +49,9 @@ const Development = () => {
                 </CardActionArea>
               </Card>
 
-              <Card sx={{ maxWidth: 345, marginLeft:8, width:300 }}>
+              <Card sx={{ maxWidth: 345, marginLeft:8, width:325,boxShadow:5 }}>
                 <CardActionArea>
-                  <CardMedia component="img" height="140" image="/static/images/cards/contemplative-reptile.jpg" alt="green iguana"/>
+                  <CardMedia component="img" height="140" image="/static/images/cards/contemplative-reptile.jpg" alt="cloud computing pic"/>
                   <CardContent>
                     <Typography gutterBottom variant="h5" component="div" sx={{textAlign:'center'}}>
                       Cloud Computing
@@ -66,9 +66,9 @@ const Development = () => {
             </div>
 
             <div className="row2">
-            <Card sx={{ maxWidth: 345, marginLeft:8, width:300 }}>
+            <Card sx={{ maxWidth: 345, marginLeft:8, width:325,boxShadow:5 }}>
                 <CardActionArea>
-                  <CardMedia component="img" height="140" image="/static/images/cards/contemplative-reptile.jpg" alt="green iguana"/>
+                  <CardMedia component="img" height="140" image="/static/images/cards/contemplative-reptile.jpg" alt="Blockchain pic"/>
                   <CardContent>
                     <Typography gutterBottom variant="h5" component="div" sx={{textAlign:'center'}}>
                       Blockchain
@@ -81,9 +81,9 @@ const Development = () => {
                 </CardActionArea>
               </Card>
 
-              <Card sx={{ maxWidth: 345, marginLeft:8, width:300 }}>
+              <Card sx={{ maxWidth: 345, marginLeft:8, width:325,boxShadow:5 }}>
                 <CardActionArea>
-                  <CardMedia component="img" height="140" image="/static/images/cards/contemplative-reptile.jpg" alt="green iguana"/>
+                  <CardMedia component="img" height="140" image="/static/images/cards/contemplative-reptile.jpg" alt="AI pic"/>
                   <CardContent>
                     <Typography gutterBottom variant="h5" component="div" sx={{textAlign:'center'}}>
                       Artificial Intelligence
@@ -96,9 +96,9 @@ const Development = () => {
                 </CardActionArea>
               </Card>
 
-              <Card sx={{ maxWidth: 345, marginLeft:8, width:300 }}>
+              <Card sx={{ maxWidth: 345, marginLeft:8, width:325,boxShadow:5 }}>
                 <CardActionArea>
-                  <CardMedia component="img" height="140" image="/static/images/cards/contemplative-reptile.jpg" alt="green iguana"/>
+                  <CardMedia component="img" height="140" image="/static/images/cards/contemplative-reptile.jpg" alt="Data science"/>
                   <CardContent>
                     <Typography gutterBottom variant="h5" component="div" sx={{textAlign:'center'}}>
                       Data Science
