@@ -20,7 +20,7 @@ const Development = () => {
           </div>
           <div className="development-content">
             <div className="row1">
-              <Card sx={{ maxWidth: 345 , marginLeft:8, width:325,boxShadow:5}}>
+              <Card sx={{ maxWidth: 345 , marginLeft:8,height:240 , width:325,boxShadow:5}}>
               <Link to="/Web_dev" style={{textDecoration: 'none', color: 'black'}}>
                 <CardActionArea>
                   <CardMedia component="img" height="140" image="/static/images/cards/contemplative-reptile.jpg" alt="web development pic"/>
@@ -37,7 +37,7 @@ const Development = () => {
                 </Link>
               </Card>
 
-              <Card sx={{ maxWidth: 345, marginLeft:8, width:325,boxShadow:5 }}>
+              <Card sx={{ maxWidth: 345, marginLeft:8,height:240 , width:325,boxShadow:5 }}>
               <Link to="/App_dev" style={{textDecoration: 'none', color: 'black'}}>
                 <CardActionArea>
                   <CardMedia component="img" height="140" image="/static/images/cards/contemplative-reptile.jpg" alt="app development pic"/>
@@ -54,7 +54,7 @@ const Development = () => {
                 </Link>
               </Card>
 
-              <Card sx={{ maxWidth: 345, marginLeft:8, width:325,boxShadow:5 }}>
+              <Card sx={{ maxWidth: 345, marginLeft:8,height:240 , width:325,boxShadow:5 }}>
               <Link to="/Cloud" style={{textDecoration: 'none', color: 'black'}}>
                 <CardActionArea>
                   <CardMedia component="img" height="140" image="/static/images/cards/contemplative-reptile.jpg" alt="cloud computing pic"/>
@@ -73,7 +73,7 @@ const Development = () => {
             </div>
 
             <div className="row2">
-            <Card sx={{ maxWidth: 345, marginLeft:8, width:325,boxShadow:5 }}>
+            <Card sx={{ maxWidth: 345, marginLeft:8,height:240 , width:325,boxShadow:5 }}>
             <Link to="/Blockchain" style={{textDecoration: 'none', color: 'black'}}>
                 <CardActionArea>
                   <CardMedia component="img" height="140" image="/static/images/cards/contemplative-reptile.jpg" alt="Blockchain pic"/>
@@ -90,7 +90,7 @@ const Development = () => {
                 </Link>
               </Card>
 
-              <Card sx={{ maxWidth: 345, marginLeft:8, width:325,boxShadow:5 }}>
+              <Card sx={{ maxWidth: 345, marginLeft:8,height:240 , width:325,boxShadow:5 }}>
               <Link to="/Ai" style={{textDecoration: 'none', color: 'black'}}>
                 <CardActionArea>
                   <CardMedia component="img" height="140" image="/static/images/cards/contemplative-reptile.jpg" alt="AI pic"/>
@@ -107,7 +107,7 @@ const Development = () => {
                 </Link>
               </Card>
 
-              <Card sx={{ maxWidth: 345, marginLeft:8, width:325,boxShadow:5 }}>
+              <Card sx={{ maxWidth: 345, marginLeft:8,height:240 , width:325,boxShadow:5 }}>
               <Link to="/Data_science" style={{textDecoration: 'none', color: 'black'}}>
                 <CardActionArea>
                   <CardMedia component="img" height="140" image="/static/images/cards/contemplative-reptile.jpg" alt="Data science"/>
