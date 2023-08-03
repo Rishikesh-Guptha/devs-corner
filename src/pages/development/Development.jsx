@@ -18,21 +18,52 @@ const Development = () => {
             <p className="title-text">This is junction where u choose u r path.. Do it wisely..</p>
           </div>
           <div className="development-content">
+            <div className="row1">
+              <Card sx={{ maxWidth: 345 , marginLeft:2, width:300}}>
+                <CardActionArea>
+                  <CardMedia component="img" height="140" image="/static/images/cards/contemplative-reptile.jpg" alt="green iguana"/>
+                  <CardContent>
+                    <Typography gutterBottom variant="h5" component="div" sx={{textAlign:'center'}}>
+                      Web Development
+                    </Typography>
+                    {/* <Typography variant="body2" color="text.secondary">
+                      Lizards are a widespread group of squamate reptiles, with over 6,000
+                      species, ranging across all continents except Antarctica
+                    </Typography> */}
+                  </CardContent>
+                </CardActionArea>
+              </Card>
 
-          <Card sx={{ maxWidth: 345 }}>
-            <CardActionArea>
-              <CardMedia component="img" height="140" image="/static/images/cards/contemplative-reptile.jpg" alt="green iguana"/>
-              <CardContent>
-                <Typography gutterBottom variant="h5" component="div" sx={{textAlign:'center'}}>
-                  Web Development
-                </Typography>
-                {/* <Typography variant="body2" color="text.secondary">
-                  Lizards are a widespread group of squamate reptiles, with over 6,000
-                  species, ranging across all continents except Antarctica
-                </Typography> */}
-              </CardContent>
-            </CardActionArea>
-          </Card>
+              <Card sx={{ maxWidth: 345, marginLeft:2, width:300 }}>
+                <CardActionArea>
+                  <CardMedia component="img" height="140" image="/static/images/cards/contemplative-reptile.jpg" alt="green iguana"/>
+                  <CardContent>
+                    <Typography gutterBottom variant="h5" component="div" sx={{textAlign:'center'}}>
+                      App Development
+                    </Typography>
+                    {/* <Typography variant="body2" color="text.secondary">
+                      Lizards are a widespread group of squamate reptiles, with over 6,000
+                      species, ranging across all continents except Antarctica
+                    </Typography> */}
+                  </CardContent>
+                </CardActionArea>
+              </Card>
+
+              <Card sx={{ maxWidth: 345, marginLeft:2, width:300 }}>
+                <CardActionArea>
+                  <CardMedia component="img" height="140" image="/static/images/cards/contemplative-reptile.jpg" alt="green iguana"/>
+                  <CardContent>
+                    <Typography gutterBottom variant="h5" component="div" sx={{textAlign:'center'}}>
+                      Cloud Computing
+                    </Typography>
+                    {/* <Typography variant="body2" color="text.secondary">
+                      Lizards are a widespread group of squamate reptiles, with over 6,000
+                      species, ranging across all continents except Antarctica
+                    </Typography> */}
+                  </CardContent>
+                </CardActionArea>
+              </Card>
+            </div>
           </div>
         </div>
       </div>
