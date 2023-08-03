@@ -8,6 +8,8 @@ import Dsa from "./pages/dsa/Dsa.jsx";
 import Development from "./pages/development/Development.jsx";
 import Opensouce from "./pages/opensource/Opensouce.jsx";
 import Finance from "./pages/finace/Finance.jsx";
+import Web_dev from "./pages/development/dev_pages/web_dev/Web_dev";
+import App_dev from "./pages/development/dev_pages/app_dev/App_dev";
 import { FirebaseApp } from "firebase/app";
 import { auth } from "./firebase";
 
@@ -25,6 +27,8 @@ function App() {
         <Route path="Development" element={<Development/>} />
         <Route path="Opensource" element={<Opensouce/>} />
         <Route path="Finance" element={<Finance/>} />
+        <Route path="Web_dev" element={<Web_dev/>} />
+        <Route path="App_dev" element={<App_dev/>} />
         <Route path="*" element={<Error/>} />
       </Routes>
       </BrowserRouter>

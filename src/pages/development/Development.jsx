@@ -6,6 +6,7 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
+import { Outlet, Link } from "react-router-dom";
 
 const Development = () => {
   return (
@@ -20,6 +21,7 @@ const Development = () => {
           <div className="development-content">
             <div className="row1">
               <Card sx={{ maxWidth: 345 , marginLeft:8, width:325,boxShadow:5}}>
+              <Link to="/Web_dev" style={{textDecoration: 'none', color: 'black'}}>
                 <CardActionArea>
                   <CardMedia component="img" height="140" image="/static/images/cards/contemplative-reptile.jpg" alt="web development pic"/>
                   <CardContent>
@@ -32,6 +34,7 @@ const Development = () => {
                     </Typography> */}
                   </CardContent>
                 </CardActionArea>
+                </Link>
               </Card>
 
               <Card sx={{ maxWidth: 345, marginLeft:8, width:325,boxShadow:5 }}>
