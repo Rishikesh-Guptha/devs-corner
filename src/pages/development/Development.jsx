@@ -108,6 +108,7 @@ const Development = () => {
               </Card>
 
               <Card sx={{ maxWidth: 345, marginLeft:8, width:325,boxShadow:5 }}>
+              <Link to="/Data_science" style={{textDecoration: 'none', color: 'black'}}>
                 <CardActionArea>
                   <CardMedia component="img" height="140" image="/static/images/cards/contemplative-reptile.jpg" alt="Data science"/>
                   <CardContent>
@@ -120,6 +121,7 @@ const Development = () => {
                     </Typography> */}
                   </CardContent>
                 </CardActionArea>
+                </Link>
               </Card>
 
             </div>

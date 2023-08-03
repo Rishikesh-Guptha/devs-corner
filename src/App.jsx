@@ -12,6 +12,7 @@ import Web_dev from "./pages/development/dev_pages/web_dev/Web_dev";
 import App_dev from "./pages/development/dev_pages/app_dev/App_dev";
 import Cloud from "./pages/development/dev_pages/cloud/Cloud";
 import Blockchain from "./pages/development/dev_pages/blockchain/Blockchain";
+import Data_science from "./pages/development/dev_pages/data_science/Data_science";
 import Ai from "./pages/development/dev_pages/ai/Ai";
 import { FirebaseApp } from "firebase/app";
 import { auth } from "./firebase";
@@ -35,6 +36,7 @@ function App() {
         <Route path="Cloud" element={<Cloud/>} />
         <Route path="Blockchain" element={<Blockchain/>} />
         <Route path="Ai" element={<Ai/>} />
+        <Route path="Data_science" element={<Data_science/>} />
         <Route path="*" element={<Error/>} />
       </Routes>
       </BrowserRouter>
