@@ -91,6 +91,7 @@ const Development = () => {
               </Card>
 
               <Card sx={{ maxWidth: 345, marginLeft:8, width:325,boxShadow:5 }}>
+              <Link to="/Ai" style={{textDecoration: 'none', color: 'black'}}>
                 <CardActionArea>
                   <CardMedia component="img" height="140" image="/static/images/cards/contemplative-reptile.jpg" alt="AI pic"/>
                   <CardContent>
@@ -103,6 +104,7 @@ const Development = () => {
                     </Typography> */}
                   </CardContent>
                 </CardActionArea>
+                </Link>
               </Card>
 
               <Card sx={{ maxWidth: 345, marginLeft:8, width:325,boxShadow:5 }}>
