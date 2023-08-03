@@ -19,7 +19,7 @@ const Development = () => {
           </div>
           <div className="development-content">
             <div className="row1">
-              <Card sx={{ maxWidth: 345 , marginLeft:2, width:300}}>
+              <Card sx={{ maxWidth: 345 , marginLeft:8, width:300}}>
                 <CardActionArea>
                   <CardMedia component="img" height="140" image="/static/images/cards/contemplative-reptile.jpg" alt="green iguana"/>
                   <CardContent>
@@ -34,7 +34,7 @@ const Development = () => {
                 </CardActionArea>
               </Card>
 
-              <Card sx={{ maxWidth: 345, marginLeft:2, width:300 }}>
+              <Card sx={{ maxWidth: 345, marginLeft:8, width:300 }}>
                 <CardActionArea>
                   <CardMedia component="img" height="140" image="/static/images/cards/contemplative-reptile.jpg" alt="green iguana"/>
                   <CardContent>
@@ -49,7 +49,7 @@ const Development = () => {
                 </CardActionArea>
               </Card>
 
-              <Card sx={{ maxWidth: 345, marginLeft:2, width:300 }}>
+              <Card sx={{ maxWidth: 345, marginLeft:8, width:300 }}>
                 <CardActionArea>
                   <CardMedia component="img" height="140" image="/static/images/cards/contemplative-reptile.jpg" alt="green iguana"/>
                   <CardContent>
@@ -63,6 +63,54 @@ const Development = () => {
                   </CardContent>
                 </CardActionArea>
               </Card>
+            </div>
+
+            <div className="row2">
+            <Card sx={{ maxWidth: 345, marginLeft:8, width:300 }}>
+                <CardActionArea>
+                  <CardMedia component="img" height="140" image="/static/images/cards/contemplative-reptile.jpg" alt="green iguana"/>
+                  <CardContent>
+                    <Typography gutterBottom variant="h5" component="div" sx={{textAlign:'center'}}>
+                      Blockchain
+                    </Typography>
+                    {/* <Typography variant="body2" color="text.secondary">
+                      Lizards are a widespread group of squamate reptiles, with over 6,000
+                      species, ranging across all continents except Antarctica
+                    </Typography> */}
+                  </CardContent>
+                </CardActionArea>
+              </Card>
+
+              <Card sx={{ maxWidth: 345, marginLeft:8, width:300 }}>
+                <CardActionArea>
+                  <CardMedia component="img" height="140" image="/static/images/cards/contemplative-reptile.jpg" alt="green iguana"/>
+                  <CardContent>
+                    <Typography gutterBottom variant="h5" component="div" sx={{textAlign:'center'}}>
+                      Artificial Intelligence
+                    </Typography>
+                    {/* <Typography variant="body2" color="text.secondary">
+                      Lizards are a widespread group of squamate reptiles, with over 6,000
+                      species, ranging across all continents except Antarctica
+                    </Typography> */}
+                  </CardContent>
+                </CardActionArea>
+              </Card>
+
+              <Card sx={{ maxWidth: 345, marginLeft:8, width:300 }}>
+                <CardActionArea>
+                  <CardMedia component="img" height="140" image="/static/images/cards/contemplative-reptile.jpg" alt="green iguana"/>
+                  <CardContent>
+                    <Typography gutterBottom variant="h5" component="div" sx={{textAlign:'center'}}>
+                      Data Science
+                    </Typography>
+                    {/* <Typography variant="body2" color="text.secondary">
+                      Lizards are a widespread group of squamate reptiles, with over 6,000
+                      species, ranging across all continents except Antarctica
+                    </Typography> */}
+                  </CardContent>
+                </CardActionArea>
+              </Card>
+
             </div>
           </div>
         </div>
