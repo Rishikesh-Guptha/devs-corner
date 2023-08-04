@@ -6,7 +6,6 @@ import Error from "./pages/error/Error.jsx";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Dsa from "./pages/dsa/Dsa.jsx";
 import Development from "./pages/development/Development.jsx";
-import Opensouce from "./pages/opensource/Opensouce.jsx";
 import Finance from "./pages/finace/Finance.jsx";
 import Web_dev from "./pages/development/dev_pages/web_dev/Web_dev";
 import App_dev from "./pages/development/dev_pages/app_dev/App_dev";
@@ -14,6 +13,7 @@ import Cloud from "./pages/development/dev_pages/cloud/Cloud";
 import Blockchain from "./pages/development/dev_pages/blockchain/Blockchain";
 import Data_science from "./pages/development/dev_pages/data_science/Data_science";
 import Ai from "./pages/development/dev_pages/ai/Ai";
+import Opensource from "./pages/opensource/Opensource.jsx";
 import { FirebaseApp } from "firebase/app";
 import { auth } from "./firebase";
 
@@ -29,7 +29,7 @@ function App() {
         <Route path="Signup" element={<Signup/>} />
         <Route path="Dsa" element={<Dsa/>} />
         <Route path="Development" element={<Development/>} />
-        <Route path="Opensource" element={<Opensouce/>} />
+        <Route path="Opensource" element={<Opensource/>} />
         <Route path="Finance" element={<Finance/>} />
         <Route path="Web_dev" element={<Web_dev/>} />
         <Route path="App_dev" element={<App_dev/>} />
