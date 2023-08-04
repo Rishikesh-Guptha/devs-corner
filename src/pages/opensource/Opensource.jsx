@@ -29,6 +29,20 @@ const Opensource = () => {
                     </Typography>
                   </AccordionDetails>
                 </Accordion>
+
+                <p className="tech-content-opensource-issues">Issues</p>
+
+                <Accordion sx={{maxWidth:0.95, marginLeft:5,marginBottom:2}}>
+                  {/* <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1a-content" id="panel1a-header" > */}
+                  <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1a-content"   >
+                    <Typography>Good First Issues</Typography>
+                  </AccordionSummary>
+                  <AccordionDetails sx={{ marginLeft:5}}>
+                    <Typography sx={{ marginLeft:5}}>
+                      The links for good first issues lie here...
+                    </Typography>
+                  </AccordionDetails>
+                </Accordion>
           </div>
         </div>
       </div>
