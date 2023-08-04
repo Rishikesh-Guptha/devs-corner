@@ -103,7 +103,7 @@ const Navbar2 = () => {
           Settings
         </MenuItem>
         <MenuItem onClick={handleclose_logout}>
-          <Link to="/Landingpage" style={{textDecoration: 'none', color: 'black'}} >
+          <Link to="/" style={{textDecoration: 'none', color: 'black'}} >
           <ListItemIcon>
             <Logout fontSize="small" />
           </ListItemIcon>
