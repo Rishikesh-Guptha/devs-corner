@@ -3,6 +3,10 @@
 This is a Personalized Learning based web application , specifically designed for students who wants to pursue a successful career in the tech field.
 
 This project is built using **Reactjs** for the Frontend and **Firebase** as BAAS.
+
+This projects main motive is to provide students or future developers a well defined guided path ,not just for survival but also for thriving.
+
+
 ## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
