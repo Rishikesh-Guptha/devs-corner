@@ -36,7 +36,7 @@ const Navbar2 = () => {
         <div className="nav-left">
         <p className="title"> <Link to="/Dashboard" style={{textDecoration: 'none', color: 'black'}}>Dev's Corner</Link></p>
         <p className="dashboard"><Link to="/Dashboard" style={{textDecoration: 'none', color: 'black'}}>Dashboard</Link></p>
-        <p className="community">Community</p>
+        <p className="community"><Link to="/Community" style={{textDecoration: 'none', color: 'black'}}>Community</Link></p>
         </div>
         
         <div className="nav-right">
