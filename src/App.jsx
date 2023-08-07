@@ -14,6 +14,7 @@ import Blockchain from "./pages/development/dev_pages/blockchain/Blockchain";
 import Data_science from "./pages/development/dev_pages/data_science/Data_science";
 import Ai from "./pages/development/dev_pages/ai/Ai";
 import Opensource from "./pages/opensource/Opensource.jsx";
+import Community from "./pages/community/Community";
 import { FirebaseApp } from "firebase/app";
 import { auth } from "./firebase";
 
@@ -37,6 +38,7 @@ function App() {
         <Route path="Blockchain" element={<Blockchain/>} />
         <Route path="Ai" element={<Ai/>} />
         <Route path="Data_science" element={<Data_science/>} />
+        <Route path="Community" element={<Community/>} />
         <Route path="*" element={<Error/>} />
       </Routes>
       </BrowserRouter>
