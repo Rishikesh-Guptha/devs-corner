@@ -35,7 +35,7 @@ const Login = () => {
   return (
     <div>
         <div className="back-btn">
-            <button> <Link to="/">Back</Link></button>
+            <button> <Link to="/" style={{textDecoration: 'none', color: 'black'}}>Back</Link></button>
         </div>
         <div className="container">
             <div className="head">

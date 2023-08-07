@@ -2,6 +2,8 @@
     text-align: center;
     border: 1px solid black;
     margin: 5rem 30rem;
+    border-radius: 10px;
+        box-shadow: 5px 3px 3px 3px rgb(190, 192, 193);
 }
 .heading {
     font-size: xx-large;
