@@ -45,7 +45,7 @@ const Login = () => {
                 <form action="">
                     <div className="emailid">
                         <label htmlFor="email">Email Address:</label><br />
-                        <input type="email" className="email" placeholder='IamBatman@gmail.com' onChange={(e)=>setEmail(e.target.value)} value={email}/>
+                        <input type="email" className="email" placeholder='Batman@gmail.com' onChange={(e)=>setEmail(e.target.value)} value={email}/>
                     </div>
 
                     <div className="passwords">

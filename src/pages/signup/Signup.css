@@ -32,4 +32,6 @@ input {
 
 input {
     width: 15rem;
+    border: none;
+        border-bottom: 2px solid black;
 }
