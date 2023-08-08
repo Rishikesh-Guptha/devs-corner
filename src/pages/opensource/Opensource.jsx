@@ -1,4 +1,5 @@
 import React from 'react'
+import './Opensource.css'
 import Navbar2 from '../navbar2/Navbar2'
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
@@ -9,10 +10,11 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 const Opensource = () => {
   return (
     <div>
+      <Navbar2/>
       <div className="main-container">
         <div className="text-content">
-          <p className="text-title">Open Source</p>
-          <p className="title-text">This is the Space stone that opens a portal to great jobs for developers...</p>
+          <p className="title-text">Open Source</p>
+          <p className="text-title">This is the Space stone that opens a portal to great jobs for developers...</p>
         </div>
         <div className="tech-content">
           <div className="tech-content-opensource">
