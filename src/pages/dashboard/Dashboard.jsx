@@ -105,7 +105,7 @@ const Dashboard = () => {
       {/* Tech jobs and others  */}
       <Paper variant="outlined" square elevation={20} sx={{backgroundColor:'#bdbdbd', borderRadius:5, i:100, display:'flex'}} >
       <img src={FINANCEPIC} alt='finance pic' width={300} height={270} />
-      <Link to="/Finance" style={{textDecoration: 'none', color: 'black'}}>
+      <Link to="/Jobs" style={{textDecoration: 'none', color: 'black'}}>
       <Paper variant="outlined" square sx={{alignItems:'stretch', backgroundColor:'#bdbdbd', height:260, width:1000, m:1, border:'none'}} >
       <div className="finance">
           <div className="titles">

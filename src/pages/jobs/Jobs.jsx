@@ -1,8 +1,14 @@
 import React from 'react'
+import Navbar2 from '../navbar2/Navbar2'
 
 const Jobs = () => {
   return (
-    <div>Jobs</div>
+    <div>
+        <Navbar2/>
+        <div className="main-container">
+            Jobs
+        </div>
+    </div>
   )
 }
 
