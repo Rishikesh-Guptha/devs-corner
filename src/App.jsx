@@ -15,6 +15,7 @@ import Data_science from "./pages/development/dev_pages/data_science/Data_scienc
 import Ai from "./pages/development/dev_pages/ai/Ai";
 import Opensource from "./pages/opensource/Opensource.jsx";
 import Community from "./pages/community/Community";
+import Jobs from "./pages/jobs/Jobs";
 import { FirebaseApp } from "firebase/app";
 import { auth } from "./firebase";
 
@@ -39,6 +40,7 @@ function App() {
         <Route path="Ai" element={<Ai/>} />
         <Route path="Data_science" element={<Data_science/>} />
         <Route path="Community" element={<Community/>} />
+        <Route path="Jobs" element={<Jobs/>} />
         <Route path="*" element={<Error/>} />
       </Routes>
       </BrowserRouter>
