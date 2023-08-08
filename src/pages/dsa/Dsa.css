@@ -1,10 +1,11 @@
-.text-title {
+.title-text {
     margin: 2rem auto 2rem 2rem;
     font-size: xx-large;
 }
-.title-text {
+.text-title {
     margin-left: 5rem;
     margin-bottom: 3rem;
+    font-size: large;
 }
 .tech-content-structures-title {
     margin-left: 2rem;

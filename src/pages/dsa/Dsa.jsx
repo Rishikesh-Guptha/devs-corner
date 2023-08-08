@@ -14,10 +14,10 @@ const Dsa = () => {
           <Navbar2/>
           <div className="main-content">
             <div className="text-content">
-              <p className="text-title">
+              <p className="title-text">
                 Data Structure and Algorithms
               </p>
-              <p className="title-text">
+              <p className="text-title">
                 This is the Briyani of Non-vegetarian Foods, its inevitable...
               </p>
             </div>

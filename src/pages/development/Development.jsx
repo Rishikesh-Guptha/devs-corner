@@ -15,8 +15,8 @@ const Development = () => {
         <Navbar2/>
         <div className="development-main-content">
           <div className="development-text-content">
-            <p className="text-title">Development</p>
-            <p className="title-text">This is junction where u choose u r path.. Do it wisely..</p>
+            <p className="title-text">Development</p>
+            <p className="text-title">This is junction where u choose u r path.. Do it wisely..</p>
           </div>
           <div className="development-content">
             <div className="row1">
