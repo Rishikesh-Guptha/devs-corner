@@ -101,6 +101,24 @@ const Dashboard = () => {
       </Paper>
       </Link>
       </Paper>
+
+      {/* Tech jobs and others  */}
+      <Paper variant="outlined" square elevation={20} sx={{backgroundColor:'#bdbdbd', borderRadius:5, i:100, display:'flex'}} >
+      <img src={FINANCEPIC} alt='finance pic' width={300} height={270} />
+      <Link to="/Finance" style={{textDecoration: 'none', color: 'black'}}>
+      <Paper variant="outlined" square sx={{alignItems:'stretch', backgroundColor:'#bdbdbd', height:260, width:1000, m:1, border:'none'}} >
+      <div className="finance">
+          <div className="titles">
+            Jobs and Others
+          </div>
+          <Paper sx={{width:1000, height:2, backgroundColor:'black'}}></Paper>
+          <div className="content">
+            Here you will be updated with all job oppourtunities and other initial steps to be followed to get familier with the tech world..
+          </div>
+        </div>
+      </Paper>
+      </Link>
+      </Paper>
       
     </Box>
     
