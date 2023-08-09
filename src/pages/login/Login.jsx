@@ -56,7 +56,7 @@ const Login = () => {
                 <button className="submit" onClick={onLogin} >Submit</button>
             </div>
             <div className="other-methods">
-                <p>---or---</p>
+                <p className='or'>---or---</p>
                 <div className="icons">
                     <GoogleIcon className="google-icon" fontsize="medium"></GoogleIcon>
                     <GitHubIcon className="github-icon" on></GitHubIcon>

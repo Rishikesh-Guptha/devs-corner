@@ -1,8 +1,8 @@
 .container {
     text-align: center;
     /* border: 10px solid black; */
-    padding-bottom: 2rem;
-    margin-top: 5rem;
+    padding-bottom: 0.5rem;
+        margin-top: 3rem;
 }
 
 .heading {
@@ -17,10 +17,11 @@ input {
 }
 
 .submit {
-    margin: 2rem 0;
+    margin: 2rem 0 0 0;
     font-size: medium;
     width: 7rem;
     height: 2.5rem;
+    margin-bottom: 0rem;
 
 }
 .emailid,
@@ -34,4 +35,8 @@ input {
     width: 15rem;
     border: none;
         border-bottom: 2px solid black;
+}
+p {
+    margin-top: 0;
+    margin-bottom: 0;
 }
