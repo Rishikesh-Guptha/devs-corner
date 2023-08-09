@@ -6,6 +6,7 @@ import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import { Link } from 'react-router-dom';
 
 const Dsa = () => {
   return (
@@ -30,10 +31,11 @@ const Dsa = () => {
                   <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1a-content"   >
                     <Typography>Arrays</Typography>
                   </AccordionSummary>
-                  <AccordionDetails sx={{ marginLeft:5}}>
+                  <AccordionDetails sx={{ marginLeft:5, alignContent:'space-between', display:'flex'}}>
                     <Typography sx={{ marginLeft:5}}>
                       The contents for arrays lie here..
                     </Typography>
+                    <Link to="/Array"><button>Click here</button></Link>
                   </AccordionDetails>
                 </Accordion>
 
@@ -46,6 +48,7 @@ const Dsa = () => {
                     <Typography sx={{ marginLeft:5}}>
                       The contents for Linked Lists lie here..
                     </Typography>
+                    <Link to="/Array"><button>Click here</button></Link>
                   </AccordionDetails>
                 </Accordion>
 
@@ -58,6 +61,7 @@ const Dsa = () => {
                     <Typography sx={{ marginLeft:5}}>
                       The contents for Stack lie here..
                     </Typography>
+                    <Link to="/Array"><button>Click here</button></Link>
                   </AccordionDetails>
                 </Accordion>
 
@@ -70,6 +74,7 @@ const Dsa = () => {
                     <Typography sx={{ marginLeft:5}}>
                       The contents for Queue lie here..
                     </Typography>
+                    <Link to="/Array"><button>Click here</button></Link>
                   </AccordionDetails>
                 </Accordion>
 
@@ -82,6 +87,7 @@ const Dsa = () => {
                     <Typography sx={{ marginLeft:5}}>
                       The contents for Tree lie here..
                     </Typography>
+                    <Link to="/Array"><button>Click here</button></Link>
                   </AccordionDetails>
                 </Accordion>
 
@@ -94,6 +100,7 @@ const Dsa = () => {
                     <Typography sx={{ marginLeft:10}}>
                       The contents for Graph lie here..
                     </Typography>
+                    <Link to="/Array"><button>Click here</button></Link>
                   </AccordionDetails>
                 </Accordion>
 

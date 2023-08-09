@@ -16,6 +16,7 @@ import Ai from "./pages/development/dev_pages/ai/Ai";
 import Opensource from "./pages/opensource/Opensource.jsx";
 import Community from "./pages/community/Community";
 import Jobs from "./pages/jobs/Jobs";
+import Array from "./pages/data_structures/arrays/Array.jsx";
 import { FirebaseApp } from "firebase/app";
 import { auth } from "./firebase";
 
@@ -27,7 +28,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Landingpage />}/>
         <Route path="Dashboard" element={<Dashboard />}/>
-       <Route path="Landingpage" element={<Landingpage />}/>
+        <Route path="Landingpage" element={<Landingpage />}/>
         <Route path="Login" element={<Login/>} />
         <Route path="Signup" element={<Signup/>} />
         <Route path="Dsa" element={<Dsa/>} />
@@ -43,6 +44,7 @@ function App() {
         <Route path="Community" element={<Community/>} />
         <Route path="Jobs" element={<Jobs/>} />
         <Route path="Jobs" element={<Jobs/>} />
+        <Route path="Array" element={<Array/>} />
         <Route path="*" element={<Error/>} />
       </Routes>
       </BrowserRouter>
