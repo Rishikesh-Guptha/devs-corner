@@ -19,6 +19,7 @@ import Jobs from "./pages/jobs/Jobs";
 import { FirebaseApp } from "firebase/app";
 import { auth } from "./firebase";
 
+
 function App() {
   return (
     <div className="App"> 
@@ -40,6 +41,7 @@ function App() {
         <Route path="Ai" element={<Ai/>} />
         <Route path="Data_science" element={<Data_science/>} />
         <Route path="Community" element={<Community/>} />
+        <Route path="Jobs" element={<Jobs/>} />
         <Route path="Jobs" element={<Jobs/>} />
         <Route path="*" element={<Error/>} />
       </Routes>
