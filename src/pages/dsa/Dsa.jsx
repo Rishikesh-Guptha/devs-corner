@@ -117,6 +117,7 @@ const Dsa = () => {
                     <Typography sx={{ marginLeft:5}}>
                       The contents for sorting algorithms lie here..
                     </Typography>
+                    <Link to="/Array"><button>Click here</button></Link>
                   </AccordionDetails>
                 </Accordion>
 
@@ -129,6 +130,7 @@ const Dsa = () => {
                     <Typography sx={{ marginLeft:5}}>
                       The contents for searching algorithms lie here..
                     </Typography>
+                    <Link to="/Array"><button>Click here</button></Link>
                   </AccordionDetails>
                 </Accordion>
               </div>
@@ -144,6 +146,7 @@ const Dsa = () => {
                     <Typography sx={{ marginLeft:5}}>
                       The contents for DSA sheets  lie here..
                     </Typography>
+                    <Link to="/Array"><button>Click here</button></Link>
                   </AccordionDetails>
                 </Accordion>
 
