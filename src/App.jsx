@@ -18,6 +18,7 @@ import Community from "./pages/community/Community";
 import Jobs from "./pages/jobs/Jobs";
 import Array from "./pages/data_structures/arrays/Array.jsx";
 import Linked_list from "./pages/data_structures/linked_list/Linked_list";
+import Stack from "./pages/data_structures/stack/Stack";
 import { FirebaseApp } from "firebase/app";
 import { auth } from "./firebase";
 
@@ -47,6 +48,7 @@ function App() {
         <Route path="Jobs" element={<Jobs/>} />
         <Route path="Array" element={<Array/>} />
         <Route path="Linked_list" element={<Linked_list/>} />
+        <Route path="Stack" element={<Stack/>} />
         <Route path="*" element={<Error/>} />
       </Routes>
       </BrowserRouter>
