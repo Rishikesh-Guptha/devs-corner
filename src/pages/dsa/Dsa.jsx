@@ -61,7 +61,7 @@ const Dsa = () => {
                     <Typography sx={{ marginLeft:5}}>
                       The contents for Stack lie here..
                     </Typography>
-                    <Link to="/Array"><button>Click here</button></Link>
+                    <Link to="/Stack"><button>Click here</button></Link>
                   </AccordionDetails>
                 </Accordion>
 
@@ -74,7 +74,7 @@ const Dsa = () => {
                     <Typography sx={{ marginLeft:5}}>
                       The contents for Queue lie here..
                     </Typography>
-                    <Link to="/Array"><button>Click here</button></Link>
+                    <Link to="/Queue"><button>Click here</button></Link>
                   </AccordionDetails>
                 </Accordion>
 

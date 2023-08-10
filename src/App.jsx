@@ -19,6 +19,8 @@ import Jobs from "./pages/jobs/Jobs";
 import Array from "./pages/data_structures/arrays/Array.jsx";
 import Linked_list from "./pages/data_structures/linked_list/Linked_list";
 import Stack from "./pages/data_structures/stack/Stack";
+import Queue from "./pages/data_structures/queue/Queue";
+import Tree from "./pages/data_structures/tree/Tree";
 import { FirebaseApp } from "firebase/app";
 import { auth } from "./firebase";
 
@@ -49,6 +51,8 @@ function App() {
         <Route path="Array" element={<Array/>} />
         <Route path="Linked_list" element={<Linked_list/>} />
         <Route path="Stack" element={<Stack/>} />
+        <Route path="Queue" element={<Queue/>} />
+        <Route path="Tree" element={<Tree/>} />
         <Route path="*" element={<Error/>} />
       </Routes>
       </BrowserRouter>
