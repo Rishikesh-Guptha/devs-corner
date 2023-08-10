@@ -48,7 +48,7 @@ const Dsa = () => {
                     <Typography sx={{ marginLeft:5}}>
                       The contents for Linked Lists lie here..
                     </Typography>
-                    <Link to="/Array"><button>Click here</button></Link>
+                    <Link to="/Linked_list"><button>Click here</button></Link>
                   </AccordionDetails>
                 </Accordion>
 
