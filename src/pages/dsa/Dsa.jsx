@@ -87,7 +87,7 @@ const Dsa = () => {
                     <Typography sx={{ marginLeft:5}}>
                       The contents for Tree lie here..
                     </Typography>
-                    <Link to="/Array"><button>Click here</button></Link>
+                    <Link to="/Tree"><button>Click here</button></Link>
                   </AccordionDetails>
                 </Accordion>
 
@@ -100,7 +100,7 @@ const Dsa = () => {
                     <Typography sx={{ marginLeft:10}}>
                       The contents for Graph lie here..
                     </Typography>
-                    <Link to="/Array"><button>Click here</button></Link>
+                    <Link to="/Graph"><button>Click here</button></Link>
                   </AccordionDetails>
                 </Accordion>
 
