@@ -19,6 +19,7 @@ const Array = () => {
   };
   return (
     <div className='main-container'>
+      <p>Arrays</p>
       <DragDropContext onDragEnd={result => console.log(result)}>
       <div className="drag-drop-area" onDragOver={handleDragOver} onDrop={handleDrop}>
       <h2>Drag and Drop Area</h2>
