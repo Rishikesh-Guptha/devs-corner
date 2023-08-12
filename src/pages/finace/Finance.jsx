@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link, Outlet } from 'react-router-dom';
 import Navbar2 from '../navbar2/Navbar2'
 import './Finance.css'
 import Accordion from '@mui/material/Accordion';
@@ -41,7 +42,7 @@ const Finance = () => {
             </AccordionSummary>
             <AccordionDetails sx={{ marginLeft:5}}>
                 <Typography sx={{ marginLeft:5}}>
-                      The contents for why to invest lie here..
+                      <Link to="/Stocks">Stocks</Link>
                 </Typography>  
             </AccordionDetails>
           </Accordion>

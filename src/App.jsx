@@ -22,6 +22,7 @@ import Stack from "./pages/data_structures/stack/Stack";
 import Queue from "./pages/data_structures/queue/Queue";
 import Tree from "./pages/data_structures/tree/Tree";
 import Graph from "./pages/data_structures/graph/Graph";
+import Stocks from "./pages/finace/news/Stocks";
 import { FirebaseApp } from "firebase/app";
 import { auth } from "./firebase";
 
@@ -55,6 +56,7 @@ function App() {
         <Route path="Queue" element={<Queue/>} />
         <Route path="Tree" element={<Tree/>} />
         <Route path="Graph" element={<Graph/>} />
+        <Route path="Stocks" element={<Stocks/>} />
         <Route path="*" element={<Error/>} />
       </Routes>
       </BrowserRouter>
