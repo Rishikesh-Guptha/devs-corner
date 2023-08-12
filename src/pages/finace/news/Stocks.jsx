@@ -9,18 +9,23 @@ const options = {
       'X-RapidAPI-Host': 'mboum-finance.p.rapidapi.com'
     }
   };
-  
+  //We have to subscribe for the rapidapi , otherwise it is working..
   
  const Stocks = () => {
-    try {
-        const response =  axios.request(options);
-        console.log(response.data);
-        return (<div> ${response.data} </div>)
-    } catch (error) {
-        console.error(error);
-        return(<div>Nothing here</div>)
-    }
-  
+   
+    fetch('https://mboum-finance.p.rapidapi.com/ne/news',{
+        headers: {
+            'X-RapidAPI-Key': 'e153357261msh4a591fafe82aacfp1c540djsn327150702a6c',
+            'X-RapidAPI-Host': 'mboum-finance.p.rapidapi.com'
+          } 
+    })
+    .then((res)=> res.json())
+    .then((data)=>{
+        console.log(data);
+    })
+  return(
+    <div></div>
+  )
 }
 
 
