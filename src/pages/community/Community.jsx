@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import './Community.css';
 import Navbar2 from '../navbar2/Navbar2'
 
 const Community = () => {

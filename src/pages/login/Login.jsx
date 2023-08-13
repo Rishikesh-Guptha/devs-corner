@@ -2,11 +2,12 @@ import React, {useState} from 'react'
 import './/Login.css';
 import Landingpage from '../landingpage/Landingpage';
 import Signup from '../signup/Signup';
-import {  signInWithEmailAndPassword   } from 'firebase/auth';
+import {  signInWithEmailAndPassword, signInWithPopup   } from 'firebase/auth';
 import { Outlet, Link,NavLink, useNavigate } from "react-router-dom";
 import GoogleIcon from '@mui/icons-material/Google';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import { auth } from '../../firebase';
+import { auth, gprovider } from '../../firebase';
+import {signInWithPopup} from 'firebase/auth'
 import Dashboard from '../dashboard/Dashboard';
 
 //This is the login page
@@ -14,6 +15,14 @@ const Login = () => {
     const navigate = useNavigate();
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+
+    const signinwithgoogle=()=>{
+        console.log("google auth button is clicked");
+        signInWithPopup(auth, gprovider).then((result)=>{
+            localStorage.setItem("isAuth",true);
+
+        })
+    }
        
     const onLogin = (e) => {
         e.preventDefault();
@@ -58,7 +67,7 @@ const Login = () => {
             <div className="other-methods">
                 <p className='or'>---or---</p>
                 <div className="icons">
-                    <GoogleIcon className="google-icon" fontsize="medium"></GoogleIcon>
+                    <button onClick={signinwithgoogle}><GoogleIcon className="google-icon" fontsize="medium" ></GoogleIcon></button>
                     <GitHubIcon className="github-icon" on></GitHubIcon>
 
                 </div>
