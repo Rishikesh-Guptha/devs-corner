@@ -1,6 +1,5 @@
 * {
     font-family: 'Poppins';
-    font-weight: 300;
     margin: 0;
 }
     
@@ -16,6 +15,15 @@
 .login,
 .signup {
     margin-right: 1rem;
+    font-size: large;
+    }
+    
+    .login:hover {
+        opacity: 0.7;
+    }
+    
+    .signup:hover {
+        opacity: 0.7;
 }
 .navbar {
     margin-top: 0px;
@@ -31,9 +39,6 @@
         box-shadow: 0px 10px 10px 0px rgb(205, 205, 205);
 }
 
-.nav-left {
-    font-size: xx-large;
-}
 .title {
     padding-left: 1rem;
     font-size: xx-large;
