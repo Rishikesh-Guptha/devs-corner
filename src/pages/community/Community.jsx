@@ -7,7 +7,7 @@ const Community = () => {
         <Navbar2/>
         <div className="main-content">
             Community
-            <p>This is the blog page</p>
+            <p>This is the blog page  </p>
         </div>
     </div>
   )
