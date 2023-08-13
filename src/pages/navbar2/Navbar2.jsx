@@ -2,6 +2,7 @@ import React from 'react';
 import './Navbar2.css';
 import Error from '../error/Error.jsx';
 import { auth } from '../../firebase';
+import {signOut} from 'firebase/auth'
 import { Outlet, Link } from "react-router-dom";
 import FaceIcon from '@mui/icons-material/Face';
 import Box from '@mui/material/Box';
@@ -15,6 +16,7 @@ import Tooltip from '@mui/material/Tooltip';
 import Settings from '@mui/icons-material/Settings';
 import Logout from '@mui/icons-material/Logout';
 
+
 const Navbar2 = () => {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
@@ -27,7 +29,9 @@ const Navbar2 = () => {
   const handleclose_logout=(e)=>{
     setAnchorEl(null);
     e.preventDefault();
-    auth.signOut();
+    // auth.signOut();
+    signOut(auth);
+    localStorage.setItem("isAuth",false);
     console.log('User signed out!');
   }
   return (
@@ -103,7 +107,7 @@ const Navbar2 = () => {
           Settings
         </MenuItem>
         <MenuItem onClick={handleclose_logout}>
-          <Link to="/" style={{textDecoration: 'none', color: 'black'}} >
+          <Link to="/"  style={{textDecoration: 'none', color: 'black'}} >
           <ListItemIcon>
             <Logout fontSize="small" />
           </ListItemIcon>

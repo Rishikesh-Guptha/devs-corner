@@ -7,7 +7,6 @@ import { Outlet, Link,NavLink, useNavigate } from "react-router-dom";
 import GoogleIcon from '@mui/icons-material/Google';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import { auth, gprovider } from '../../firebase';
-import {signInWithPopup} from 'firebase/auth'
 import Dashboard from '../dashboard/Dashboard';
 
 //This is the login page
@@ -20,6 +19,8 @@ const Login = () => {
         console.log("google auth button is clicked");
         signInWithPopup(auth, gprovider).then((result)=>{
             localStorage.setItem("isAuth",true);
+            console.log(auth.currentUser.displayName);
+            navigate("/Dashboard");
 
         })
     }
@@ -32,6 +33,7 @@ const Login = () => {
             const user = userCredential.user;
             navigate("/Dashboard")
             console.log(user);
+            console.log(auth.currentUser.displayName);
         })
         .catch((error) => {
             const errorCode = error.code;
@@ -67,7 +69,7 @@ const Login = () => {
             <div className="other-methods">
                 <p className='or'>---or---</p>
                 <div className="icons">
-                    <button onClick={signinwithgoogle}><GoogleIcon className="google-icon" fontsize="medium" ></GoogleIcon></button>
+                    <button  className="google-icon" onClick={signinwithgoogle} ><GoogleIcon fontsize="medium" ></GoogleIcon></button>
                     <GitHubIcon className="github-icon" on></GitHubIcon>
 
                 </div>

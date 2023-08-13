@@ -42,3 +42,7 @@ input {
 .or {
     margin: 1rem 0;
 }
+.google-icon {
+    border: none;
+    background-color: white;
+}
