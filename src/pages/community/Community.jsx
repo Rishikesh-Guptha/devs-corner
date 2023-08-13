@@ -38,8 +38,8 @@ const Community = () => {
         return (
           <div className="post">
             <div className="postHeader">
-              <div className="title">
-                <p> {post.title}</p>
+              <div className="title-post">
+                <p className='post-title'> {post.title}</p>
               </div>
               <div className="deletePost">
                 {post.author.id === auth.currentUser.uid && (

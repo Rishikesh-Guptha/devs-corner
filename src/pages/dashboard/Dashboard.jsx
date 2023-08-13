@@ -91,7 +91,7 @@ const Dashboard = () => {
       <Paper variant="outlined" square sx={{alignItems:'stretch', backgroundColor:'#bdbdbd', height:260, width:1000, m:1, border:'none'}} >
       <div className="finance">
           <div className="titles">
-            Finance Managment
+            Finance Management
           </div>
           <Paper sx={{width:1000, height:2, backgroundColor:'black'}}></Paper>
           <div className="content">

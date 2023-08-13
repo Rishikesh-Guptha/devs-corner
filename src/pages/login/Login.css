@@ -46,3 +46,12 @@ input {
     border: none;
     background-color: white;
 }
+.submit {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px 5px rgb(205, 205, 205);
+}
+
+.submit:hover {
+    transform: scale(1.04);
+}

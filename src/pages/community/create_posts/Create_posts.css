@@ -1,0 +1,60 @@
+.back-btn {
+    margin-top: 1rem;
+}
+
+.content-area {
+    margin-top: 1rem;
+    border: 1px white solid;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px 5px rgb(205, 205, 205);
+    margin: auto 2rem
+}
+
+.content-area-title,
+.content-area-text {
+    margin-left: 2rem;
+    font-size: larger;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.content-title-input {
+    margin-left: 3rem;
+    border: none;
+    border-radius: 15px;
+    background-color: rgb(210, 210, 210);
+    height: 2rem;
+    padding-left: 1rem;
+    width: 20rem;
+    font-size: 1rem;
+}
+
+.content-text-area {
+    border: none;
+    margin-left: 3rem;
+    width: 90%;
+    border-radius: 15px;
+    background-color: rgb(210, 210, 210);
+    padding-top: 2rem;
+    padding-left: 1rem;
+    resize: none;
+    font-size: large;
+
+}
+
+.submiting-btn {
+    border: none;
+    border-radius: 15px;
+    margin-left: 48%;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 5px 5px 8px 9px rgb(205, 205, 205);
+    width: 7rem;
+    height: 2.2rem;
+    font-size: large;
+}
+
+.submiting-btn:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+}
