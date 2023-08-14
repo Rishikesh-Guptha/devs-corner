@@ -1,43 +1,32 @@
-import React,{ useState } from 'react'
+import React,{ useState } from 'react';
+import './Array.css';
 import { DragDropContext, Draggable, Droppable } from 'react-beautiful-dnd';
 
 const Array = () => {
+
+  function allowDrop(ev) {
+    ev.preventDefault();
+  }
   
-  const [droppedItems, setDroppedItems] = useState([]);
-
-  const handleDragOver = (e) => {
-    e.preventDefault();
-  };
-
-  const handleDrop = (e) => {
-    e.preventDefault();
-
-    const data = e.dataTransfer.getData('text/plain');
-    const newItem = { type: 'link', content: data };
-
-    setDroppedItems([...droppedItems, newItem]);
-  };
+  function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+  }
+  
+  function drop(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+    ev.target.appendChild(document.getElementById(data));
+  }
+  
   return (
     <div className='main-container'>
       <p>Arrays</p>
-      <DragDropContext onDragEnd={result => console.log(result)}>
-      <div className="drag-drop-area" onDragOver={handleDragOver} onDrop={handleDrop}>
-      <h2>Drag and Drop Area</h2>
-      <div className="dropped-items-container">
-        {droppedItems.map((item, index) => (
-          <div key={index} className="dropped-item">
-            {item.type === 'link' ? (
-              <a href={item.content} target="_blank" rel="noopener noreferrer">
-                {item.content}
-              </a>
-            ) : (
-              <div className="other-content">{item.content}</div>
-            )}
-          </div>
-        ))}
+      
+      <div className="movables">
+        <div className="drop-area" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <p id="text1" draggable="true" ondragstart="drag(event)">text1</p>
+        <p id="text2">text2</p>
       </div>
-    </div>
-      </DragDropContext>
       
     </div>
   )
