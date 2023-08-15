@@ -1,6 +1,46 @@
-.drop-area {
-    width: 500px;
-    height: 500px;
+.main-container-title {
+    margin-bottom: 0.5rem;
+    margin-top: 0.8rem;
+    font-size: x-large;
+}
+
+.drop-display-area {
+    display: flex;
+}
+
+.display-area-title {
+    margin-bottom: 0.2rem;
+    margin-top: 1rem;
+}
+
+.display-area-content {
     border: 1px solid black;
-    margin-left: 2rem;
+    width: 150vh;
+    height: 60vh;
+    margin: 0.2rem 1rem 1rem 1rem;
+}
+
+.drop-area-content {
+    border: 1px solid black;
+    width: 45vh;
+        height: 60vh;
+    }
+    
+    .drop-area-title {
+        margin-bottom: 0.2rem;
+        margin-top: 1rem;
+        margin-left: 0.1rem;
+    }
+    
+    .list-area-content {
+        border: 1px black solid;
+        width: 198vh;
+        margin-top: 0.2rem;
+        margin-left: 1rem;
+        height: 18vh;
+    }
+    
+    .list-area-title {
+        margin-top: 0.2rem;
+        margin-bottom: 0.5rem;
 }

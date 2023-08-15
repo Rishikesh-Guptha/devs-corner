@@ -20,13 +20,24 @@ const Array = () => {
   
   return (
     <div className='main-container'>
-      <p>Arrays</p>
-      
-      <div className="movables">
-        <div className="drop-area" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-        <p id="text1" draggable="true" ondragstart="drag(event)">text1</p>
-        <p id="text2">text2</p>
+      <p className='main-container-title'>Arrays</p>
+      <div className="area-container">
+        <div className="drop-display-area">
+          <div className="display-area">
+            <p className='display-area-title'>Display area</p>
+            <div className="display-area-content"></div>
+          </div>
+          <div className="drop-area">
+            <p className="drop-area-title">Drop Area</p>
+            <div className="drop-area-content"></div>
+          </div>
+        </div>
+        <div className="list-area">
+          <p className="list-area-title">List Area</p>
+          <div className="list-area-content"></div>
+        </div>
       </div>
+      
       
     </div>
   )
