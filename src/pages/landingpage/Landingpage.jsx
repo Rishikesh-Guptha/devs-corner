@@ -11,6 +11,8 @@ import Navbar2 from '../navbar2/Navbar2';
 //This page currently only has the navbar like structure .
 //This is the first page that appears when the application is loaded
 const Landingpage = () => {
+
+  
   return (
     <div>
         <div className="navbar"> 
@@ -25,12 +27,7 @@ const Landingpage = () => {
         
         </div>
         <div className="main-text">
-          <div className="text-space1">
-            <p>This is the first page</p>
-            <p>This is the landing page</p>
-            <p>This page is then redirected to the authentication pages</p>
-          </div>
-            
+          this is the landing page
         </div>
         {/* <Navbar2/> */}
         <Outlet/>

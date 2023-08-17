@@ -4,19 +4,68 @@ import { DragDropContext, Draggable, Droppable } from 'react-beautiful-dnd';
 
 const Array = () => {
 
-  function allowDrop(ev) {
-    ev.preventDefault();
-  }
+  // drag state
+  // const [dragActive, setDragActive] = React.useState(false);
+  // // ref
+  // const inputRef = React.useRef(null);
   
-  function drag(ev) {
-    ev.dataTransfer.setData("text", ev.target.id);
-  }
+  // // handle drag events
+  // const handleDrag = function(e) {
+  //   e.preventDefault();
+  //   e.stopPropagation();
+  //   if (e.type === "dragenter" || e.type === "dragover") {
+  //     setDragActive(true);
+  //   } else if (e.type === "dragleave") {
+  //     setDragActive(false);
+  //   }
+  // };
+
+  // // triggers when file is dropped
+  // const handleDrop = function(e) {
+  //   e.preventDefault();
+  //   e.stopPropagation();
+  //   setDragActive(false);
+  //   if (e.dataTransfer.files && e.dataTransfer.files[0]) {
+  //     // handleFiles(e.dataTransfer.files);
+  //   }
+  // };
   
-  function drop(ev) {
-    ev.preventDefault();
-    var data = ev.dataTransfer.getData("text");
-    ev.target.appendChild(document.getElementById(data));
-  }
+  // // triggers when file is selected with click
+  // const handleChange = function(e) {
+  //   e.preventDefault();
+  //   if (e.target.files && e.target.files[0]) {
+  //     // handleFiles(e.target.files);
+  //   }
+  // };
+
+  // // triggers the input when the button is clicked
+  // const onButtonClick = () => {
+  //   inputRef.current.click();
+  // };
+
+  const [isDragging, setIsDragging] = useState(false);
+
+  const handleDragEnter = (e) => {
+    e.preventDefault();
+    setIsDragging(true);
+  };
+
+  const handleDragOver = (e) => {
+    e.preventDefault();
+    e.dataTransfer.dropEffect = 'copy';
+  };
+
+  const handleDragLeave = () => {
+    setIsDragging(false);
+  };
+
+  const handleDrop = (e) => {
+    e.preventDefault();
+    setIsDragging(false);
+    const files = e.dataTransfer.files;
+    // Process the dropped files here
+    console.log(files);
+  };
   
   return (
     <div className='main-container'>
@@ -29,7 +78,27 @@ const Array = () => {
           </div>
           <div className="drop-area">
             <p className="drop-area-title">Drop Area</p>
-            <div className="drop-area-content"></div>
+            <div className="drop-area-content">
+            {/* <form id="form-file-upload" onDragEnter={handleDrag} onSubmit={(e) => e.preventDefault()}>
+      <input ref={inputRef} type="file" id="input-file-upload" multiple={true} onChange={handleChange} />
+      <label id="label-file-upload" htmlFor="input-file-upload" className={dragActive ? "drag-active" : "" }>
+        <div>
+          <p>Drag and drop your file here or</p>
+          <button className="upload-button" onClick={onButtonClick}>Upload a file</button>
+        </div> 
+      </label>
+      { dragActive && <div id="drag-file-element" onDragEnter={handleDrag} onDragLeave={handleDrag} onDragOver={handleDrag} onDrop={handleDrop}></div> }
+    </form> */}
+              <div
+      className={`file-drop-area ${isDragging ? 'dragging' : ''}`}
+      onDragEnter={handleDragEnter}
+      onDragOver={handleDragOver}
+      onDragLeave={handleDragLeave}
+      onDrop={handleDrop}
+    >
+      {isDragging ? 'Drop the files here' : 'Drag and drop files here'}
+      </div>
+            </div>
           </div>
         </div>
         <div className="list-area">
