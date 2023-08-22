@@ -11,6 +11,11 @@ import DialogTitle from "@mui/material/DialogTitle";
 import Typography from "@mui/material/Typography";
 
 const Array = () => {
+	const [notestitle, setNotestitle] = useState("");
+	const [notes, setNotes] = useState("");
+	const [notesyoutube, setNotesyoutube] = useState("");
+	const [notesblog, setNotesblog] = useState("");
+	const [noteswebsite, setNoteswebsite] = useState("");
 	const [open, setOpen] = React.useState(false);
 
 	const handleClickOpen = () => {
@@ -55,6 +60,7 @@ const Array = () => {
 											fullWidth
 											variant="standard"
 											sx={{ marginTop: 0 }}
+											value={notestitle}
 										/>
 										<Typography sx={{ marginBottom: 0, marginTop: 2 }}>
 											Notes
