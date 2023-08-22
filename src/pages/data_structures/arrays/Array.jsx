@@ -8,6 +8,7 @@ import DialogActions from "@mui/material/DialogActions";
 import DialogContent from "@mui/material/DialogContent";
 import DialogContentText from "@mui/material/DialogContentText";
 import DialogTitle from "@mui/material/DialogTitle";
+import Typography from "@mui/material/Typography";
 
 const Array = () => {
 	const [open, setOpen] = React.useState(false);
@@ -37,25 +38,76 @@ const Array = () => {
 								<Dialog
 									open={open}
 									onClose={handleClose}>
-									<DialogTitle>Subscribe</DialogTitle>
+									<DialogTitle>Notes</DialogTitle>
 									<DialogContent>
-										<DialogContentText>
-											To subscribe to this website, please enter your email
-											address here. We will send updates occasionally.
+										<DialogContentText sx={{ marginLeft: 10, marginRight: 10 }}>
+											Enter the text notes, links, blog and everything right
+											here..
 										</DialogContentText>
+										<Typography sx={{ marginBottom: 0, marginTop: 2 }}>
+											Title
+										</Typography>
 										<TextField
 											autoFocus
 											margin="dense"
 											id="name"
-											label="Email Address"
-											type="email"
+											type="text"
 											fullWidth
 											variant="standard"
+											sx={{ marginTop: 0 }}
+										/>
+										<Typography sx={{ marginBottom: 0, marginTop: 2 }}>
+											Notes
+										</Typography>
+										<TextField
+											autoFocus
+											margin="dense"
+											type="text"
+											fullWidth
+											maxRows={50}
+											variant="standard"
+											sx={{ marginTop: 0 }}
+										/>
+										<Typography sx={{ marginBottom: 0, marginTop: 2 }}>
+											Youtube links
+										</Typography>
+										<TextField
+											autoFocus
+											margin="dense"
+											id="name"
+											type="url"
+											fullWidth
+											variant="standard"
+											sx={{ marginTop: 0 }}
+										/>
+										<Typography sx={{ marginBottom: 0, marginTop: 2 }}>
+											Blog links
+										</Typography>
+										<TextField
+											autoFocus
+											margin="dense"
+											id="name"
+											type="url"
+											fullWidth
+											variant="standard"
+											sx={{ marginTop: 0 }}
+										/>
+										<Typography sx={{ marginBottom: 0, marginTop: 2 }}>
+											Website links
+										</Typography>
+										<TextField
+											autoFocus
+											margin="dense"
+											id="name"
+											type="url"
+											fullWidth
+											variant="standard"
+											sx={{ marginTop: 0 }}
 										/>
 									</DialogContent>
 									<DialogActions>
 										<Button onClick={handleClose}>Cancel</Button>
-										<Button onClick={handleClose}>Subscribe</Button>
+										<Button onClick={handleClose}>Done</Button>
 									</DialogActions>
 								</Dialog>
 							</div>
