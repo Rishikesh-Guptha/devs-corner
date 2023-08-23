@@ -42,13 +42,7 @@ const Array = () => {
 
 	const handleSubmit = () => {
 		setNotesllist([...noteslist, lists]);
-		console.log(noteslist);
-		setNotes("");
-		setNotesblog("");
-		setNotestitle("");
-		setNotesyoutube("");
-		setNoteswebsite("");
-		setOpen(false);
+		handleCancel();
 	};
 
 	return (
@@ -172,15 +166,35 @@ const Array = () => {
 					<div className="notes-list">
 						{noteslist.map((lists) => {
 							return (
-								<div className="notes-lists-main">
-									<div className="notes-lists-title">TITLE:{lists.title}</div>
-									<div className="notes-lists-notes">NOTES:{lists.notes}</div>
-									<div className="notes-lists-youtube">
-										YOUTUBE:{lists.youtube}
+								<div className="notes-lists-maines">
+									<div
+										className={
+											lists.title !== "" ? "notes-lists-title" : "hidden"
+										}>
+										<strong>TITLE:</strong>
+										{lists.title}
 									</div>
-									<div className="notes-lists-blog">BLOGS:{lists.blog}</div>
-									<div className="notes-lists-website">
-										WEBsITES:{lists.website}
+									<div className={lists.notes ? "notes-lists-notes" : "hidden"}>
+										<strong>NOTES:</strong>
+										{lists.notes}
+									</div>
+									<div
+										className={
+											lists.youtube ? "notes-lists-youtube" : "hidden"
+										}>
+										<strong>YOUTUBE:</strong>
+										{lists.youtube}
+									</div>
+									<div className={lists.blog ? "notes-lists-blog" : "hidden"}>
+										<strong>BLOGS:</strong>
+										{lists.blog}
+									</div>
+									<div
+										className={
+											lists.website ? "notes-lists-website" : "hidden"
+										}>
+										<strong>WEBSITES:</strong>
+										{lists.website}
 									</div>
 								</div>
 							);
