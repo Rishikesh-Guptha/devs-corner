@@ -1,4 +1,5 @@
 import React from 'react';
+import { detectOverflow } from "@popperjs/core";
 import {
   MDBCol,
   MDBContainer,
