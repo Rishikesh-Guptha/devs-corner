@@ -28,100 +28,102 @@ const Array = () => {
 
 	return (
 		<div className="main-container">
-			<p className="main-container-title">Arrays</p>
-			<div className="area-container">
-				<div className="drop-display-area">
-					<div className="display-area">
-						<p className="display-area-title">Display area</p>
-						<div className="display-area-content">
-							<div className="add-btn">
-								<Button
-									variant="outlined"
-									onClick={handleClickOpen}>
-									ADD
-								</Button>
-								<Dialog
-									open={open}
-									onClose={handleClose}>
-									<DialogTitle>Notes</DialogTitle>
-									<DialogContent>
-										<DialogContentText sx={{ marginLeft: 10, marginRight: 10 }}>
-											Enter the text notes, links, blog and everything right
-											here..
-										</DialogContentText>
-										<Typography sx={{ marginBottom: 0, marginTop: 2 }}>
-											Title
-										</Typography>
-										<TextField
-											autoFocus
-											margin="dense"
-											id="name"
-											type="text"
-											fullWidth
-											variant="standard"
-											sx={{ marginTop: 0 }}
-											value={notestitle}
-										/>
-										<Typography sx={{ marginBottom: 0, marginTop: 2 }}>
-											Notes
-										</Typography>
-										<TextField
-											autoFocus
-											margin="dense"
-											type="text"
-											fullWidth
-											maxRows={50}
-											variant="standard"
-											sx={{ marginTop: 0 }}
-										/>
-										<Typography sx={{ marginBottom: 0, marginTop: 2 }}>
-											Youtube links
-										</Typography>
-										<TextField
-											autoFocus
-											margin="dense"
-											id="name"
-											type="url"
-											fullWidth
-											variant="standard"
-											sx={{ marginTop: 0 }}
-										/>
-										<Typography sx={{ marginBottom: 0, marginTop: 2 }}>
-											Blog links
-										</Typography>
-										<TextField
-											autoFocus
-											margin="dense"
-											id="name"
-											type="url"
-											fullWidth
-											variant="standard"
-											sx={{ marginTop: 0 }}
-										/>
-										<Typography sx={{ marginBottom: 0, marginTop: 2 }}>
-											Website links
-										</Typography>
-										<TextField
-											autoFocus
-											margin="dense"
-											id="name"
-											type="url"
-											fullWidth
-											variant="standard"
-											sx={{ marginTop: 0 }}
-										/>
-									</DialogContent>
-									<DialogActions>
-										<Button onClick={handleClose}>Cancel</Button>
-										<Button onClick={handleClose}>Done</Button>
-									</DialogActions>
-								</Dialog>
-							</div>
-						</div>
-					</div>
-					<div className="drop-area">
-						<p className="drop-area-title">Drop Area</p>
-						<div className="drop-area-content"></div>
+			<p className="main-container-title">ARRAY</p>
+			<div className="display-area">
+				<p className="display-area-title">Display area</p>
+				<div className="display-area-content">
+					<div className="add-btn">
+						<Button
+							className=""
+							sx={{
+								borderColor: "none",
+								color: "black",
+								fontSize: 20,
+								padding: -10,
+								borderRadius: 50,
+								width: 1.5,
+								border: "none",
+							}}
+							variant="outlined"
+							onClick={handleClickOpen}>
+							+
+						</Button>
+
+						<Dialog
+							open={open}
+							onClose={handleClose}>
+							<DialogTitle>Notes</DialogTitle>
+							<DialogContent>
+								<DialogContentText sx={{ marginLeft: 10, marginRight: 10 }}>
+									Enter the text notes, links, blog and everything right here..
+								</DialogContentText>
+								<Typography sx={{ marginBottom: 0, marginTop: 2 }}>
+									Title
+								</Typography>
+								<TextField
+									autoFocus
+									margin="dense"
+									id="name"
+									type="text"
+									fullWidth
+									variant="standard"
+									sx={{ marginTop: 0 }}
+									value={notestitle}
+								/>
+								<Typography sx={{ marginBottom: 0, marginTop: 2 }}>
+									Notes
+								</Typography>
+								<TextField
+									autoFocus
+									margin="dense"
+									type="text"
+									fullWidth
+									maxRows={50}
+									variant="standard"
+									sx={{ marginTop: 0 }}
+								/>
+								<Typography sx={{ marginBottom: 0, marginTop: 2 }}>
+									Youtube links
+								</Typography>
+								<TextField
+									autoFocus
+									margin="dense"
+									id="name"
+									type="url"
+									fullWidth
+									variant="standard"
+									sx={{ marginTop: 0 }}
+								/>
+								<Typography sx={{ marginBottom: 0, marginTop: 2 }}>
+									Blog links
+								</Typography>
+								<TextField
+									autoFocus
+									margin="dense"
+									id="name"
+									type="url"
+									fullWidth
+									variant="standard"
+									sx={{ marginTop: 0 }}
+								/>
+								<Typography sx={{ marginBottom: 0, marginTop: 2 }}>
+									Website links
+								</Typography>
+								<TextField
+									autoFocus
+									margin="dense"
+									id="name"
+									type="url"
+									fullWidth
+									variant="standard"
+									sx={{ marginTop: 0 }}
+								/>
+							</DialogContent>
+							<DialogActions>
+								<Button onClick={handleClose}>Cancel</Button>
+								<Button onClick={handleClose}>Done</Button>
+							</DialogActions>
+						</Dialog>
 					</div>
 				</div>
 			</div>
