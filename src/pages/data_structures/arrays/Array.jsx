@@ -9,6 +9,7 @@ import DialogContent from "@mui/material/DialogContent";
 import DialogContentText from "@mui/material/DialogContentText";
 import DialogTitle from "@mui/material/DialogTitle";
 import Typography from "@mui/material/Typography";
+import e from "cors";
 
 const Array = () => {
 	const [notestitle, setNotestitle] = useState("");
@@ -17,12 +18,36 @@ const Array = () => {
 	const [notesblog, setNotesblog] = useState("");
 	const [noteswebsite, setNoteswebsite] = useState("");
 	const [open, setOpen] = React.useState(false);
+	const [noteslist, setNotesllist] = useState([]);
+
+	const lists = {
+		title: notestitle,
+		notes: notes,
+		youtube: notesyoutube,
+		blog: notesblog,
+		website: noteswebsite,
+	};
 
 	const handleClickOpen = () => {
 		setOpen(true);
 	};
+	const handleCancel = () => {
+		setNotes("");
+		setNotesblog("");
+		setNotestitle("");
+		setNotesyoutube("");
+		setNoteswebsite("");
+		setOpen(false);
+	};
 
-	const handleClose = () => {
+	const handleSubmit = () => {
+		setNotesllist([...noteslist, lists]);
+		console.log(noteslist);
+		setNotes("");
+		setNotesblog("");
+		setNotestitle("");
+		setNotesyoutube("");
+		setNoteswebsite("");
 		setOpen(false);
 	};
 
@@ -51,7 +76,7 @@ const Array = () => {
 
 						<Dialog
 							open={open}
-							onClose={handleClose}>
+							onClose={handleCancel}>
 							<DialogTitle>Notes</DialogTitle>
 							<DialogContent>
 								<DialogContentText sx={{ marginLeft: 10, marginRight: 10 }}>
@@ -69,6 +94,9 @@ const Array = () => {
 									variant="standard"
 									sx={{ marginTop: 0 }}
 									value={notestitle}
+									onChange={(e) => {
+										setNotestitle(e.target.value);
+									}}
 								/>
 								<Typography sx={{ marginBottom: 0, marginTop: 2 }}>
 									Notes
@@ -81,6 +109,10 @@ const Array = () => {
 									maxRows={50}
 									variant="standard"
 									sx={{ marginTop: 0 }}
+									value={notes}
+									onChange={(e) => {
+										setNotes(e.target.value);
+									}}
 								/>
 								<Typography sx={{ marginBottom: 0, marginTop: 2 }}>
 									Youtube links
@@ -93,6 +125,10 @@ const Array = () => {
 									fullWidth
 									variant="standard"
 									sx={{ marginTop: 0 }}
+									value={notesyoutube}
+									onChange={(e) => {
+										setNotesyoutube(e.target.value);
+									}}
 								/>
 								<Typography sx={{ marginBottom: 0, marginTop: 2 }}>
 									Blog links
@@ -105,6 +141,10 @@ const Array = () => {
 									fullWidth
 									variant="standard"
 									sx={{ marginTop: 0 }}
+									value={notesblog}
+									onChange={(e) => {
+										setNotesblog(e.target.value);
+									}}
 								/>
 								<Typography sx={{ marginBottom: 0, marginTop: 2 }}>
 									Website links
@@ -117,13 +157,34 @@ const Array = () => {
 									fullWidth
 									variant="standard"
 									sx={{ marginTop: 0 }}
+									value={noteswebsite}
+									onChange={(e) => {
+										setNoteswebsite(e.target.value);
+									}}
 								/>
 							</DialogContent>
 							<DialogActions>
-								<Button onClick={handleClose}>Cancel</Button>
-								<Button onClick={handleClose}>Done</Button>
+								<Button onClick={handleCancel}>Cancel</Button>
+								<Button onClick={handleSubmit}>Done</Button>
 							</DialogActions>
 						</Dialog>
+					</div>
+					<div className="notes-list">
+						{noteslist.map((lists) => {
+							return (
+								<div className="notes-lists-main">
+									<div className="notes-lists-title">TITLE:{lists.title}</div>
+									<div className="notes-lists-notes">NOTES:{lists.notes}</div>
+									<div className="notes-lists-youtube">
+										YOUTUBE:{lists.youtube}
+									</div>
+									<div className="notes-lists-blog">BLOGS:{lists.blog}</div>
+									<div className="notes-lists-website">
+										WEBsITES:{lists.website}
+									</div>
+								</div>
+							);
+						})}
 					</div>
 				</div>
 			</div>
