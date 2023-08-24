@@ -9,9 +9,12 @@ import DialogContent from "@mui/material/DialogContent";
 import DialogContentText from "@mui/material/DialogContentText";
 import DialogTitle from "@mui/material/DialogTitle";
 import Typography from "@mui/material/Typography";
+import { doc, updateDoc } from "firebase/firestore";
+import { auth, db } from "../../../firebase";
 import e from "cors";
 
 const Array = () => {
+	const updateRef = doc(db, "users", "array");
 	const [notestitle, setNotestitle] = useState("");
 	const [notes, setNotes] = useState("");
 	const [notesyoutube, setNotesyoutube] = useState("");
@@ -40,8 +43,10 @@ const Array = () => {
 		setOpen(false);
 	};
 
-	const handleSubmit = () => {
+	const handleSubmit = async () => {
 		setNotesllist([...noteslist, lists]);
+		// await updateDoc(updateRef, noteslist);
+		console.log("upadted suuccessfully");
 		handleCancel();
 	};
 

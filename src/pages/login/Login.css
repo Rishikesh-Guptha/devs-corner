@@ -1,9 +1,10 @@
 .container {
     text-align: center;
-    border: 1px solid white;
+    border: 1px solid black;
     margin: 5rem 30rem;
     border-radius: 10px;
-        box-shadow: 5px 3px 3px 7px rgb(190, 192, 193);
+    z-index: -1;
+        box-shadow: 3px 2px 3px 5px rgb(157, 167, 255);
 }
 .heading {
     font-size: xx-large;
@@ -33,6 +34,9 @@ input {
     width: 15rem;
     border: none;
         border-bottom: 2px solid black;
+        border-radius: 20px;
+            height: 5vh;
+            padding-left: 2vh;
 }
 .icons {
     margin: 1rem 10rem;
@@ -49,7 +53,7 @@ input {
 .submit {
     border: none;
     border-radius: 15px;
-    box-shadow: 2px 2px 5px 5px rgb(205, 205, 205);
+    /* box-shadow: 2px 2px 5px 5px rgb(205, 205, 205); */
 }
 
 .submit:hover {
