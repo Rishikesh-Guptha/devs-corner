@@ -48,7 +48,7 @@ input {
 }
 .google-icon {
     border: none;
-    background-color: white;
+    background-color: transparent;
 }
 .submit {
     border: none;

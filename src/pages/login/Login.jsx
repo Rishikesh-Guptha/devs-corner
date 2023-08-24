@@ -44,43 +44,75 @@ const Login = () => {
     }
 
   return (
-    <div>
-        <div className="back-btn">
-            <button> <Link to="/" style={{textDecoration: 'none', color: 'black'}}>Back</Link></button>
-        </div>
-        <div className="container">
-            <div className="head">
-                <p className="heading">LOGIN</p>
-            </div>
-            <div className="content">
-                <form action="">
-                    <div className="emailid">
-                        <label htmlFor="email">Email Address:</label><br />
-                        <input type="email" className="email" placeholder='Batman@gmail.com' onChange={(e)=>setEmail(e.target.value)} value={email}/>
-                    </div>
+		<div>
+			<div className="back-btn">
+				<button>
+					{" "}
+					<Link
+						to="/"
+						style={{ textDecoration: "none", color: "black" }}>
+						Back
+					</Link>
+				</button>
+			</div>
+			<div className="container">
+				<div className="head">
+					<p className="heading">LOGIN</p>
+				</div>
+				<div className="content">
+					<form action="">
+						<div className="emailid">
+							<label htmlFor="email">Email Address:</label>
+							<br />
+							<input
+								type="email"
+								className="email"
+								placeholder="Batman@gmail.com"
+								onChange={(e) => setEmail(e.target.value)}
+								value={email}
+							/>
+						</div>
 
-                    <div className="passwords">
-                        <label htmlFor="password">Password:</label><br />
-                        <input type="password" className="password" placeholder='IamBatman' onChange={(e)=>setPassword(e.target.value)} value={password}/>
-                    </div>
-                </form>
-                <button className="submit" onClick={onLogin} >Submit</button>
-            </div>
-            <div className="other-methods">
-                <p className='or'>---or---</p>
-                <div className="icons">
-                    <button  className="google-icon" onClick={signinwithgoogle} ><GoogleIcon fontsize="medium" ></GoogleIcon></button>
-                    <GitHubIcon className="github-icon" on></GitHubIcon>
-
-                </div>
-            </div>
-            <div className="bottom">
-                <p>First time? <Link to="/Signup">Signup</Link></p>
-            </div>
-        </div>
-        <Outlet/>
-    </div>
-  )
+						<div className="passwords">
+							<label htmlFor="password">Password:</label>
+							<br />
+							<input
+								type="password"
+								className="password"
+								placeholder="IamBatman"
+								onChange={(e) => setPassword(e.target.value)}
+								value={password}
+							/>
+						</div>
+					</form>
+					<button
+						className="submit"
+						onClick={onLogin}>
+						Submit
+					</button>
+				</div>
+				<div className="other-methods">
+					<p className="or">---or---</p>
+					<div className="icons">
+						<button
+							className="google-icon"
+							onClick={signinwithgoogle}>
+							<GoogleIcon fontsize="medium"></GoogleIcon>
+						</button>
+						<GitHubIcon
+							className="github-icon"
+							on></GitHubIcon>
+					</div>
+				</div>
+				<div className="bottom">
+					<p>
+						First time? <Link to="/Signup">Signup</Link>
+					</p>
+				</div>
+			</div>
+			<Outlet />
+		</div>
+	);
 }
 
 export default Login

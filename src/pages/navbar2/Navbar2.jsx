@@ -120,20 +120,15 @@ const Navbar2 = () => {
 						}}
 						transformOrigin={{ horizontal: "right", vertical: "top" }}
 						anchorOrigin={{ horizontal: "right", vertical: "bottom" }}>
-						<Link to="/ProfilePage">
+						<Link
+							to="/ProfilePage"
+							style={{ color: "black", textDecoration: "none" }}>
 							<MenuItem>
 								<Avatar /> Profile
 							</MenuItem>
 						</Link>
 
 						<Divider />
-
-						<MenuItem onClick={handleClose}>
-							<ListItemIcon>
-								<Settings fontSize="small" />
-							</ListItemIcon>
-							Settings
-						</MenuItem>
 						<MenuItem onClick={handleclose_logout}>
 							<Link
 								to="/"

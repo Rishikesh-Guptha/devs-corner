@@ -34,15 +34,18 @@ const Dsa = () => {
 								Structures
 							</p>
 
-							<Accordion
-								sx={{ maxWidth: 0.95, marginLeft: 5, marginBottom: 2 }}>
-								{/* <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1a-content" id="panel1a-header" > */}
-								<AccordionSummary
-									expandIcon={<ExpandMoreIcon />}
-									aria-controls="panel1a-content">
-									<Typography>Arrays</Typography>
-								</AccordionSummary>
-								<AccordionDetails
+							<Link
+								to="/Array"
+								style={{ color: "black", textDecoration: "none" }}>
+								<Accordion
+									sx={{ maxWidth: 0.95, marginLeft: 5, marginBottom: 2 }}>
+									{/* <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1a-content" id="panel1a-header" > */}
+									<AccordionSummary
+										// expandIcon={<ExpandMoreIcon />}
+										aria-controls="panel1a-content">
+										<Typography>Arrays</Typography>
+									</AccordionSummary>
+									{/* <AccordionDetails
 									sx={{
 										marginLeft: 5,
 										alignContent: "space-between",
@@ -54,8 +57,9 @@ const Dsa = () => {
 									<Link to="/Array">
 										<button>Click here</button>
 									</Link>
-								</AccordionDetails>
-							</Accordion>
+								</AccordionDetails> */}
+								</Accordion>
+							</Link>
 
 							<Accordion
 								sx={{ maxWidth: 0.95, marginLeft: 5, marginBottom: 2 }}>
