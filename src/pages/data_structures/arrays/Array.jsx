@@ -52,9 +52,17 @@ const Array = () => {
 
 	return (
 		<div className="main-container">
-			<p className="main-container-title">ARRAY</p>
+			<p
+				className="main-container-title"
+				style={{ color: "white" }}>
+				ARRAY
+			</p>
 			<div className="display-area">
-				<p className="display-area-title">Display area</p>
+				<p
+					className="display-area-title"
+					style={{ color: "white" }}>
+					Display area
+				</p>
 				<div className="display-area-content">
 					<div className="add-btn">
 						<Button
