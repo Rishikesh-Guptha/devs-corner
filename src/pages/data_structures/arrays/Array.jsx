@@ -98,11 +98,11 @@ const Array = () => {
 					ARRAY
 				</p>
 				<div className="display-area">
-					<p
+					{/* <p
 						className="display-area-title"
 						style={{ color: "white" }}>
 						Display area
-					</p>
+					</p> */}
 					<div className="display-area-content">
 						<div className="add-btn">
 							<Button
