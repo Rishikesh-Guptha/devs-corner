@@ -41,227 +41,260 @@ const Array = () => {
     };
 
     const handleSubmit = () => {
-        if (notestitle || notes || notesyoutube || notesblog || noteswebsite) {
-            setNotesllist([...noteslist, {
-                title: notestitle,
-                notes: notes,
-                youtube: notesyoutube,
-                blog: notesblog,
-                website: noteswebsite,
-            }]);
-        }
-        handleCancel();
-    };
+			if (notestitle || notes || notesyoutube || notesblog || noteswebsite) {
+				setNotesllist([
+					...noteslist,
+					{
+						title: notestitle,
+						notes: notes,
+						youtube: notesyoutube,
+						blog: notesblog,
+						website: noteswebsite,
+					},
+				]);
+				console.log(noteslist);
+			}
+			handleCancel();
+		};
 
-    const handleEdit = (noteIndex) => {
-        setEditIndex(noteIndex);
-        const selectedNote = noteslist[noteIndex];
-        setNotestitle(selectedNote.title);
-        setNotes(selectedNote.notes);
-        setNotesyoutube(selectedNote.youtube);
-        setNotesblog(selectedNote.blog);
-        setNoteswebsite(selectedNote.website);
-        setOpen(true);
-    };
+		const handleEdit = (noteIndex) => {
+			setEditIndex(noteIndex);
+			const selectedNote = noteslist[noteIndex];
+			setNotestitle(selectedNote.title);
+			setNotes(selectedNote.notes);
+			setNotesyoutube(selectedNote.youtube);
+			setNotesblog(selectedNote.blog);
+			setNoteswebsite(selectedNote.website);
+			setOpen(true);
+		};
 
-    const handleSaveEdit = () => {
-        const updatedNotesList = [...noteslist];
-        updatedNotesList[editIndex] = {
-            ...updatedNotesList[editIndex],
-            title: notestitle,
-            notes: notes,
-            youtube: notesyoutube,
-            blog: notesblog,
-            website: noteswebsite,
-        };
-        setNotesllist(updatedNotesList);
-        setEditIndex(null);
-        handleCancel();
-    };
+		const handleSaveEdit = () => {
+			const updatedNotesList = [...noteslist];
+			updatedNotesList[editIndex] = {
+				...updatedNotesList[editIndex],
+				title: notestitle,
+				notes: notes,
+				youtube: notesyoutube,
+				blog: notesblog,
+				website: noteswebsite,
+			};
+			setNotesllist(updatedNotesList);
+			setEditIndex(null);
+			handleCancel();
+		};
 
-    const handleDelete = (indexToDelete) => {
-        const updatedNotesList = noteslist.filter((_, index) => index !== indexToDelete);
-        setNotesllist(updatedNotesList);
-    };
+		const handleDelete = (indexToDelete) => {
+			const updatedNotesList = noteslist.filter(
+				(_, index) => index !== indexToDelete,
+			);
+			setNotesllist(updatedNotesList);
+		};
 
-    return (
-        <div className="main-container">
-            <p
-                className="main-container-title"
-                style={{ color: "white" }}>
-                ARRAY
-            </p>
-            <div className="display-area">
-                <p
-                    className="display-area-title"
-                    style={{ color: "white" }}>
-                    Display area
-                </p>
-                <div className="display-area-content">
-                    <div className="add-btn">
-                        <Button
-                            className=""
-                            sx={{
-                                borderColor: "none",
-                                color: "black",
-                                fontSize: 20,
-                                padding: -10,
-                                borderRadius: 50,
-                                width: 1.5,
-                                border: "none",
-                            }}
-                            variant="outlined"
-                            onClick={handleClickOpen}>
-                            +
-                        </Button>
+		return (
+			<div className="main-container">
+				<p
+					className="main-container-title"
+					style={{ color: "white" }}>
+					ARRAY
+				</p>
+				<div className="display-area">
+					<p
+						className="display-area-title"
+						style={{ color: "white" }}>
+						Display area
+					</p>
+					<div className="display-area-content">
+						<div className="add-btn">
+							<Button
+								className=""
+								sx={{
+									borderColor: "none",
+									color: "black",
+									fontSize: 20,
+									padding: -10,
+									borderRadius: 50,
+									width: 1.5,
+									border: "none",
+								}}
+								variant="outlined"
+								onClick={handleClickOpen}>
+								+
+							</Button>
 
-                        <Dialog
-                            open={open}
-                            onClose={handleCancel}>
-                            <DialogTitle>Notes</DialogTitle>
-                            <DialogContent>
-                                <DialogContentText sx={{ marginLeft: 10, marginRight: 10 }}>
-                                    Enter the text notes, links, blog, and everything right here..
-                                </DialogContentText>
-                                <Typography sx={{ marginBottom: 0, marginTop: 2 }}>
-                                    Title
-                                </Typography>
-                                <TextField
-                                    autoFocus
-                                    margin="dense"
-                                    id="name"
-                                    type="text"
-                                    fullWidth
-                                    variant="standard"
-                                    sx={{ marginTop: 0 }}
-                                    value={notestitle}
-                                    onChange={(e) => {
-                                        setNotestitle(e.target.value);
-                                    }}
-                                />
-                                <Typography sx={{ marginBottom: 0, marginTop: 2 }}>
-                                    Notes
-                                </Typography>
-                                <TextField
-                                    autoFocus
-                                    margin="dense"
-                                    type="text"
-                                    fullWidth
-                                    maxRows={50}
-                                    variant="standard"
-                                    sx={{ marginTop: 0 }}
-                                    value={notes}
-                                    onChange={(e) => {
-                                        setNotes(e.target.value);
-                                    }}
-                                />
-                                <Typography sx={{ marginBottom: 0, marginTop: 2 }}>
-                                    Youtube links
-                                </Typography>
-                                <TextField
-                                    autoFocus
-                                    margin="dense"
-                                    id="name"
-                                    type="url"
-                                    fullWidth
-                                    variant="standard"
-                                    sx={{ marginTop: 0 }}
-                                    value={notesyoutube}
-                                    onChange={(e) => {
-                                        setNotesyoutube(e.target.value);
-                                    }}
-                                />
-                                <Typography sx={{ marginBottom: 0, marginTop: 2 }}>
-                                    Blog links
-                                </Typography>
-                                <TextField
-                                    autoFocus
-                                    margin="dense"
-                                    id="name"
-                                    type="url"
-                                    fullWidth
-                                    variant="standard"
-                                    sx={{ marginTop: 0 }}
-                                    value={notesblog}
-                                    onChange={(e) => {
-                                        setNotesblog(e.target.value);
-                                    }}
-                                />
-                                <Typography sx={{ marginBottom: 0, marginTop: 2 }}>
-                                    Website links
-                                </Typography>
-                                <TextField
-                                    autoFocus
-                                    margin="dense"
-                                    id="name"
-                                    type="url"
-                                    fullWidth
-                                    variant="standard"
-                                    sx={{ marginTop: 0 }}
-                                    value={noteswebsite}
-                                    onChange={(e) => {
-                                        setNoteswebsite(e.target.value);
-                                    }}
-                                />
-                            </DialogContent>
-                            <DialogActions>
-                                <Button onClick={handleCancel}>Cancel</Button>
-                                {editIndex !== null ? (
-                                    <Button onClick={handleSaveEdit}>Save</Button>
-                                ) : (
-                                    <Button onClick={handleSubmit}>Done</Button>
-                                )}
-                            </DialogActions>
-                        </Dialog>
-                    </div>
-                    <div className="notes-list">
-                        {noteslist.map((lists, index) => (
-                            <div key={index} className="notes-lists-maines">
-                                <div className={lists.title !== "" ? "notes-lists-title" : "hidden"}>
-                                    <strong>TITLE:</strong>
-                                    {lists.title}
-                                </div>
-                                <div className={lists.notes ? "notes-lists-notes" : "hidden"}>
-                                    <div>
-                                        <strong>NOTES:</strong>
-                                        {editIndex === index ? (
-                                            <TextField
-                                                autoFocus
-                                                margin="dense"
-                                                type="text"
-                                                fullWidth
-                                                maxRows={50}
-                                                variant="standard"
-                                                sx={{ marginTop: 0 }}
-                                                value={notes}
-                                                onChange={(e) => {
-                                                    setNotes(e.target.value);
-                                                }}
-                                            />
-                                        ) : (
-                                            <div>
-                                                {lists.notes}
-                                                <DeleteIcon
-                                                    style={{ cursor: "pointer", marginLeft: '10px' }}
-                                                    onClick={() => handleDelete(index)}
-                                                />
-                                                <EditIcon
-                                                    style={{ cursor: "pointer", marginLeft: '10px' }}
-                                                    onClick={() => handleEdit(index)}
-                                                />
-                                            </div>
-                                        )}
-                                    </div>
-                                    {/* ... Other content sections */}
-                                </div>
-                                {/* ... Other content sections */}
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </div>
-        </div>
-    );
+							<Dialog
+								open={open}
+								onClose={handleCancel}>
+								<DialogTitle>Notes</DialogTitle>
+								<DialogContent>
+									<DialogContentText sx={{ marginLeft: 10, marginRight: 10 }}>
+										Enter the text notes, links, blog, and everything right
+										here..
+									</DialogContentText>
+									<Typography sx={{ marginBottom: 0, marginTop: 2 }}>
+										Title
+									</Typography>
+									<TextField
+										autoFocus
+										margin="dense"
+										id="name"
+										type="text"
+										fullWidth
+										variant="standard"
+										sx={{ marginTop: 0 }}
+										value={notestitle}
+										onChange={(e) => {
+											setNotestitle(e.target.value);
+										}}
+									/>
+									<Typography sx={{ marginBottom: 0, marginTop: 2 }}>
+										Notes
+									</Typography>
+									<TextField
+										autoFocus
+										margin="dense"
+										type="text"
+										fullWidth
+										maxRows={50}
+										variant="standard"
+										sx={{ marginTop: 0 }}
+										value={notes}
+										onChange={(e) => {
+											setNotes(e.target.value);
+										}}
+									/>
+									<Typography sx={{ marginBottom: 0, marginTop: 2 }}>
+										Youtube links
+									</Typography>
+									<TextField
+										autoFocus
+										margin="dense"
+										id="name"
+										type="url"
+										fullWidth
+										variant="standard"
+										sx={{ marginTop: 0 }}
+										value={notesyoutube}
+										onChange={(e) => {
+											setNotesyoutube(e.target.value);
+										}}
+									/>
+									<Typography sx={{ marginBottom: 0, marginTop: 2 }}>
+										Blog links
+									</Typography>
+									<TextField
+										autoFocus
+										margin="dense"
+										id="name"
+										type="url"
+										fullWidth
+										variant="standard"
+										sx={{ marginTop: 0 }}
+										value={notesblog}
+										onChange={(e) => {
+											setNotesblog(e.target.value);
+										}}
+									/>
+									<Typography sx={{ marginBottom: 0, marginTop: 2 }}>
+										Website links
+									</Typography>
+									<TextField
+										autoFocus
+										margin="dense"
+										id="name"
+										type="url"
+										fullWidth
+										variant="standard"
+										sx={{ marginTop: 0 }}
+										value={noteswebsite}
+										onChange={(e) => {
+											setNoteswebsite(e.target.value);
+										}}
+									/>
+								</DialogContent>
+								<DialogActions>
+									<Button onClick={handleCancel}>Cancel</Button>
+									{editIndex !== null ? (
+										<Button onClick={handleSaveEdit}>Save</Button>
+									) : (
+										<Button onClick={handleSubmit}>Done</Button>
+									)}
+								</DialogActions>
+							</Dialog>
+						</div>
+						<div className="notes-list">
+							{noteslist.map((lists, index) => (
+								<div
+									key={index}
+									className="notes-lists-maines">
+									<div
+										className={
+											lists.title !== "" ? "notes-lists-title" : "hidden"
+										}>
+										<strong>TITLE:</strong>
+										{lists.title}
+									</div>
+									<div className={lists.notes ? "notes-lists-notes" : "hidden"}>
+										<div>
+											<strong>NOTES:</strong>
+											{editIndex === index ? (
+												<TextField
+													autoFocus
+													margin="dense"
+													type="text"
+													fullWidth
+													maxRows={50}
+													variant="standard"
+													sx={{ marginTop: 0 }}
+													value={notes}
+													onChange={(e) => {
+														setNotes(e.target.value);
+													}}
+												/>
+											) : (
+												<div>
+													{lists.notes}
+													<DeleteIcon
+														style={{ cursor: "pointer", marginLeft: "10px" }}
+														onClick={() => handleDelete(index)}
+													/>
+													<EditIcon
+														style={{ cursor: "pointer", marginLeft: "10px" }}
+														onClick={() => handleEdit(index)}
+													/>
+												</div>
+											)}
+										</div>
+										{/* ... Other content sections */}
+									</div>
+									<div
+										className={
+											lists.youtube !== "" ? "notes-lists-title" : "hidden"
+										}>
+										<strong>YOUTUBE:</strong>
+										{lists.youtube}
+									</div>
+									<div
+										className={
+											lists.blog !== "" ? "notes-lists-title" : "hidden"
+										}>
+										<strong>BLOG:</strong>
+										{lists.blog}
+									</div>
+									<div
+										className={
+											lists.website !== "" ? "notes-lists-title" : "hidden"
+										}>
+										<strong>WEBSITE:</strong>
+										{lists.website}
+									</div>
+									{/* ... Other content sections */}
+								</div>
+							))}
+						</div>
+					</div>
+				</div>
+			</div>
+		);
 };
 
 export default Array;
