@@ -11,7 +11,7 @@ import DialogTitle from "@mui/material/DialogTitle";
 import Typography from "@mui/material/Typography";
 import EditIcon from '@mui/icons-material/Edit'; // Import the Edit icon
 import DeleteIcon from '@mui/icons-material/Delete'; // Import the Delete icon
-import { doc, updateDoc } from "firebase/firestore";
+import { doc, updateDoc,collection,addDoc } from "firebase/firestore";
 import { auth, db } from "../../../firebase";
 import e from "cors";
 
@@ -25,6 +25,8 @@ const Array = () => {
     const [open, setOpen] = React.useState(false);
     const [noteslist, setNotesllist] = useState([]);
     const [editIndex, setEditIndex] = useState(null); // New state for edit mode
+	const user = auth.currentUser; // Get the current user from Firebase Authentication
+    const userNotesRef = collection(db, "users", user.email, "notes/array"); // Reference to the user's notes subcollection
 
     const handleClickOpen = () => {
         setOpen(true);
@@ -40,23 +42,26 @@ const Array = () => {
         setEditIndex(null);
     };
 
-    const handleSubmit = () => {
-			if (notestitle || notes || notesyoutube || notesblog || noteswebsite) {
-				setNotesllist([
-					...noteslist,
-					{
-						title: notestitle,
-						notes: notes,
-						youtube: notesyoutube,
-						blog: notesblog,
-						website: noteswebsite,
-					},
-				]);
-				console.log(noteslist);
-			}
-			handleCancel();
-		};
+    const handleSubmit = async () => {
+		if (notestitle || notes || notesyoutube || notesblog || noteswebsite) {
+            const newNote = {
+                title: notestitle,
+                notes: notes,
+                youtube: notesyoutube,
+                blog: notesblog,
+                website: noteswebsite,
+            };
 
+            try {
+                await addDoc(userNotesRef, newNote); // Add the note to the user's notes subcollection
+                console.log("Note added to Firestore");
+            } catch (error) {
+                console.error("Error adding note: ", error);
+            }
+
+            // ... Reset state and close dialog ...
+        }
+    };
 		const handleEdit = (noteIndex) => {
 			setEditIndex(noteIndex);
 			const selectedNote = noteslist[noteIndex];
