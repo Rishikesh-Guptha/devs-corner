@@ -26,6 +26,7 @@ import Stocks from "./pages/finace/news/Stocks";
 import Create_posts from "./pages/community/create_posts/Create_posts";
 import ProfilePage from "./pages/profile/ProfilePage.jsx";
 import Sorting from "./pages/data_structures/Sortingalgorithms/Sorting";
+import Searching from "./pages/data_structures/searching/Searching";
 import { FirebaseApp } from "firebase/app";
 import { auth } from "./firebase";
 
@@ -145,6 +146,10 @@ function App() {
 					<Route
 						path="Sorting"
 						element={<Sorting />}
+					/>
+					<Route
+						path="Searching"
+						element={<Searching />}
 					/>
 					<Route
 						path="*"

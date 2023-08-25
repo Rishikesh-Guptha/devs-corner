@@ -16,7 +16,8 @@ import DeleteIcon from "@mui/icons-material/Delete"; // Import the Delete icon
 import { doc, updateDoc } from "firebase/firestore";
 import { auth, db } from "../../../firebase";
 import e from "cors";
-const Sorting = () => {
+
+const Searching = () => {
 	const updateRef = doc(db, "users", "array");
 	const [notestitle, setNotestitle] = useState("");
 	const [notes, setNotes] = useState("");
@@ -297,4 +298,4 @@ const Sorting = () => {
 	);
 };
 
-export default Sorting;
+export default Searching;

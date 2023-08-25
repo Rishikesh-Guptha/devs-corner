@@ -61,7 +61,9 @@ const Dsa = () => {
 								</Accordion>
 							</Link>
 
-							<Link to="/Linked_list">
+							<Link
+								to="/Linked_list"
+								style={{ color: "black", textDecoration: "none" }}>
 								<Accordion
 									sx={{ maxWidth: 0.95, marginLeft: 5, marginBottom: 2 }}>
 									{/* <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1a-content" id="panel1a-header" > */}
@@ -81,7 +83,9 @@ const Dsa = () => {
 								</Accordion>
 							</Link>
 
-							<Link to="/Stack">
+							<Link
+								to="/Stack"
+								style={{ color: "black", textDecoration: "none" }}>
 								<Accordion
 									sx={{ maxWidth: 0.95, marginLeft: 5, marginBottom: 2 }}>
 									{/* <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1a-content" id="panel1a-header" > */}
@@ -101,7 +105,9 @@ const Dsa = () => {
 								</Accordion>
 							</Link>
 
-							<Link to="/Queue">
+							<Link
+								to="/Queue"
+								style={{ color: "black", textDecoration: "none" }}>
 								<Accordion
 									sx={{ maxWidth: 0.95, marginLeft: 5, marginBottom: 2 }}>
 									{/* <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1a-content" id="panel1a-header" > */}
@@ -121,15 +127,18 @@ const Dsa = () => {
 								</Accordion>
 							</Link>
 
-							<Accordion
-								sx={{ maxWidth: 0.95, marginLeft: 5, marginBottom: 2 }}>
-								{/* <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1a-content" id="panel1a-header" > */}
-								<AccordionSummary
-									// expandIcon={<ExpandMoreIcon />}
-									aria-controls="panel1a-content">
-									<Typography>Tree</Typography>
-								</AccordionSummary>
-								{/* <AccordionDetails sx={{ marginLeft: 5 }}>
+							<Link
+								to="/Tree"
+								style={{ color: "black", textDecoration: "none" }}>
+								<Accordion
+									sx={{ maxWidth: 0.95, marginLeft: 5, marginBottom: 2 }}>
+									{/* <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1a-content" id="panel1a-header" > */}
+									<AccordionSummary
+										// expandIcon={<ExpandMoreIcon />}
+										aria-controls="panel1a-content">
+										<Typography>Tree</Typography>
+									</AccordionSummary>
+									{/* <AccordionDetails sx={{ marginLeft: 5 }}>
 									<Typography sx={{ marginLeft: 5 }}>
 										The contents for Tree lie here..
 									</Typography>
@@ -137,17 +146,21 @@ const Dsa = () => {
 										<button>Click here</button>
 									</Link>
 								</AccordionDetails> */}
-							</Accordion>
+								</Accordion>
+							</Link>
 
-							<Accordion
-								sx={{ maxWidth: 0.95, marginLeft: 5, marginBottom: 2 }}>
-								{/* <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1a-content" id="panel1a-header" > */}
-								<AccordionSummary
-									// expandIcon={<ExpandMoreIcon />}
-									aria-controls="panel1a-content">
-									<Typography>Graph</Typography>
-								</AccordionSummary>
-								{/* <AccordionDetails sx={{ marginLeft: 10 }}>
+							<Link
+								to="/Graph"
+								style={{ color: "black", textDecoration: "none" }}>
+								<Accordion
+									sx={{ maxWidth: 0.95, marginLeft: 5, marginBottom: 2 }}>
+									{/* <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1a-content" id="panel1a-header" > */}
+									<AccordionSummary
+										// expandIcon={<ExpandMoreIcon />}
+										aria-controls="panel1a-content">
+										<Typography>Graph</Typography>
+									</AccordionSummary>
+									{/* <AccordionDetails sx={{ marginLeft: 10 }}>
 									<Typography sx={{ marginLeft: 10 }}>
 										The contents for Graph lie here..
 									</Typography>
@@ -155,7 +168,8 @@ const Dsa = () => {
 										<button>Click here</button>
 									</Link>
 								</AccordionDetails> */}
-							</Accordion>
+								</Accordion>
+							</Link>
 						</div>
 						<div className="tech-content-algorithms">
 							<p
@@ -164,15 +178,18 @@ const Dsa = () => {
 								Algorithms
 							</p>
 
-							<Accordion
-								sx={{ maxWidth: 0.95, marginLeft: 5, marginBottom: 2 }}>
-								{/* <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1a-content" id="panel1a-header" > */}
-								<AccordionSummary
-									// expandIcon={<ExpandMoreIcon />}
-									aria-controls="panel1a-content">
-									<Typography>Sorting Algorithms</Typography>
-								</AccordionSummary>
-								{/* <AccordionDetails sx={{ marginLeft: 5 }}>
+							<Link
+								to="/Sorting"
+								style={{ color: "black", textDecoration: "none" }}>
+								<Accordion
+									sx={{ maxWidth: 0.95, marginLeft: 5, marginBottom: 2 }}>
+									{/* <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1a-content" id="panel1a-header" > */}
+									<AccordionSummary
+										// expandIcon={<ExpandMoreIcon />}
+										aria-controls="panel1a-content">
+										<Typography>Sorting Algorithms</Typography>
+									</AccordionSummary>
+									{/* <AccordionDetails sx={{ marginLeft: 5 }}>
 									<Typography sx={{ marginLeft: 5 }}>
 										The contents for sorting algorithms lie here..
 									</Typography>
@@ -180,17 +197,21 @@ const Dsa = () => {
 										<button>Click here</button>
 									</Link>
 								</AccordionDetails> */}
-							</Accordion>
+								</Accordion>
+							</Link>
 
-							<Accordion
-								sx={{ maxWidth: 0.95, marginLeft: 5, marginBottom: 2 }}>
-								{/* <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1a-content" id="panel1a-header" > */}
-								<AccordionSummary
-									// expandIcon={<ExpandMoreIcon />}
-									aria-controls="panel1a-content">
-									<Typography>Searching Algorithms</Typography>
-								</AccordionSummary>
-								{/* <AccordionDetails sx={{ marginLeft: 5 }}>
+							<Link
+								to="/Searching"
+								style={{ color: "black", textDecoration: "none" }}>
+								<Accordion
+									sx={{ maxWidth: 0.95, marginLeft: 5, marginBottom: 2 }}>
+									{/* <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1a-content" id="panel1a-header" > */}
+									<AccordionSummary
+										// expandIcon={<ExpandMoreIcon />}
+										aria-controls="panel1a-content">
+										<Typography>Searching Algorithms</Typography>
+									</AccordionSummary>
+									{/* <AccordionDetails sx={{ marginLeft: 5 }}>
 									<Typography sx={{ marginLeft: 5 }}>
 										The contents for searching algorithms lie here..
 									</Typography>
@@ -198,7 +219,8 @@ const Dsa = () => {
 										<button>Click here</button>
 									</Link>
 								</AccordionDetails> */}
-							</Accordion>
+								</Accordion>
+							</Link>
 						</div>
 						<div className="tech-content-dsa-sheets">
 							<p
