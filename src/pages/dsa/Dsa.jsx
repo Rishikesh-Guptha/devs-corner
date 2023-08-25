@@ -61,15 +61,16 @@ const Dsa = () => {
 								</Accordion>
 							</Link>
 
-							<Accordion
-								sx={{ maxWidth: 0.95, marginLeft: 5, marginBottom: 2 }}>
-								{/* <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1a-content" id="panel1a-header" > */}
-								<AccordionSummary
-									// expandIcon={<ExpandMoreIcon />}
-									aria-controls="panel1a-content">
-									<Typography>Linked List</Typography>
-								</AccordionSummary>
-								{/* <AccordionDetails sx={{ marginLeft: 5 }}>
+							<Link to="/Linked_list">
+								<Accordion
+									sx={{ maxWidth: 0.95, marginLeft: 5, marginBottom: 2 }}>
+									{/* <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1a-content" id="panel1a-header" > */}
+									<AccordionSummary
+										// expandIcon={<ExpandMoreIcon />}
+										aria-controls="panel1a-content">
+										<Typography>Linked List</Typography>
+									</AccordionSummary>
+									{/* <AccordionDetails sx={{ marginLeft: 5 }}>
 									<Typography sx={{ marginLeft: 5 }}>
 										The contents for Linked Lists lie here..
 									</Typography>
@@ -77,17 +78,19 @@ const Dsa = () => {
 										<button>Click here</button>
 									</Link>
 								</AccordionDetails> */}
-							</Accordion>
+								</Accordion>
+							</Link>
 
-							<Accordion
-								sx={{ maxWidth: 0.95, marginLeft: 5, marginBottom: 2 }}>
-								{/* <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1a-content" id="panel1a-header" > */}
-								<AccordionSummary
-									// expandIcon={<ExpandMoreIcon />}
-									aria-controls="panel1a-content">
-									<Typography>Stack</Typography>
-								</AccordionSummary>
-								{/* <AccordionDetails sx={{ marginLeft: 5 }}>
+							<Link to="/Stack">
+								<Accordion
+									sx={{ maxWidth: 0.95, marginLeft: 5, marginBottom: 2 }}>
+									{/* <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1a-content" id="panel1a-header" > */}
+									<AccordionSummary
+										// expandIcon={<ExpandMoreIcon />}
+										aria-controls="panel1a-content">
+										<Typography>Stack</Typography>
+									</AccordionSummary>
+									{/* <AccordionDetails sx={{ marginLeft: 5 }}>
 									<Typography sx={{ marginLeft: 5 }}>
 										The contents for Stack lie here..
 									</Typography>
@@ -95,17 +98,19 @@ const Dsa = () => {
 										<button>Click here</button>
 									</Link>
 								</AccordionDetails> */}
-							</Accordion>
+								</Accordion>
+							</Link>
 
-							<Accordion
-								sx={{ maxWidth: 0.95, marginLeft: 5, marginBottom: 2 }}>
-								{/* <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1a-content" id="panel1a-header" > */}
-								<AccordionSummary
-									// expandIcon={<ExpandMoreIcon />}
-									aria-controls="panel1a-content">
-									<Typography>Queue</Typography>
-								</AccordionSummary>
-								{/* <AccordionDetails sx={{ marginLeft: 5 }}>
+							<Link to="/Queue">
+								<Accordion
+									sx={{ maxWidth: 0.95, marginLeft: 5, marginBottom: 2 }}>
+									{/* <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1a-content" id="panel1a-header" > */}
+									<AccordionSummary
+										// expandIcon={<ExpandMoreIcon />}
+										aria-controls="panel1a-content">
+										<Typography>Queue</Typography>
+									</AccordionSummary>
+									{/* <AccordionDetails sx={{ marginLeft: 5 }}>
 									<Typography sx={{ marginLeft: 5 }}>
 										The contents for Queue lie here..
 									</Typography>
@@ -113,7 +118,8 @@ const Dsa = () => {
 										<button>Click here</button>
 									</Link>
 								</AccordionDetails> */}
-							</Accordion>
+								</Accordion>
+							</Link>
 
 							<Accordion
 								sx={{ maxWidth: 0.95, marginLeft: 5, marginBottom: 2 }}>

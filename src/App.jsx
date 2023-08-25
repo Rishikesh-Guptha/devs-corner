@@ -25,48 +25,135 @@ import Graph from "./pages/data_structures/graph/Graph";
 import Stocks from "./pages/finace/news/Stocks";
 import Create_posts from "./pages/community/create_posts/Create_posts";
 import ProfilePage from "./pages/profile/ProfilePage.jsx";
+import Sorting from "./pages/data_structures/Sortingalgorithms/Sorting";
 import { FirebaseApp } from "firebase/app";
 import { auth } from "./firebase";
 
-
 function App() {
-  return (
-    <div className="App"> 
-      <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Landingpage />}/>
-        <Route path="Dashboard" element={<Dashboard />}/>
-        <Route path="Landingpage" element={<Landingpage />}/>
-        <Route path="Login" element={<Login/>} />
-        <Route path="Signup" element={<Signup/>} />
-        <Route path="Dsa" element={<Dsa/>} />
-        <Route path="Development" element={<Development/>} />
-        <Route path="Opensource" element={<Opensource/>} />
-        <Route path="Finance" element={<Finance/>} />
-        <Route path="Web_dev" element={<Web_dev/>} />
-        <Route path="App_dev" element={<App_dev/>} />
-        <Route path="Cloud" element={<Cloud/>} />
-        <Route path="Blockchain" element={<Blockchain/>} />
-        <Route path="Ai" element={<Ai/>} />
-        <Route path="Data_science" element={<Data_science/>} />
-        <Route path="Community" element={<Community/>} />
-        <Route path="Jobs" element={<Jobs/>} />
-        <Route path="Jobs" element={<Jobs/>} />
-        <Route path="Array" element={<Array/>} />
-        <Route path="Linked_list" element={<Linked_list/>} />
-        <Route path="Stack" element={<Stack/>} />
-        <Route path="Queue" element={<Queue/>} />
-        <Route path="Tree" element={<Tree/>} />
-        <Route path="Graph" element={<Graph/>} />
-        <Route path="Stocks" element={<Stocks/>} />
-        <Route path="Create_posts" element={<Create_posts/>} />
-        <Route path="ProfilePage" element={<ProfilePage/>} />
-        <Route path="*" element={<Error/>} />
-      </Routes>
-      </BrowserRouter>
-      
-    </div>
-  );
+	return (
+		<div className="App">
+			<BrowserRouter>
+				<Routes>
+					<Route
+						path="/"
+						element={<Landingpage />}
+					/>
+					<Route
+						path="Dashboard"
+						element={<Dashboard />}
+					/>
+					<Route
+						path="Landingpage"
+						element={<Landingpage />}
+					/>
+					<Route
+						path="Login"
+						element={<Login />}
+					/>
+					<Route
+						path="Signup"
+						element={<Signup />}
+					/>
+					<Route
+						path="Dsa"
+						element={<Dsa />}
+					/>
+					<Route
+						path="Development"
+						element={<Development />}
+					/>
+					<Route
+						path="Opensource"
+						element={<Opensource />}
+					/>
+					<Route
+						path="Finance"
+						element={<Finance />}
+					/>
+					<Route
+						path="Web_dev"
+						element={<Web_dev />}
+					/>
+					<Route
+						path="App_dev"
+						element={<App_dev />}
+					/>
+					<Route
+						path="Cloud"
+						element={<Cloud />}
+					/>
+					<Route
+						path="Blockchain"
+						element={<Blockchain />}
+					/>
+					<Route
+						path="Ai"
+						element={<Ai />}
+					/>
+					<Route
+						path="Data_science"
+						element={<Data_science />}
+					/>
+					<Route
+						path="Community"
+						element={<Community />}
+					/>
+					<Route
+						path="Jobs"
+						element={<Jobs />}
+					/>
+					<Route
+						path="Jobs"
+						element={<Jobs />}
+					/>
+					<Route
+						path="Array"
+						element={<Array />}
+					/>
+					<Route
+						path="Linked_list"
+						element={<Linked_list />}
+					/>
+					<Route
+						path="Stack"
+						element={<Stack />}
+					/>
+					<Route
+						path="Queue"
+						element={<Queue />}
+					/>
+					<Route
+						path="Tree"
+						element={<Tree />}
+					/>
+					<Route
+						path="Graph"
+						element={<Graph />}
+					/>
+					<Route
+						path="Stocks"
+						element={<Stocks />}
+					/>
+					<Route
+						path="Create_posts"
+						element={<Create_posts />}
+					/>
+					<Route
+						path="ProfilePage"
+						element={<ProfilePage />}
+					/>
+					<Route
+						path="Sorting"
+						element={<Sorting />}
+					/>
+					<Route
+						path="*"
+						element={<Error />}
+					/>
+				</Routes>
+			</BrowserRouter>
+		</div>
+	);
 }
 
 export default App;
