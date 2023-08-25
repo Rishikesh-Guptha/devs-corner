@@ -14,10 +14,18 @@ import {
 
 const ProfilePage = () => {
   const [editMode, setEditMode] = useState(false);
+  const[fullname,setFullname]=useState("");
+  const[email,setEmail]=useState("");
+  const[phone,setPhone]=useState("");
+  const[interest,setInterest]=useState("");
+
 
   const handleEditToggle = () => {
     setEditMode(!editMode);
   };
+  const handlesave=()=>{
+    setEditMode(!editMode);
+  }
 
   return (
     <div>
@@ -66,16 +74,19 @@ const ProfilePage = () => {
                     <MDBCol sm="3">
                       <MDBCardText>Full Name</MDBCardText>
                     </MDBCol>
-                    <MDBCol sm="9">
+                    <MDBCol sm="9">{fullname}
                       {editMode ? (
                         <input
                           type="text"
                           className="form-control"
                           placeholder="Enter Full Name"
+                          value={fullname} onChange={(e) => {
+                            setFullname(e.target.value);
+                          }}
                         />
                       ) : (
                         <MDBCardText className="text-muted">
-                          Johnatan Smith
+                          
                         </MDBCardText>
                       )}
                     </MDBCol>
@@ -85,16 +96,19 @@ const ProfilePage = () => {
                     <MDBCol sm="3">
                       <MDBCardText>Email</MDBCardText>
                     </MDBCol>
-                    <MDBCol sm="9">
+                    <MDBCol sm="9">{email}
                       {editMode ? (
                         <input
                           type="email"
                           className="form-control"
                           placeholder="Enter Email"
+                          value={email} onChange={(e) => {
+                            setEmail(e.target.value);
+                          }}
                         />
                       ) : (
                         <MDBCardText className="text-muted">
-                          example@example.com
+                          
                         </MDBCardText>
                       )}
                     </MDBCol>
@@ -104,16 +118,20 @@ const ProfilePage = () => {
                     <MDBCol sm="3">
                       <MDBCardText>Phone</MDBCardText>
                     </MDBCol>
-                    <MDBCol sm="9">
+                    <MDBCol sm="9">{phone}
                       {editMode ? (
                         <input
                           type="tel"
                           className="form-control"
                           placeholder="Enter Phone"
+                          value={phone} onChange={(e)=>{
+                            setPhone(e.target.value);
+                          }}
+                          
                         />
                       ) : (
                         <MDBCardText className="text-muted">
-                          (097) 234-5678
+                          
                         </MDBCardText>
                       )}
                     </MDBCol>
@@ -124,45 +142,30 @@ const ProfilePage = () => {
                       <MDBCardText>Interest</MDBCardText>
                     </MDBCol>
                     <MDBCol sm="9">
+                      {interest}
                       {editMode ? (
                         <input
                           type="text"
                           className="form-control"
                           placeholder="Enter Interest"
+                          value={interest} onChange={(e)=>{
+                            setInterest(e.target.value);}}
                         />
                       ) : (
                         <MDBCardText className="text-muted">
-                          Web Development
+                          
                         </MDBCardText>
                       )}
                     </MDBCol>
                   </MDBRow>
                   <hr />
-                  <MDBRow>
-                    <MDBCol sm="3">
-                      <MDBCardText>Location</MDBCardText>
-                    </MDBCol>
-                    <MDBCol sm="9">
-                      {editMode ? (
-                        <input
-                          type="text"
-                          className="form-control"
-                          placeholder="Enter Location"
-                        />
-                      ) : (
-                        <MDBCardText className="text-muted">
-                          Bay Area, San Francisco, CA
-                        </MDBCardText>
-                      )}
-                    </MDBCol>
-                  </MDBRow>
                   <hr />
                   <MDBRow>
                     <MDBCol sm="12">
                       {editMode ? (
                         <button
                           className="btn btn-success float-right"
-                          onClick={() => handleEditToggle()}
+                          onClick={() => handlesave()}
                         >
                           Save
                         </button>
