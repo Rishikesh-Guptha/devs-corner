@@ -23,8 +23,14 @@ const Development = () => {
 				<Navbar2 />
 				<div className="development-main-content">
 					<div className="development-text-content">
-						<p className="title-text">Development</p>
-						<p className="text-title">
+						<p
+							className="title-text"
+							style={{ color: "white" }}>
+							Development
+						</p>
+						<p
+							className="text-title"
+							style={{ color: "white" }}>
 							This is junction where u choose u r path.. Do it wisely..
 						</p>
 					</div>
