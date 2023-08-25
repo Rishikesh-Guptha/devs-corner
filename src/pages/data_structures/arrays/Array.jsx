@@ -73,6 +73,7 @@ const Array = () => {
             } catch (error) {
                 console.error("Error adding note: ", error);
             }
+			handleCancel();
 
             // ... Reset state and close dialog ...
         }
@@ -255,7 +256,7 @@ const Array = () => {
 							</Dialog>
 						</div>
 						<div className="notes-list">
-							{noteslist.map((lists, index) => (
+							{notesList.map((lists, index) => (
 								<div
 									key={index}
 									className="notes-lists-maines">
