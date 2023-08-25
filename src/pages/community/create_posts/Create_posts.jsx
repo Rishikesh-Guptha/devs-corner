@@ -28,18 +28,18 @@ const Create_posts = () => {
         </div>
         
         <div className="titles">
-            <p className="title">Create Post</p>
+            <p className="title" style={{color:'white'}}>Create Post</p>
         </div>
         <div className="content-area">
             <form action="">
                 <div className="content-title">
-                    <p className='content-area-title'>Title</p>
+                    <p className='content-area-title' style={{color:'white'}}>Title</p>
                     <input className='content-title-input' type="text" placeholder='Enter the Title...' required onChange={(event)=>{
                         setTitle(event.target.value);
                     }} />
                 </div>
                 <div className="content-text">
-                    <p className='content-area-text'>Text</p>
+                    <p className='content-area-text' style={{color:'white'}}>Text</p>
                     <textarea className="content-text-area" id="" cols="50" rows="6" placeholder='Enter the text here...' required onChange={(event)=>{
                         setTextcontent(event.target.value);
                     }}></textarea>
