@@ -29,7 +29,7 @@ const Community = () => {
         <Navbar2/>
         <div className="main-content">
           <div className="header">
-          <p className='header-title'>Community</p>
+          <p className='header-title' style={{color:'white'}}>Community</p>
           <Link to="/Create_posts" style={{textDecoration: 'none', color: 'black'}}><button className="create-posts">Create post</button></Link>
           </div>
           <div className="content-text">
@@ -39,7 +39,7 @@ const Community = () => {
 					<div className="post">
 						<div className="postHeader">
 							<div className="title-posts">
-								<p className="post-title"> {post.title}</p>
+								<p className="post-title"><strong>Title:</strong> {post.title}</p>
 							</div>
 							<div className="deletePost">
 								{post.author.id === auth.currentUser.uid && (
@@ -53,8 +53,8 @@ const Community = () => {
 								)}
 							</div>
 						</div>
-						<div className="postTextContainer"> {post.textcontent} </div>
-						<p>@{post.author.email}</p>
+						<div className="postTextContainer"><strong>Text:</strong> {post.textcontent} </div>
+						<p className="author">@{post.author.email}</p>
 					</div>
 				);
       })}
