@@ -27,7 +27,7 @@
     /* background-color: #3B3C36;
             color: whitesmoke; */
     position: fixed;
-    background-color: white;
+    background-color: rgb(110, 110, 110);
     /* border-bottom: 1px black solid; */
     z-index: 1;
 }
@@ -39,7 +39,7 @@
 }
 
 .main-text {
-    padding-top: 5rem;
+    padding-top: 0rem;
 
 }
 

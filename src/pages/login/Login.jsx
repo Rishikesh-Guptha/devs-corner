@@ -55,7 +55,7 @@ const Login = () => {
 					</Link>
 				</button>
 			</div>
-			<div className="container">
+			<div className="containers">
 				<div className="head">
 					<p className="heading">LOGIN</p>
 				</div>

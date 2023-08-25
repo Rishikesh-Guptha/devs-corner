@@ -36,28 +36,27 @@ const Community = () => {
           <div className="homePage">
       {postLists.map((post) => {
         return (
-          <div className="post">
-            <div className="postHeader">
-              <div className="title-post">
-                <p className='post-title'> {post.title}</p>
-              </div>
-              <div className="deletePost">
-                {post.author.id === auth.currentUser.uid && (
-                  <button className='delete-btn'
-                    onClick={() => {
-                      deletePost(post.id);
-                    }}
-                  ><DeleteOutlinedIcon />
-                    
-                  </button>
-                  
-                )}
-              </div>
-            </div>
-            <div className="postTextContainer"> {post.textcontent} </div>
-            <h3>@{post.author.email}</h3>
-          </div>
-        );
+					<div className="post">
+						<div className="postHeader">
+							<div className="title-posts">
+								<p className="post-title"> {post.title}</p>
+							</div>
+							<div className="deletePost">
+								{post.author.id === auth.currentUser.uid && (
+									<button
+										className="delete-btn"
+										onClick={() => {
+											deletePost(post.id);
+										}}>
+										<DeleteOutlinedIcon />
+									</button>
+								)}
+							</div>
+						</div>
+						<div className="postTextContainer"> {post.textcontent} </div>
+						<p>@{post.author.email}</p>
+					</div>
+				);
       })}
     </div>
             

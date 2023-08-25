@@ -95,7 +95,7 @@ const Signup = () => {
 					</Link>
 				</button>
 			</div>
-			<div className="container">
+			<div className="containers">
 				<div className="head">
 					<p className="heading">SIGNUP</p>
 				</div>

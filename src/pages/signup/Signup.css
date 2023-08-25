@@ -1,13 +1,13 @@
-.container {
+.containers {
     text-align: center;
     /* border: 10px solid black; */
     padding-bottom: 0.5rem;
-        margin-top: 3rem;
+        margin-top: 2rem;
 }
 
 .heading {
     font-size: xx-large;
-    margin-top: 4rem;
+    margin-top: 3rem;
     margin-bottom: 2rem;
 }
 
