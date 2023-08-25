@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState ,useEffect} from 'react';
 import './Array.css';
 import { DragDropContext, Draggable, Droppable } from 'react-beautiful-dnd';
 import Button from "@mui/material/Button";
@@ -11,12 +11,13 @@ import DialogTitle from "@mui/material/DialogTitle";
 import Typography from "@mui/material/Typography";
 import EditIcon from '@mui/icons-material/Edit'; // Import the Edit icon
 import DeleteIcon from '@mui/icons-material/Delete'; // Import the Delete icon
-import { doc, updateDoc,collection,addDoc } from "firebase/firestore";
+import { getDocs, collection, deleteDoc, doc, updateDoc ,addDoc,onSnapshot} from "firebase/firestore";
 import { auth, db } from "../../../firebase";
 import e from "cors";
 
 const Array = () => {
-    const updateRef = doc(db, "users", "array");
+    // const updateRef = doc(db, "users", "array");
+
     const [notestitle, setNotestitle] = useState("");
     const [notes, setNotes] = useState("");
     const [notesyoutube, setNotesyoutube] = useState("");
@@ -26,7 +27,21 @@ const Array = () => {
     const [noteslist, setNotesllist] = useState([]);
     const [editIndex, setEditIndex] = useState(null); // New state for edit mode
 	const user = auth.currentUser; // Get the current user from Firebase Authentication
-    const userNotesRef = collection(db, "users", user.email, "notes/array"); // Reference to the user's notes subcollection
+    const userNotesRef = collection(db, "users", user.email, "array"); // Reference to the user's notes subcollection
+    const [notesList, setNotesList] = useState([]); // State to store retrieved notes
+	useEffect(() => {
+        const unsubscribe = onSnapshot(userNotesRef, (querySnapshot) => {
+            const notesData = [];
+            querySnapshot.forEach((doc) => {
+                notesData.push({ id: doc.id, ...doc.data() });
+            });
+            setNotesList(notesData);
+        });
+
+        return () => unsubscribe(); // Unsubscribe when component unmounts
+    }, []);
+
+    console.log("Retrieved notes:", notesList); // Log the retrieved notes
 
     const handleClickOpen = () => {
         setOpen(true);
@@ -94,6 +109,19 @@ const Array = () => {
 			);
 			setNotesllist(updatedNotesList);
 		};
+		// const deletePost = async (id) => {
+		// 	const postDoc = doc(db, "users", user.email, "notes/array");
+		// 	await deleteDoc(postDoc);
+		//   };
+		
+		//   useEffect(() => {
+		// 	const getPosts = async () => {
+		// 	  const data = await getDocs(userNotesRef);
+		// 	  setPostList(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
+		// 	};
+		
+		// 	getPosts();
+		//   }, [deletePost]);
 
 		return (
 			<div className="main-container">
