@@ -74,6 +74,11 @@
     scroll-behavior: smooth;
   }
 }
+.name-below-pic {
+  display: flex;
+  align-items: flex-start;
+  align-content: flex-start;
+}
 body {
   margin: 0;
   font-family: var(--bs-body-font-family);

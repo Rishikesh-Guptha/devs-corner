@@ -63,15 +63,15 @@ const Navbar2 = () => {
 				</div>
 
 				<div className="nav-right">
-					<p style={{ color: "white" }}>
-						Hello{" "}
+					<div style={{ color: "white" }}>
+						Hello
 						{auth.currentUser.email !== null ? (
 							auth.currentUser.email
 						) : (
 							<Error />
 						)}{" "}
 						!!
-					</p>
+					</div>
 					{/* There is error in the above line, when someone tries to enter into the website without loggin in, type /dashboard in the url directly */}
 					<Tooltip title="Account settings">
 						<IconButton

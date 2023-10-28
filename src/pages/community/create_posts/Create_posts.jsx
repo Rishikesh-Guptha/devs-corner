@@ -21,36 +21,72 @@ const Create_posts = () => {
     }
 
   return (
-    <div >
-        <Navbar2/>
-        <div className="back-btn">
-        <button> <Link to="/Community" style={{textDecoration: 'none', color: 'black'}}>Back</Link></button>
-        </div>
-        
-        <div className="titles">
-            <p className="title" style={{color:'white'}}>Create Post</p>
-        </div>
-        <div className="content-area">
-            <form action="">
-                <div className="content-title">
-                    <p className='content-area-title' style={{color:'white'}}>Title</p>
-                    <input className='content-title-input' type="text" placeholder='Enter the Title...' required onChange={(event)=>{
-                        setTitle(event.target.value);
-                    }} />
-                </div>
-                <div className="content-text">
-                    <p className='content-area-text' style={{color:'white'}}>Text</p>
-                    <textarea className="content-text-area" id="" cols="50" rows="6" placeholder='Enter the text here...' required onChange={(event)=>{
-                        setTextcontent(event.target.value);
-                    }}></textarea>
-                </div>
-                <div className="submit-btn">
-                    <button className="submiting-btn" onClick={create_post}>Submit</button>
-                </div>
-            </form>
-        </div>
-    </div>
-  )
+		<div>
+			<Navbar2 />
+			<div className="back-btn">
+				<button>
+					{" "}
+					<Link
+						to="/Community"
+						style={{ textDecoration: "none", color: "black" }}>
+						Back
+					</Link>
+				</button>
+			</div>
+
+			<div className="titles">
+				<p
+					className="title"
+					style={{ color: "white" }}>
+					Create Post
+				</p>
+			</div>
+			<div className="content-area">
+				<form action="">
+					<div className="content-title">
+						<p
+							className="content-area-title"
+							style={{ color: "white", fontSize: "2rem" }}>
+							Title
+						</p>
+						<input
+							className="content-title-input"
+							type="text"
+							placeholder="Enter the Title..."
+							required
+							onChange={(event) => {
+								setTitle(event.target.value);
+							}}
+						/>
+					</div>
+					<div className="content-text">
+						<p
+							className="content-area-text"
+							style={{ color: "white", fontSize: "2rem" }}>
+							Text
+						</p>
+						<textarea
+							className="content-text-area"
+							id=""
+							cols="50"
+							rows="6"
+							placeholder="Enter the text here..."
+							required
+							onChange={(event) => {
+								setTextcontent(event.target.value);
+							}}></textarea>
+					</div>
+					<div className="submit-btn">
+						<button
+							className="submiting-btn"
+							onClick={create_post}>
+							Submit
+						</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	);
 }
 
 export default Create_posts

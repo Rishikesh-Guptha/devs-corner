@@ -32,21 +32,18 @@ body {
         opacity: 0.7;
 }
 .navbar {
-    margin-top: 0px;
     width: 100%;
     display: flex;
     justify-content: space-between;
-    height: 5.5rem;
-        position: fixed;
+    margin-bottom: 0;
         background-color: rgb(110, 110, 110);
-            /* border-bottom: 1px white solid;
-                                                                                                                                                                                                                                                                                                                                        box-shadow: 0px 10px 10px 0px rgb(205, 205, 205); */
+            
 }
 
 .title {
-    padding-left: 1rem;
     font-size: xx-large;
 }
+
 .main-text {
     padding-top: 5rem;
 
@@ -60,11 +57,15 @@ link {
 }
 
 .main-title {
-    font-size: 5.5vh;
+    font-size: 6vh;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: white;
+        font-weight: bolder;
 }
 
 .wanna {
     font-size: 3vh;
+    color: white;
 }
 
 .get-started {
@@ -80,4 +81,42 @@ link {
 
 .get-started:hover {
     scale: 0.95;
+        /* font-size: 1.5rem; */
+            transition: 0.2s;
+        }
+        
+        @media (max-width: 1000px) {
+            .main-text-content {
+                margin-top: 10vh;
+                margin-left: 10vh;
+            }
+        
+        }
+        
+        @media (max-width: 500px) {
+            .login {
+                font-size: 2vh;
+            }
+        
+            .signup {
+                font-size: 2vh;
+            }
+        
+            .nav-title {
+                font-size: 3vh;
+            }
+        
+            .main-title {
+                font-size: 4vh;
+            }
+        
+            .main-text-content {
+                margin-left: 5vh;
+            }
+        
+            .get-started {
+                width: 20vh;
+                height: 4vh;
+                font-size: small;
+            }
 }

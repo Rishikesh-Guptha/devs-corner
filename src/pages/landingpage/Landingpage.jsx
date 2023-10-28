@@ -1,11 +1,6 @@
 import React from 'react';
-import './/Landingpage.css';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ".//Landingpage.css";
 import { Outlet, Link } from "react-router-dom";
-import Login from '../login/Login';
-import Signup from '../signup/Signup';
-import Navbar2 from '../navbar2/Navbar2';
-import backpic from "../../assets/backpic.jpg";
 
 //This page currently only has the navbar like structure .
 //This is the first page that appears when the application is loaded
@@ -15,8 +10,8 @@ const Landingpage = () => {
 			<div className="navbar">
 				<div className="nav-left">
 					<p className="title">
-						{" "}
 						<Link
+							className="nav-title"
 							to="/"
 							style={{ textDecoration: "none", color: "white" }}>
 							Dev's Corner
@@ -25,21 +20,22 @@ const Landingpage = () => {
 				</div>
 
 				<div className="nav-right">
-					<p className="login">
-						{" "}
+					<div className="login">
 						<Link
+							className="login"
 							to="Login"
 							style={{ textDecoration: "none", color: "white" }}>
 							Login
-						</Link>{" "}
-					</p>
-					<p className="signup">
+						</Link>
+					</div>
+					<div className="signup">
 						<Link
+							className="signup"
 							to="Signup"
 							style={{ textDecoration: "none", color: "white" }}>
 							Signup
 						</Link>
-					</p>
+					</div>
 				</div>
 			</div>
 			<div className="main-text">

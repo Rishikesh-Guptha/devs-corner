@@ -143,7 +143,7 @@ const Array = () => {
 								className=""
 								sx={{
 									borderColor: "none",
-									color: "black",
+									color: "white",
 									fontSize: 20,
 									padding: -10,
 									borderRadius: 50,

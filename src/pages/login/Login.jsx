@@ -1,7 +1,6 @@
 import React, {useState} from 'react'
 import './/Login.css';
-import Landingpage from '../landingpage/Landingpage';
-import Signup from '../signup/Signup';
+
 import {  signInWithEmailAndPassword, signInWithPopup   } from 'firebase/auth';
 import { Outlet, Link,NavLink, useNavigate } from "react-router-dom";
 import GoogleIcon from '@mui/icons-material/Google';
@@ -67,7 +66,7 @@ const Login = () => {
 							<input
 								type="email"
 								className="email"
-								placeholder="Batman@gmail.com"
+								placeholder="youremail@gmail.com"
 								onChange={(e) => setEmail(e.target.value)}
 								value={email}
 							/>
@@ -79,7 +78,7 @@ const Login = () => {
 							<input
 								type="password"
 								className="password"
-								placeholder="IamBatman"
+								placeholder="**********"
 								onChange={(e) => setPassword(e.target.value)}
 								value={password}
 							/>
@@ -106,7 +105,17 @@ const Login = () => {
 				</div>
 				<div className="bottom">
 					<p>
-						First time? <Link to="/Signup">Signup</Link>
+						First time?{" "}
+						<Link
+							to="/Signup"
+							style={{
+								textDecoration: "none",
+								fontSize: "1.4rem",
+								color: "blue",
+								fontWeight: "bold",
+							}}>
+							Signup
+						</Link>
 					</p>
 				</div>
 			</div>

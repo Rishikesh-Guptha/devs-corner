@@ -6,7 +6,7 @@
     margin-top: 1rem;
     border: 1px white solid;
     border-radius: 15px;
-    box-shadow: 5px 5px 5px 5px rgb(205, 205, 205);
+    /* box-shadow: 5px 5px 5px 5px rgb(205, 205, 205); */
     margin: auto 2rem
 }
 
@@ -48,13 +48,15 @@
     margin-left: 48%;
     margin-top: 1rem;
     margin-bottom: 1.5rem;
-    box-shadow: 5px 5px 8px 9px rgb(205, 205, 205);
+    /* box-shadow: 5px 5px 8px 9px rgb(205, 205, 205); */
     width: 7rem;
     height: 2.2rem;
     font-size: large;
+    background-color: lightslategray;
+        color: white;
 }
 
 .submiting-btn:hover {
-    opacity: 0.8;
     transform: scale(1.05);
+    transition: 0.2s;
 }

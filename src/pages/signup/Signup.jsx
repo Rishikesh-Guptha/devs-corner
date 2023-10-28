@@ -1,11 +1,10 @@
 import React, {useState} from 'react';
 import './/Signup.css';
-import Landingpage from '../landingpage/Landingpage';
-import Login from '../login/Login';
-import Dashboard from '../dashboard/Dashboard.jsx';
+import GoogleIcon from "@mui/icons-material/Google";
+import GitHubIcon from "@mui/icons-material/GitHub";
 import { Outlet, Link, NavLink, useNavigate } from "react-router-dom";
-import {  createUserWithEmailAndPassword  } from 'firebase/auth';
-import { auth, db } from "../../firebase";
+import { createUserWithEmailAndPassword, signInWithPopup } from "firebase/auth";
+import { auth, db, gprovider } from "../../firebase";
 import { addDoc, collection, setDoc, doc } from "firebase/firestore";
 
 //This is the signup page
@@ -14,6 +13,14 @@ const Signup = () => {
 
 	const [email, setEmail] = useState("");
 	const [password, setPassword] = useState("");
+	const signinwithgoogle = () => {
+		console.log("google auth button is clicked");
+		signInWithPopup(auth, gprovider).then((result) => {
+			localStorage.setItem("isAuth", true);
+			console.log(auth.currentUser.displayName);
+			navigate("/Dashboard");
+		});
+	};
 
 	const onSubmit = async (e) => {
 		e.preventDefault();
@@ -42,34 +49,6 @@ const Signup = () => {
 					datascience: {},
 					github: {},
 				});
-
-				// usercollectionref.doc(user.uid).set({
-				// 	array: "",
-				// 	linkedlist: "",
-				// 	stack: "",
-				// 	queue: "",
-				// 	tree: "",
-				// 	graph: "",
-				// 	searching: "",
-				// 	sorting: "",
-				// 	webdev: "",
-				// });
-				// const cityRef = doc(db, email);
-				// setDoc(cityRef, { array: true }, { merge: true });
-				// setDoc(cityRef, { linkedlist: true }, { merge: true });
-				// setDoc(cityRef, { stack: true }, { merge: true });
-				// setDoc(cityRef, { queue: true }, { merge: true });
-				// setDoc(cityRef, { tree: true }, { merge: true });
-				// setDoc(cityRef, { graph: true }, { merge: true });
-				// setDoc(cityRef, { sorting: true }, { merge: true });
-				// setDoc(cityRef, { searching: true }, { merge: true });
-				// setDoc(cityRef, { webdev: true }, { merge: true });
-				// setDoc(cityRef, { appdev: true }, { merge: true });
-				// setDoc(cityRef, { ai: true }, { merge: true });
-				// setDoc(cityRef, { cloud: true }, { merge: true });
-				// setDoc(cityRef, { blockchain: true }, { merge: true });
-				// setDoc(cityRef, { datascience: true }, { merge: true });
-				// setDoc(cityRef, { github: true }, { merge: true });
 				const userid = user.uid;
 
 				navigate("/Dashboard");
@@ -143,10 +122,32 @@ const Signup = () => {
 						Submit
 					</button>
 				</div>
+				<div className="other-methods">
+					<p className="or">---or---</p>
+					<div className="icons">
+						<button
+							className="google-icon"
+							onClick={signinwithgoogle}>
+							<GoogleIcon fontsize="medium"></GoogleIcon>
+						</button>
+						<GitHubIcon
+							className="github-icon"
+							on></GitHubIcon>
+					</div>
+				</div>
 				<div className="bottom">
 					<p>
 						If this page is Familiar,you already have an account{" "}
-						<Link to="/Login">Login</Link>
+						<Link
+							to="/Login"
+							style={{
+								textDecoration: "none",
+								fontSize: "1.4rem",
+								color: "blue",
+								fontWeight: "bold",
+							}}>
+							Login
+						</Link>
 					</p>
 				</div>
 			</div>

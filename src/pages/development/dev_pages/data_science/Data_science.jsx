@@ -97,7 +97,7 @@ const Data_science = () => {
 			<p
 				className="main-container-title"
 				style={{ color: "white" }}>
-				ARRAY
+				DATA SCIENCE
 			</p>
 			<div className="display-area">
 				{/* <p
