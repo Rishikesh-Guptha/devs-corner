@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.0db86427.css",
+    "main.js": "/static/js/main.cdbf2326.js",
+    "static/media/backpic.jpg": "/static/media/backpic.1d8d33d977113399e1a5.jpg",
+    "static/media/open_source.jpg": "/static/media/open_source.4e14c4dff9453f8b6daf.jpg",
+    "static/media/data_structure.jpg": "/static/media/data_structure.e160bca859e1184c14f5.jpg",
+    "static/media/finance.jpg": "/static/media/finance.857cf6ba26b53fcf0621.jpg",
+    "static/media/development.jpg": "/static/media/development.dc04ccff023a8a44e796.jpg",
+    "static/media/ai.jpeg": "/static/media/ai.a5188b6a04cb4131b455.jpeg",
+    "static/media/web.jpeg": "/static/media/web.87a17969fd121d831b7f.jpeg",
+    "static/media/blockchain.jpeg": "/static/media/blockchain.9968a06cf85736f532ba.jpeg",
+    "static/media/datasci.jpeg": "/static/media/datasci.aeb4bc95dd9707009c44.jpeg",
+    "static/media/cloud.jpeg": "/static/media/cloud.fab073221689c1b99d74.jpeg",
+    "static/media/mobile.jpeg": "/static/media/mobile.d375dd19507847910f75.jpeg",
+    "static/media/axios.cjs": "/static/media/axios.e7d77f0967a69d31d7fc.cjs",
+    "index.html": "/index.html",
+    "main.0db86427.css.map": "/static/css/main.0db86427.css.map",
+    "main.cdbf2326.js.map": "/static/js/main.cdbf2326.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0db86427.css",
+    "static/js/main.cdbf2326.js"
+  ]
+}
