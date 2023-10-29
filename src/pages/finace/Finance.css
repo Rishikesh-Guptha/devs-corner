@@ -1,13 +1,18 @@
 .title-text {
     margin: 2rem auto 2rem 2rem;
     font-size: xx-large;
+    color: white;
 }
 
 .text-title {
     margin-left: 5rem;
     margin-bottom: 3rem;
     font-size: large;
+    color: white;
 }
 .main-content-finance {
-    margin-top: 10vh;
+    padding-top: 10vh;
+    }
+.finance-content-title {
+    color: white;
 }
