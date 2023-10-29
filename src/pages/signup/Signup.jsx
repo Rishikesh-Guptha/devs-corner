@@ -78,9 +78,9 @@ const Signup = () => {
 				<div className="head">
 					<p className="heading">SIGNUP</p>
 				</div>
-				<div className="content">
+				<div className="content-signup">
 					<form action="">
-						<div className="emailid">
+						<div className="emailid-signup">
 							<label htmlFor="email">Email Address:</label>
 							<br />
 							<input
@@ -93,7 +93,7 @@ const Signup = () => {
 							/>
 						</div>
 
-						<div className="passwords">
+						<div className="passwords-signup">
 							<label htmlFor="password">Password:</label>
 							<br />
 							<input

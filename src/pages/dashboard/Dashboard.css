@@ -15,3 +15,15 @@ img {
 .content {
     margin-top: 1rem;
 }
+@media (max-width:500) {
+    .paper {
+        margin: auto 20vh;
+        width: 50%;
+        font-size: x-large;
+    }
+
+    .main_content {
+        width: max-content;
+        font-size: larger;
+    }
+}

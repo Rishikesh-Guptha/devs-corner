@@ -18,8 +18,8 @@
     margin-right: 1rem;
 }
 
-.navbar {
-    margin-top: 0px;
+.navbar2 {
+    margin-top: -2rem;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -69,4 +69,39 @@ link {
 
 .community:hover {
     opacity: .7;
+}
+@media (max-width:700px) {
+    .nav-right-display-name {
+        display: none;
+    }
+
+    .title {
+        margin-left: 10vh;
+        font-size: large;
+    }
+
+    .nav-left {
+        margin-left: 1rem;
+    }
+
+    .community,
+    .dashboard {
+        font-size: small;
+    }
+
+}
+
+@media (max-width:100px) {
+    .nav-left {
+        margin-right: 10vh;
+    }
+
+    .nav-right {
+        margin-right: 10vh;
+    }
+
+    .navbar2 {
+        overflow: hidden;
+        width: 100vh;
+    }
 }

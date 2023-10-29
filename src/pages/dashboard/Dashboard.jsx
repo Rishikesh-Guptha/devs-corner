@@ -39,6 +39,7 @@ const Dashboard = () => {
 
 					{/* Data Structure and Algorithms  */}
 					<Paper
+						className="paper"
 						variant="outlined"
 						square
 						elevation={20}
@@ -88,6 +89,7 @@ const Dashboard = () => {
 
 					{/* Development  */}
 					<Paper
+						className="paper"
 						variant="outlined"
 						square
 						elevation={20}
@@ -136,6 +138,7 @@ const Dashboard = () => {
 
 					{/* Opensource  */}
 					<Paper
+						className="paper"
 						variant="outlined"
 						square
 						elevation={20}
@@ -185,6 +188,7 @@ const Dashboard = () => {
 
 					{/* Finance Managment  */}
 					<Paper
+						className="paper"
 						variant="outlined"
 						square
 						elevation={20}
@@ -234,6 +238,7 @@ const Dashboard = () => {
 
 					{/* Tech jobs and others  */}
 					<Paper
+						className="paper"
 						variant="outlined"
 						square
 						elevation={20}

@@ -7,8 +7,8 @@ import { Outlet, Link } from "react-router-dom";
 const Landingpage = () => {
 	return (
 		<div>
-			<div className="navbar">
-				<div className="nav-left">
+			<div className="navbar-landing">
+				<div className="nav-left-landing">
 					<p className="title">
 						<Link
 							className="nav-title"
@@ -19,7 +19,7 @@ const Landingpage = () => {
 					</p>
 				</div>
 
-				<div className="nav-right">
+				<div className="nav-right-landing">
 					<div className="login">
 						<Link
 							className="login"

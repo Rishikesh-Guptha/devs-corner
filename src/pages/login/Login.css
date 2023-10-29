@@ -1,11 +1,14 @@
 .containers {
     text-align: center;
     border: 1px solid black;
-    /* margin: 5rem 30rem; */
-        margin: 5vh 70vh;
+    margin: 5rem 35dvh;
+        /* margin: 5vh 70vh; */
     border-radius: 10px;
         box-shadow: 3px 2px 3px 5px rgb(157, 167, 255);
         backdrop-filter: blur(3px);
+}
+.content-login {
+    font-size: large;
 }
 .heading {
     font-size: xx-large;
@@ -13,10 +16,6 @@
         margin-bottom: 2rem;
     }
     
-    label,
-    input {
-        margin: 1vh 0;
-}
     
     .submit {
         margin: 1rem 0;
@@ -28,11 +27,11 @@
 
 .emailid,
 .passwords {
-    text-align: center;
-        margin-left: 8vh;
+    text-align: left;
+        /* margin-left: 8vh; */
 }
 input {
-    width: 15rem;
+    width: 40vh;
     border: none;
         border-bottom: 2px solid black;
         border-radius: 20px;
@@ -59,4 +58,31 @@ input {
 
 .submit:hover {
     transform: scale(1.04);
+}
+@media (width<=1000px) {
+    /* .containers {
+        margin: 5vh 70vh;
+    }
+
+    .content-login {
+        margin: 5vh 70vh;
+        font-size: x-large;
+    } */
+
+    input {
+        width: 30vh;
+    }
+}
+
+@media (width<=800px) {
+    .containers {
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .back-btn {
+        z-index: 1;
+    }
+
 }

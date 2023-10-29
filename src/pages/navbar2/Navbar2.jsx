@@ -36,7 +36,7 @@ const Navbar2 = () => {
   }
   return (
 		<div>
-			<div className="navbar">
+			<div className="navbar2">
 				<div className="nav-left">
 					<p className="title">
 						{" "}
@@ -63,10 +63,12 @@ const Navbar2 = () => {
 				</div>
 
 				<div className="nav-right">
-					<div style={{ color: "white" }}>
-						Hello
-						{auth.currentUser.email !== null ? (
-							auth.currentUser.email
+					<div
+						className="nav-right-display-name"
+						style={{ color: "white" }}>
+						Hello{" "}
+						{auth.currentUser.displayName !== null ? (
+							auth.currentUser.displayName
 						) : (
 							<Error />
 						)}{" "}

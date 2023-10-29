@@ -4,7 +4,10 @@
     padding-bottom: 0.5rem;
         margin-top: 1rem;
 }
-
+.content-signup {
+    text-align: center;
+    font-size: large;
+}
 .heading {
     font-size: xx-large;
     margin-top: 2rem;
@@ -15,6 +18,13 @@ label,
 input {
     margin: 1rem 0;
 }
+label {
+    margin-left: 5vh;
+}
+
+input {
+    margin-left: 10vh;
+}
 
 .submit {
     margin: 1rem 0 0 0;
@@ -24,15 +34,7 @@ input {
     margin-bottom: 0rem;
 
 }
-/* .emailid,
-.passwords,
-.confirm-passwords {
-    text-align: center;
-        margin: auto;
-    }
-        */ .label {
-            margin: auto;
-        }
+
 input {
     width: 40vh;
     border: none;
@@ -41,4 +43,46 @@ input {
 p {
     margin-top: 0;
     margin-bottom: 0;
+}
+@media (width<=1000px) {
+    /* .containers {
+        margin: 5vh 70vh;
+    }
+
+    .content-login {
+        margin: 5vh 70vh;
+        font-size: x-large;
+    } */
+
+    input {
+        width: 40vh;
+    }
+}
+
+@media (width<=900px) {
+    .containers {
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+@media (width<=550px) {
+    input {
+        width: 30vh;
+    }
+
+    .containers {
+        width: fit-content;
+        margin-left: 10vh;
+        margin-right: 10vh;
+        padding-left: auto;
+        padding-right: auto;
+    }
+
+    .back-btn {
+        z-index: -1;
+    }
+
 }

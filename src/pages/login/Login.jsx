@@ -58,9 +58,9 @@ const Login = () => {
 				<div className="head">
 					<p className="heading">LOGIN</p>
 				</div>
-				<div className="content">
+				<div className="content-login">
 					<form action="">
-						<div className="emailid">
+						<div className="emailid-login">
 							<label htmlFor="email">Email Address:</label>
 							<br />
 							<input
@@ -72,7 +72,7 @@ const Login = () => {
 							/>
 						</div>
 
-						<div className="passwords">
+						<div className="passwords-login">
 							<label htmlFor="password">Password:</label>
 							<br />
 							<input
