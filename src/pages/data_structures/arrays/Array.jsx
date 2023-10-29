@@ -110,22 +110,9 @@ const Array = () => {
 			);
 			setNotesllist(updatedNotesList);
 		};
-		// const deletePost = async (id) => {
-		// 	const postDoc = doc(db, "users", user.email, "notes/array");
-		// 	await deleteDoc(postDoc);
-		//   };
-		
-		//   useEffect(() => {
-		// 	const getPosts = async () => {
-		// 	  const data = await getDocs(userNotesRef);
-		// 	  setPostList(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
-		// 	};
-		
-		// 	getPosts();
-		//   }, [deletePost]);
 
 		return (
-			<div className="main-container">
+			<div className="main-container-array">
 				<p
 					className="main-container-title"
 					style={{ color: "white" }}>

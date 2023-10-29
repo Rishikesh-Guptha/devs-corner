@@ -31,7 +31,12 @@ const ProfilePage = () => {
 	return (
 		<div>
 			<Navbar2 />
-			<section style={{ backgroundColor: "#eee", height: "100vh" }}>
+			<section
+				style={{
+					backgroundColor: "#eee",
+					height: "100vh",
+					paddingTop: "10vh",
+				}}>
 				<MDBContainer className="py-5">
 					<MDBRow>
 						<MDBCol lg="4">

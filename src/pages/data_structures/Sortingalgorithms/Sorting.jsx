@@ -92,11 +92,13 @@ const Sorting = () => {
 	};
 
 	return (
-		<div className="main-container">
+		<div
+			className="main-container"
+			style={{ marginTop: "3vh" }}>
 			<p
 				className="main-container-title"
 				style={{ color: "white" }}>
-				ARRAY
+				Sorting Algorithms
 			</p>
 			<div className="display-area">
 				{/* <p

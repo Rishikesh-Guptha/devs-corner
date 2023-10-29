@@ -21,9 +21,9 @@ const Create_posts = () => {
     }
 
   return (
-		<div>
+		<div className="create-post-container">
 			<Navbar2 />
-			<div className="back-btn">
+			{/* <div className="back-btn">
 				<button>
 					{" "}
 					<Link
@@ -32,12 +32,12 @@ const Create_posts = () => {
 						Back
 					</Link>
 				</button>
-			</div>
+			</div> */}
 
 			<div className="titles">
 				<p
 					className="title"
-					style={{ color: "white" }}>
+					style={{ color: "white", fontSize: "4vh" }}>
 					Create Post
 				</p>
 			</div>

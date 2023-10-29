@@ -1,9 +1,13 @@
+.create-post-container {
+    margin-top: -1vh;
+    padding-top: -1vh;
+}
 .back-btn {
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
+        padding-top: 10vh;
 }
 
 .content-area {
-    margin-top: 1rem;
     border: 1px white solid;
     border-radius: 15px;
     /* box-shadow: 5px 5px 5px 5px rgb(205, 205, 205); */
@@ -59,4 +63,7 @@
 .submiting-btn:hover {
     transform: scale(1.05);
     transition: 0.2s;
+}
+.titles {
+    padding-top: 10vh;
 }

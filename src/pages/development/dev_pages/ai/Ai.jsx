@@ -93,7 +93,9 @@ const Ai = () => {
 	};
 
 	return (
-		<div className="main-container">
+		<div
+			className="main-container"
+			style={{ marginTop: "3vh" }}>
 			<p
 				className="main-container-title"
 				style={{ color: "white" }}>
