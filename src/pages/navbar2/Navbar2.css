@@ -19,7 +19,8 @@
 }
 
 .navbar2 {
-    margin-top: -2rem;
+    /* margin-top: -2rem;
+            margin-bottom: -2rem; */
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -100,8 +101,7 @@ link {
         margin-right: 10vh;
     }
 
-    .navbar2 {
-        overflow: hidden;
+                                .navbar2 {
         width: 100vh;
     }
 }

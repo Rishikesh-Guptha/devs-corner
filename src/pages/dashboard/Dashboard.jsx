@@ -23,9 +23,9 @@ const Dashboard = () => {
   return (
 		<div>
 			<Navbar2 />
-			<div className="main_content">
+			<div className="main-content-dashboard">
 				<p
-					className="headings"
+					className="headings-dashboard"
 					style={{ color: "white" }}>
 					Courses
 				</p>

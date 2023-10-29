@@ -1,6 +1,8 @@
-.headings {
-    margin: 2rem 2rem 0;
+.headings-dashboard {
+    margin: 0rem 2rem 2rem 0;
     font-size: xxx-large;
+    padding-top: 10vh;
+        padding-left: 2vh;
 }
 img {
     margin: auto 1rem;
@@ -15,6 +17,7 @@ img {
 .content {
     margin-top: 1rem;
 }
+
 @media (max-width:500) {
     .paper {
         margin: auto 20vh;

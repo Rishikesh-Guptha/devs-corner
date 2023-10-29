@@ -9,9 +9,9 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 const Opensource = () => {
   return (
-		<div>
+		<div className="opensource-container">
 			<Navbar2 />
-			<div className="main-container">
+			<div className="main-container-opensource">
 				<div className="text-content">
 					<p
 						className="title-text"

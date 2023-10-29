@@ -10,16 +10,14 @@ import { Outlet, Link } from "react-router-dom";
 import aipic from "../../assets/ai.jpeg";
 import blockchainpic from "../../assets/blockchain.jpeg";
 import cloudpic from "../../assets/cloud.jpeg";
-import jobpic from "../../assets/jobs.jpeg";
 import mobilepic from "../../assets/mobile.jpeg";
 import webpic from "../../assets/web.jpeg";
 import datasci from "../../assets/datasci.jpeg";
-import opensrc from "../../assets/open_source.jpg";
 
 const Development = () => {
 	return (
 		<div>
-			<div className="developmet-index-container">
+			<div className="development-index-container">
 				<Navbar2 />
 				<div className="development-main-content">
 					<div className="development-text-content">
