@@ -70,7 +70,9 @@ const Dashboard = () => {
 									border: "none",
 								}}>
 								<div className="dsa">
-									<div className="titles">Data Structures and Algorithms</div>
+									<div className="titles-dashboard">
+										Data Structures and Algorithms
+									</div>
 									<Paper
 										sx={{
 											width: 1000,
@@ -120,7 +122,7 @@ const Dashboard = () => {
 									border: "none",
 								}}>
 								<div className="development">
-									<div className="titles">Development</div>
+									<div className="titles-dashboard">Development</div>
 									<Paper
 										sx={{
 											width: 1000,
@@ -169,7 +171,7 @@ const Dashboard = () => {
 									border: "none",
 								}}>
 								<div className="opensource">
-									<div className="titles">Open Source</div>
+									<div className="titles-dashboard">Open Source</div>
 									<Paper
 										sx={{
 											width: 1000,
@@ -219,7 +221,7 @@ const Dashboard = () => {
 									border: "none",
 								}}>
 								<div className="finance">
-									<div className="titles">Finance Management</div>
+									<div className="titles-dashboard">Finance Management</div>
 									<Paper
 										sx={{
 											width: 1000,
@@ -269,7 +271,7 @@ const Dashboard = () => {
 									border: "none",
 								}}>
 								<div className="finance">
-									<div className="titles">Jobs and Others</div>
+									<div className="titles-dashboard">Jobs and Others</div>
 									<Paper
 										sx={{
 											width: 1000,
