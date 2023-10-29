@@ -1,10 +1,8 @@
 import React from 'react'
 import Navbar2 from '../navbar2/Navbar2';
 import Accordion from '@mui/material/Accordion';
-import AccordionSummary from '@mui/material/AccordionSummary';
-import AccordionDetails from '@mui/material/AccordionDetails';
-import Typography from '@mui/material/Typography';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import AccordionSummary from "@mui/material/AccordionSummary";
+import Typography from "@mui/material/Typography";
 import "./Jobs.css";
 
 const Jobs = () => {
@@ -15,7 +13,7 @@ const Jobs = () => {
 				<div className="texts">
 					<p
 						className="titles"
-						style={{ color: "white", marginTop: "2rem", marginLeft: "1rem" }}>
+						style={{ color: "white", marginLeft: "1rem" }}>
 						Jobs and Oppurtunities
 					</p>
 				</div>

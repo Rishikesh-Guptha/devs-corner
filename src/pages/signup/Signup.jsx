@@ -64,7 +64,7 @@ const Signup = () => {
 
 	return (
 		<div>
-			<div className="back-btn">
+			<div className="back-btn-signup">
 				<button>
 					{" "}
 					<Link

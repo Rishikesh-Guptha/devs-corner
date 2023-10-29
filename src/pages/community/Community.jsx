@@ -25,7 +25,7 @@ const Community = () => {
   }, [deletePost]);
 
   return (
-		<div>
+		<div className="community-main-container">
 			<Navbar2 />
 			<div className="main-content-community">
 				<div className="header">

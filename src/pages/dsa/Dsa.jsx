@@ -11,7 +11,7 @@ import { Link } from 'react-router-dom';
 const Dsa = () => {
   return (
 		<div>
-			<div className="main-container">
+			<div className="main-container-dsa">
 				<Navbar2 />
 				<div className="main-content">
 					<div className="text-content">

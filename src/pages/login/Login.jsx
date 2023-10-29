@@ -44,7 +44,7 @@ const Login = () => {
 
   return (
 		<div>
-			<div className="back-btn">
+			<div className="back-btn-login">
 				<button>
 					{" "}
 					<Link
